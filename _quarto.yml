@@ -1,0 +1,43 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Git for Science"
+  author: "Lars Schöbitz"
+  reader-mode: true
+  site-url: https://gitforsci.github.io/website/
+  repo-url: https://github.com/gitforsci/website/
+  repo-branch: main
+  repo-actions: [edit, issue]
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: part-foundations.qmd
+      chapters:
+        - chapter-01.qmd
+        - chapter-02.qmd
+    - part: part-workflows.qmd
+      chapters:
+        - chapter-03.qmd
+        - chapter-04.qmd
+    - part: part-collaboration.qmd
+      chapters:
+        - chapter-05.qmd
+        - chapter-06.qmd
+    - part: part-publishing.qmd
+      chapters:
+        - chapter-07.qmd
+        - chapter-08.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+
+execute:
+  freeze: auto

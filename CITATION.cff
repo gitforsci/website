@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite them as below."
+type: software
+title: "Git for Science"
+abstract: "{{ABSTRACT}}"
+authors:
+  - family-names: "Schöbitz"
+    given-names: "Lars"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "{{AFFILIATION}}"
+version: "{{VERSION}}"
+date-released: "{{DATE_RELEASED}}"
+doi: "{{DOI}}"
+url: "https://gitforsci.github.io/website/"
+repository-code: "https://github.com/gitforsci/website/"
+license: "{{LICENSE_SPDX}}"
+keywords:
+  - open-educational-resources
+  - git
+  - science
+  - workshop
