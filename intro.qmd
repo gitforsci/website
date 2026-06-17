@@ -1,1 +1,57 @@
-# Introduction
+# Introduction {#sec-intro}
+
+## The workshop in one page
+
+**Git for Science** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
+
+The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio interface. Git is the new thing; R is the familiar ground it stands on.
+
+Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first step onto the terminal. These are not the headline outcome, but they are part of why the workshop is worth four hours. @sec-course-shape says more about this.
+
+This is the first of a planned two-workshop series. The second workshop, on agentic coding for collaboration and scientific work, builds on these foundations and is out of scope here.
+
+## How this handbook is organized
+
+```{mermaid}
+flowchart TD
+    P[Preface and Introduction<br/>what this is, who it is for] --> A
+    A[Part 1: Pedagogy<br/>why the workshop is shaped this way] --> B
+    B[Part 2: Prerequisites<br/>accounts and software, for learner and teacher] --> C
+    C[Part 3: Three-org setup<br/>create the GitHub organizations and the website] --> D
+    D[Part 4: Delivering the session<br/>pre-flight checks and the run of show] --> E
+    E[Part 5: Reusing and re-running<br/>next iteration, license, citation] --> F
+    F[Appendices<br/>printable checklists, planned drawings, references]
+```
+
+Read the parts in order the first time through. Parts 2 and 3 are the setup core: the checklists there get you from nothing to a working course infrastructure. Part 4 is the day itself. Part 5 is what you do afterwards and the next time round.
+
+## A map of the moving pieces
+
+The workshop is not a single repository. It is a small family of repositories spread across three GitHub organizations, plus the accounts and software each person needs. Before any of that makes sense, it helps to see the whole board.
+
+```{mermaid}
+flowchart LR
+    subgraph people[People]
+        T[Teacher]
+        L[Learner]
+    end
+    subgraph tools[Accounts and software]
+        GH[GitHub account]
+        R[R and RStudio]
+        G[Git]
+        EL[Element / Matrix chat]
+    end
+    subgraph orgs[Three GitHub organizations]
+        C[Central org<br/>handbook, citation, DOI]
+        DEV[Dev org<br/>templates and material]
+        IT[Iteration org<br/>one per cohort]
+    end
+    T --> GH & R & G & EL
+    L --> GH & R & G & EL
+    T --> C & DEV & IT
+    L --> IT
+    DEV -->|template| IT
+    C -.->|citation| DEV & IT
+```
+
+Do not worry about the detail yet. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.

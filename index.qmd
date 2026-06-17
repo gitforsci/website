@@ -1,1 +1,32 @@
 # Preface {.unnumbered}
+
+This is a teacher handbook. It is not the course itself, it is the guide for the person who runs the course.
+
+**Git for Science** is a four-hour, hands-on workshop that teaches researchers the foundations of Git and GitHub for collaboration. The teaching material (slides, pre-work, exercises) lives in separate repositories. This book explains how those pieces fit together and gives you the checklists to set up and deliver the workshop yourself.
+
+The material is published as an Open Educational Resource (OER). That means you are free to take it, adapt it, and teach it. This handbook exists so that doing so is a matter of working through checklists rather than reverse-engineering someone else's setup.
+
+## Who this book is for
+
+There are two readers in mind, and the book is layered so each can find their path.
+
+- **A new educator** who found this material and wants to teach the workshop from scratch. If that is you, read the book front to back. Each part builds on the last: understand the pedagogy, set up the accounts and software, create the GitHub organizations, deliver the session, and archive it.
+- **A repeat instructor** who has run the workshop before and is spinning up the next iteration. If that is you, you can skip ahead to @sec-new-iteration in Part 5, which is written as a standalone run-book for the next round.
+
+Throughout the book, look for these callouts:
+
+::: {.callout-note appearance="simple"}
+**New educator** — context and reasoning you need the first time through.
+:::
+
+::: {.callout-tip appearance="simple"}
+**Repeat instructor** — the short version once you already know the setup.
+:::
+
+## How the material is licensed and cited
+
+This workshop is open. Before you teach it, see @sec-citation-license for how the license and citation work, and how to credit the original authors when you adapt it.
+
+## A note on scope
+
+This handbook covers **Workshop 1: Git and GitHub foundations**. A follow-up workshop on agentic coding for collaboration and scientific work exists as a separate effort and is mentioned only where relevant. Everything here is about the foundations workshop.

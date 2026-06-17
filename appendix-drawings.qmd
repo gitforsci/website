@@ -1,0 +1,16 @@
+# Planned live drawings {#sec-appendix-drawings}
+
+The live visual drawings (@sec-live-drawings) are still in development. This appendix is the at-a-glance index of all planned drawings, so you can see the full set in one place. The design brief for each lives in @sec-live-drawings; update both when you develop a drawing.
+
+| # | Drawing | Makes clear | When in the session | Status |
+|---|---|---|---|---|
+| 1 | Local and remote (@drawing-local-remote) | Two copies of the work, and Git moving changes between them | Start of "create and clone" | To develop |
+| 2 | The commit cycle (@drawing-commit-cycle) | Stage, commit, push; a commit as a labeled snapshot | First commit in "create and clone" | To develop |
+| 3 | Branching (@drawing-branching) | A branch as a parallel line of work that splits and rejoins | Start of "branch" | To develop |
+| 4 | The pull request (@drawing-pull-request) | A merge with a human review step in the middle | Start of "pull request and merge" | To develop |
+
+## How to use this list
+
+- When you develop a drawing, replace its placeholder in @sec-live-drawings with the image and change its status here to "Done."
+- If you add a new drawing, add a row here and a section there, keeping the numbering in sync with the run of show (@sec-run-of-show).
+- Keep the "When in the session" column aligned with the run of show so the drawings stay tied to the moment they support.

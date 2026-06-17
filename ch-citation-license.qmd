@@ -1,0 +1,54 @@
+# Keep it open and citable {#sec-citation-license}
+
+Publishing the workshop as an Open Educational Resource (OER) means two practical things: a license that grants reuse, and a citation that lets people credit it. This chapter is how to set both up and keep them consistent across the org family.
+
+## Choose a license
+
+A license is what makes the material legally reusable. Without one, "open" is just a word; others have no right to adapt it. For OER, prefer permissive, well-understood licenses:
+
+- For **content** (slides, prose, exercises), a Creative Commons license such as **CC-BY-4.0** is the common choice. It lets others reuse and adapt the material as long as they credit you.
+- For **code** (scripts, helper functions), a permissive software license such as **MIT** is conventional.
+
+A course that mixes both can carry both: CC-BY for the writing, MIT for the code. State clearly which applies to what.
+
+- [ ] Add a `LICENSE` file to the central `course/website` repository.
+- [ ] Make the license choice visible on the course landing page.
+- [ ] Apply the same license consistently across the material repositories.
+
+## The canonical citation
+
+There is one citation for the course, not one per repository or per cohort. It lives in a `CITATION.cff` file in the central `course/website`. That file is the single source of truth: authors, title, version, release date, and (once you have one) the DOI.
+
+A `CITATION.cff` should include at least:
+
+- [ ] `cff-version`, `title`, `authors`, `version`, and `date-released`.
+- [ ] An `orcid` for every author. Use real ORCID URLs; do not invent them. If you do not have a co-author's ORCID, ask them rather than guessing.
+
+::: {.callout-important}
+Do not fabricate ORCIDs, DOIs, or author details. An incorrect identifier is worse than a missing one, because it silently misattributes the work. Leave it blank and fill it in when you have the real value.
+:::
+
+## Mint a DOI with Zenodo
+
+A DOI is a permanent identifier that makes the course formally citable in the academic record. The usual route is Zenodo (<https://zenodo.org>), which integrates with GitHub:
+
+- [ ] Sign in to Zenodo with your GitHub account.
+- [ ] Enable the Zenodo integration for the `course/website` repository.
+- [ ] Create a release of the repository on GitHub. Zenodo archives that release and mints a DOI.
+- [ ] Add the DOI back into `CITATION.cff` and display its badge on the landing page.
+
+One DOI represents the course. New releases get new versioned DOIs under it, so you can cite both "the course" and "the course as of this version."
+
+## Keep the citation consistent across repositories
+
+When the canonical citation changes (a new author, a corrected ORCID, a new DOI version), the other repositories should match. The flow is one-directional: edit the canonical file in `course/website`, then copy it down.
+
+- [ ] Edit `CITATION.cff` in `course/website` only.
+- [ ] Copy the updated file into each other repository in the org family (the dev org's repositories and each cohort's repositories) so they all carry the same citation.
+- [ ] Never edit a downstream `CITATION.cff` as the source of truth; downstream copies are always overwritten from the canonical one.
+
+This keeps every part of the course pointing at the same authorship and DOI, which is what lets a reuser who lands on any repository cite the work correctly.
+
+## What a reuser needs from you
+
+If someone else adapts this course, the license and citation are what let them do it properly: the license grants the right to reuse, and the citation tells them whom to credit. Making both clear and correct on the central landing page is the single most important thing you can do to make the material a genuine Open Educational Resource.

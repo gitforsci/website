@@ -14,23 +14,33 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - part: part-foundations.qmd
+    - part: part-pedagogy.qmd
       chapters:
-        - chapter-01.qmd
-        - chapter-02.qmd
-    - part: part-workflows.qmd
+        - ch-philosophy.qmd
+        - ch-course-shape.qmd
+        - ch-live-drawings.qmd
+    - part: part-prerequisites.qmd
       chapters:
-        - chapter-03.qmd
-        - chapter-04.qmd
-    - part: part-collaboration.qmd
+        - ch-learner-setup.qmd
+        - ch-teacher-setup.qmd
+    - part: part-setup.qmd
       chapters:
-        - chapter-05.qmd
-        - chapter-06.qmd
-    - part: part-publishing.qmd
+        - ch-three-orgs.qmd
+        - ch-create-orgs.qmd
+        - ch-website.qmd
+    - part: part-delivery.qmd
       chapters:
-        - chapter-07.qmd
-        - chapter-08.qmd
+        - ch-before.qmd
+        - ch-run-of-show.qmd
+    - part: part-reuse.qmd
+      chapters:
+        - ch-new-iteration.qmd
+        - ch-citation-license.qmd
     - summary.qmd
+
+  appendices:
+    - appendix-checklists.qmd
+    - appendix-drawings.qmd
     - references.qmd
 
 bibliography: references.bib

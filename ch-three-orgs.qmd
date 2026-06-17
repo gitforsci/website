@@ -1,0 +1,70 @@
+# The three-organization model {#sec-three-orgs}
+
+The workshop's material is spread across three GitHub organizations, not one. This looks like more than you need at first, but each organization has a distinct job, and keeping them separate is what makes the course reusable and citable over time.
+
+Throughout this chapter, `course` stands in for your course's short name. Replace it with your own slug everywhere (for example a course named `gitforsci` would have organizations `gitforsci`, `gitforsci-dev`, and `gitforsci-001`).
+
+## The three organizations
+
+```{mermaid}
+flowchart TD
+    subgraph central[course -- central org]
+        CW[website<br/>handbook, canonical citation, DOI]
+    end
+    subgraph dev[course-dev -- development org]
+        DT[website template]
+        DM[setup, admin, exercises, assignments]
+    end
+    subgraph iter[course-00x -- iteration org]
+        IW[website<br/>generated from template]
+        IM[per-cohort repos]
+    end
+    dev -->|generate fresh each cohort| iter
+    central -.->|canonical citation copied down| dev
+    central -.->|canonical citation copied down| iter
+```
+
+### The central org: `course`
+
+The long-lived, public face of the course. There is one central org, ever, not one per cohort. It holds:
+
+- The `website` repository, which is **this handbook** plus the course landing page.
+- The **canonical `CITATION.cff`** and the course-level DOI. This is the single source of truth for how the course is cited (@sec-citation-license).
+
+The central org is stable. It should not churn every time you teach. Think of it as the published identity of the course.
+
+### The development org: `course-dev`
+
+Where you author and maintain the teaching material between cohorts. It holds the **templates** that each new cohort is generated from:
+
+- A `website` **template repository**: the starting point for each cohort's site.
+- Material repositories: the setup instructions, any admin material, and the exercise and assignment templates.
+
+When you improve the material, you do it here. Those improvements reach future cohorts because each new cohort is generated fresh from these templates.
+
+### The iteration org: `course-00x`
+
+One organization per time you teach the course. Name it with an iteration tag: `course-001`, `course-002`, or something descriptive like `course-2026spring`. It holds:
+
+- A `website` **generated from the `course-dev` template**. This is an independent copy with its own clean history and no live link back to the template.
+- Per-cohort copies of the material repositories your learners will work in.
+
+Each iteration org is a frozen snapshot: the course exactly as you taught it that time. Learners are members of the iteration org and nothing else.
+
+## How material flows
+
+Two flows matter, and they go in different directions.
+
+**Templates flow forward.** When you generate a new cohort from `course-dev`, it picks up every improvement you have made to the templates since the last cohort. Past cohorts do not change; they are frozen. Only future cohorts inherit your edits. If you ever need to carry a fix into a cohort that already exists, you apply it there as an ordinary commit.
+
+**Citation flows down.** The canonical `CITATION.cff` lives in the central `course/website`. When it changes (a new author, a corrected ORCID, a new DOI), you copy it down into the other repositories so everything cites the course the same way. @sec-citation-license covers this.
+
+## Why not just one organization
+
+Splitting the central org from the development org keeps your public identity (the citation, the DOI, the handbook) stable while the messy work of editing material happens elsewhere.
+
+Splitting the development org from each iteration org lets template improvements flow forward to future cohorts without back-contaminating the template with one cohort's specific dates, names, and URLs. Each past cohort stays exactly as it was taught, which is what makes it a trustworthy archival record.
+
+::: {.callout-note appearance="simple"}
+**New educator** — you do not need all three on day one. To teach the course once, you need an iteration org with a website and the material repositories. The central and development orgs pay off when you teach it a second time and want a clean way to reuse and cite the material. @sec-create-orgs builds them in an order that makes this practical.
+:::

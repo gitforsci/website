@@ -1,0 +1,15 @@
+# Three-org setup {.unnumbered}
+
+This is the infrastructure part. By the end of it you will have three GitHub organizations, the repositories the workshop needs, and a published cohort website.
+
+- @sec-three-orgs explains the three-organization model: what each org is for and how material flows between them. Read this before you create anything.
+- @sec-create-orgs is the checklist to create the three organizations and their core repositories, click by click in the GitHub interface.
+- @sec-website is the checklist to stand up and publish the cohort website from the template.
+
+```{mermaid}
+flowchart LR
+    A[Understand the model<br/>three-orgs] --> B[Create the orgs and repos<br/>create-orgs]
+    B --> C[Build and publish the website<br/>website]
+```
+
+Everything here is described as manual steps in the GitHub web interface and RStudio. No scripting is required.

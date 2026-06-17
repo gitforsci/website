@@ -1,0 +1,15 @@
+# Pedagogy {.unnumbered}
+
+Before you set anything up, it is worth understanding why the workshop is shaped the way it is. The setup checklists later in the book make more sense once you know what they are in service of.
+
+This part covers three things:
+
+- @sec-philosophy: the teaching philosophy. What kind of room you are trying to create, and the few principles that drive every decision in the workshop.
+- @sec-course-shape: the shape of the course. How pre-course work, in-class hands-on exercises, and the wrap-up fit together, and the side benefits learners pick up along the way.
+- @sec-live-drawings: live visual drawings. The diagrams you draw by hand in front of the room. These are still in development, so this chapter is a set of placeholders describing what each drawing should do.
+
+```{mermaid}
+flowchart LR
+    A[Philosophy<br/>safe, need-to-know, collaboration-first] --> B[Course shape<br/>pre-work, hands-on, wrap-up]
+    B --> C[Live drawings<br/>concepts made visible]
+```

@@ -1,0 +1,11 @@
+# Reusing and re-running {.unnumbered}
+
+The workshop is taught; now keep it alive and reusable.
+
+- @sec-new-iteration is the repeat-instructor run-book: the short path to spin up the next cohort once you already understand the setup.
+- @sec-citation-license is how to keep the material a genuine Open Educational Resource: the license, the canonical citation, and minting a DOI so others can credit it.
+
+```{mermaid}
+flowchart LR
+    A[Spin up the next cohort<br/>new-iteration] --> B[Keep it open and citable<br/>citation-license]
+```

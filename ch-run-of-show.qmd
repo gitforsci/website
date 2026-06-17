@@ -1,0 +1,108 @@
+# Run of show {#sec-run-of-show}
+
+This is the four hours, block by block. Each block follows the same rhythm: motivate it, demonstrate it once, hand it over as a "your turn" task, then regroup. The live drawings (@sec-live-drawings) are cued where they fit.
+
+The timings below are a starting point for a four-hour session including one substantial break. Adjust to your room, but keep the proportion: most of the time is learners' hands on keyboards, not slides.
+
+```{mermaid}
+flowchart TD
+    A[0:00 Welcome and motivation] --> B[0:30 Create and clone]
+    B --> C[1:15 Branch]
+    C --> BR[2:00 Break]
+    BR --> D[2:15 Pull request and merge]
+    D --> E[3:15 Publish]
+    E --> F[3:45 Wrap-up]
+```
+
+## 0:00 to 0:30 — Welcome and motivation
+
+**Goal:** set the tone and the why before any mechanics.
+
+- Welcome, who you are, and the safe-to-fail promise (@sec-philosophy).
+- Why researchers care: collaboration, a reliable record of changes, reuse, and the freedom to try things because almost everything is reversible.
+- The shape of the next four hours, so learners know hands-on work is coming.
+- Quick check that everyone can reach GitHub and has their pre-work done; triage stragglers (@sec-before).
+
+No hands-on task yet. Keep this short; the energy comes from the doing.
+
+## 0:30 to 1:15 — Create and clone
+
+**Concept:** there are two copies of the work, local and remote, and Git moves changes between them.
+
+**Live drawing:** Drawing 1, local and remote (@drawing-local-remote). Draw it before the demonstration.
+
+**Demonstrate once:** create a repository on GitHub, clone it into RStudio, make a change, then the commit cycle (stage, commit, push) and watch the change appear on GitHub.
+
+**Live drawing:** Drawing 2, the commit cycle (@drawing-commit-cycle), as you make the first commit.
+
+**Your turn:**
+
+- [ ] Learners create or open their assigned repository.
+- [ ] Clone it into RStudio.
+- [ ] Make a small change, commit it with a message, and push.
+- [ ] Confirm the change shows on GitHub.
+
+**Regroup:** confirm everyone's change is on GitHub before moving on. This is the foundational loop; do not advance until it works for everyone.
+
+## 1:15 to 2:00 — Branch
+
+**Concept:** a branch is a parallel line of work that splits off and rejoins, which is what makes collaboration safe.
+
+**Live drawing:** Drawing 3, branching (@drawing-branching). Draw the split live.
+
+**Demonstrate once:** create a branch, make a commit on it, and push the branch.
+
+**Your turn:**
+
+- [ ] Learners create a new branch.
+- [ ] Make a change and commit it on the branch.
+- [ ] Push the branch to GitHub.
+
+**Regroup:** confirm everyone has a branch with a commit pushed. This sets up the pull request after the break.
+
+## 2:00 to 2:15 — Break
+
+A real break. Four hours needs one. Use it to help anyone who fell behind on branching, so the pull request block starts with everyone level.
+
+## 2:15 to 3:15 — Pull request and merge
+
+This is the centerpiece of the workshop. Give it the most time and care.
+
+**Concept:** a pull request is a request to merge one branch into another, reviewed by a human before it happens.
+
+**Live drawing:** Drawing 4, the pull request (@drawing-pull-request), completing the merge point from Drawing 3 and showing the review step.
+
+**Demonstrate once:** open a pull request from a branch, show the diff, review it, and merge it.
+
+**Your turn (in pairs if possible):**
+
+- [ ] Learners open a pull request from their branch.
+- [ ] A partner (or the instructor) reviews the diff and comments.
+- [ ] Merge the pull request.
+- [ ] Pull the merged change back into the local copy.
+
+**Regroup:** this is where collaboration clicks. Make sure everyone has opened, reviewed, and merged at least one pull request and pulled the result locally.
+
+## 3:15 to 3:45 — Publish
+
+**Concept:** the work can become a real, shareable artifact on the web.
+
+**Demonstrate once:** show how the repository's content is published (for example via GitHub Pages), so learners see their work reach a URL.
+
+**Your turn:**
+
+- [ ] Learners publish or view their published page.
+- [ ] Confirm it loads at its URL.
+
+Keep this light. The aim is the satisfaction of seeing their work live, not a deep dive into publishing.
+
+## 3:45 to 4:00 — Wrap-up
+
+**Goal:** consolidate and point forward.
+
+- Recap what they can now do: create, clone, commit, branch, pull request, merge, publish.
+- Name the side benefits explicitly (@sec-course-shape): more comfort with R and RStudio, a first taste of Quarto, a first step onto the terminal.
+- Point to the follow-up workshop on agentic coding.
+- Invite them to keep the chat channel and try this on their own work this week.
+
+End on momentum: they should leave wanting to use it tomorrow.

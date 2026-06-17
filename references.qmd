@@ -1,4 +1,22 @@
 # References {.unnumbered}
 
+## Further reading
+
+- **Happy Git and GitHub for the useR** [@bryan-happygit], <https://happygitwithr.com>. The standard practical reference for using Git and GitHub from R and RStudio. The learner pre-work includes its "Why Git? Why GitHub?" introduction (@sec-learner-setup).
+- **Openscapes illustrations** [@openscapes-illustrations] by Allison Horst and Julia Stewart Lowndes, <https://github.com/openscapes>. Friendly, collaboration-first illustrations used in the workshop slides; they set the tone described in @sec-philosophy.
+- **Teaching with Posit Cloud** [@posit-cloud-teach], <https://docs.posit.co/cloud/guide/teach/>. The setup guide for the cloud fallback environment noted in @sec-learner-setup.
+
+## Tools and services
+
+- R, <https://cran.r-project.org>
+- RStudio, <https://posit.co/download/rstudio-desktop/>
+- Git, <https://git-scm.com>
+- GitHub, <https://github.com>
+- Quarto, <https://quarto.org>
+- Element / Matrix, <https://element.io>
+- Posit Cloud, <https://posit.cloud>
+- Plausible analytics, <https://plausible.io>
+- Zenodo, <https://zenodo.org>
+
 ::: {#refs}
 :::

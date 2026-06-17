@@ -1,0 +1,69 @@
+# Create the organizations and repositories {#sec-create-orgs}
+
+This chapter is a click-by-click checklist for creating the three organizations and their repositories in the GitHub web interface. Nothing here requires scripting.
+
+Replace `course` with your course slug throughout.
+
+::: {.callout-note appearance="simple"}
+**New educator** — if you only want to teach the course once, you can do just the iteration org (steps 3 and 4) and skip the central and development orgs for now. The full set pays off the second time you teach. The order below builds the reusable foundation first; jump to step 3 if you want the minimum.
+:::
+
+## GitHub organizations cannot be created from the command line
+
+One manual fact to know up front: GitHub organizations are created through the website, under your account settings. There is no shortcut. Each step below that says "create an organization" means doing it in the browser.
+
+## Step 1: Create the central organization
+
+- [ ] Sign in to GitHub as the teacher account.
+- [ ] Go to <https://github.com/account/organizations/new> and create a free organization named `course`.
+- [ ] Confirm you are listed as an owner.
+- [ ] In the new org, create a repository named `website`. This will hold this handbook and the course landing page. Initialize it with a README.
+- [ ] Add a `LICENSE` file and a `CITATION.cff` (@sec-citation-license covers what goes in them).
+
+## Step 2: Create the development organization
+
+- [ ] Create a second organization named `course-dev`.
+- [ ] Inside it, create these repositories, each initialized with a README:
+  - [ ] `website` — the template the cohort sites are generated from.
+  - [ ] `setup` — the learner setup and Git configuration instructions.
+  - [ ] `admin` — any administrative material (optional; not every course needs it).
+  - [ ] One repository per exercise set and per assignment, named consistently (for example `md-01-exercises`, `md-01-assignment`).
+- [ ] Turn the `website` repository into a **template repository**: open the repository's **Settings**, and check **Template repository** near the top. This is what lets you generate cohort sites from it with the "Use this template" button (@sec-website).
+
+::: {.callout-important}
+If **Template repository** is not checked on `course-dev/website`, the "Use this template" button will not appear and you cannot generate a cohort site. Verify this box before moving on.
+:::
+
+## Step 3: Create the iteration organization
+
+Do this once per cohort. Pick an iteration tag (`001`, `002`, `2026spring`).
+
+- [ ] Create an organization named `course-001` (substitute your tag).
+- [ ] Confirm you are an owner.
+- [ ] Invite your **test-learner account** (@sec-teacher-setup) as a plain member, to verify the member view works.
+
+The `website` repository for this org is created in @sec-website by generating it from the template, so do not create it by hand here.
+
+## Step 4: Create the per-cohort material repositories
+
+Learners need their own copies of the material to work in. For each material repository in `course-dev`, create a working copy in the iteration org:
+
+- [ ] For each exercise and assignment repository, use **Use this template** on the `course-dev` repository to create a copy in `course-001`.
+- [ ] Confirm each copied repository is visible to org members.
+- [ ] If learners each need their own private copy of a repository, plan to create one per learner during onboarding; for a small cohort this is manual, repository by repository.
+
+## Step 5: Invite the learners
+
+- [ ] Collect learner GitHub usernames (the pre-course survey is a good place to gather these; see @sec-before).
+- [ ] In `course-001`, go to **People** and invite each learner as a member.
+- [ ] Ask learners to accept the email invitation as part of their pre-work (@sec-learner-setup, step 7).
+
+## Verify with the test-learner account
+
+Before you consider the setup done, switch to your test-learner browser and confirm, as an ordinary member:
+
+- [ ] The iteration org page is reachable and shows the expected repositories.
+- [ ] A material repository can be cloned in RStudio.
+- [ ] A commit pushed from the test-learner account appears on GitHub.
+
+If all three pass from the learner's point of view, your organizations are ready. Next, build the website (@sec-website).

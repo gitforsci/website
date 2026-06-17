@@ -1,0 +1,84 @@
+# Learner setup {#sec-learner-setup}
+
+This is the pre-course work. Every learner completes it at home, before the workshop, in order. Hand it out with a clear deadline that gives you time to help stragglers (@sec-before).
+
+The steps are numbered because they build on each other: you need an account before a token, Git installed before a first commit, and so on.
+
+## What a learner needs, at a glance
+
+| # | Account or software | Why it is needed | Where to get it |
+|---|---|---|---|
+| 1 | Chat channel (Element / Matrix) | Ask for help before and during the workshop | Invite link you provide |
+| 2 | R | The language the material runs in | <https://cran.r-project.org> |
+| 3 | RStudio | The interface used throughout | <https://posit.co/download/rstudio-desktop/> |
+| 4 | GitHub account | Host repositories and collaborate | <https://github.com> |
+| 5 | Personal access token (PAT) | Let RStudio talk to GitHub securely | Generated on GitHub |
+| 6 | Git | The version control software itself | <https://git-scm.com> (see notes per OS) |
+| 7 | First repository | Prove the whole chain works | Your cohort organization |
+| 8 | Short reading | Understand why Git and GitHub matter | Linked below |
+
+::: {.callout-tip}
+Items 2 and 3 (R and RStudio) are listed as prerequisites the learner should already have some experience with. The pre-work is the moment to confirm they are installed and up to date, not to learn them from scratch.
+:::
+
+## The pre-course checklist
+
+Give learners this list verbatim. Each item links to a detailed instruction page in the cohort website (Part 3 covers building that website).
+
+### 1. Join the chat channel
+
+- [ ] Open the invite link to the workshop chat channel.
+- [ ] Create an Element account (or sign in) and join the room.
+- [ ] Post a short hello so you know it works.
+
+The chat channel is where you ask for help, before and during the workshop. Using Element with a Matrix server keeps the tooling open-source-friendly; any equivalent chat works if your institution provides one.
+
+### 2. Install R
+
+- [ ] Install the latest version of R from <https://cran.r-project.org>.
+- [ ] If you already have R, update it to the current release.
+
+### 3. Install RStudio
+
+- [ ] Install the latest RStudio Desktop from <https://posit.co/download/rstudio-desktop/>.
+- [ ] Open it once and confirm it starts without errors.
+
+### 4. Create a GitHub account
+
+- [ ] Create a free account at <https://github.com>.
+- [ ] Choose a username you are happy to use professionally; it is public.
+- [ ] Verify your email address.
+
+### 5. Generate a personal access token
+
+- [ ] While signed in to GitHub, create a personal access token (PAT).
+- [ ] Copy the token somewhere safe immediately; GitHub shows it only once.
+- [ ] You will paste it into RStudio when prompted during the first repository step.
+
+The PAT is what lets RStudio push and pull to GitHub on your behalf. Treat it like a password.
+
+### 6. Install Git
+
+- [ ] Install Git for your operating system from <https://git-scm.com>.
+- [ ] **Windows:** install Git for Windows; accept the defaults.
+- [ ] **macOS:** installing the Xcode command line tools provides Git, or install from the link above.
+- [ ] **Linux:** install via your package manager (for example `sudo apt install git`).
+
+### 7. Make your first commit
+
+- [ ] Accept the email invitation to the cohort GitHub organization.
+- [ ] Bookmark the organization page; you will return to it often.
+- [ ] Follow the first-repository instructions to clone a test repository in RStudio.
+- [ ] Make a small change, commit it, and push it.
+- [ ] Confirm your change appears on GitHub.
+
+This is the verification step. If your change shows up on GitHub, every piece of your setup works and you are ready for the workshop. If it does not, ask in the chat channel before the day.
+
+### 8. Read the big picture
+
+- [ ] Read the short "Why Git? Why GitHub?" introduction from *Happy Git and GitHub for the useR* (<https://happygitwithr.com>).
+- [ ] Come with one question about collaboration you would like answered.
+
+## If a learner cannot install software
+
+Some learners are on locked-down machines and cannot install R, RStudio, or Git. For them, a cloud environment such as Posit Cloud (<https://posit.cloud>) provides R, RStudio, and Git in the browser with nothing to install. Treat this as the exception, not the default: the local setup above is the baseline this handbook assumes. If you expect several such learners, set up a Posit Cloud workspace in advance and hand those learners its link instead of steps 2, 3, and 6.
