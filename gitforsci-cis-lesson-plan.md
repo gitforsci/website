@@ -1,0 +1,221 @@
+- # Prerequisites
+    - Join Element
+        - 
+    - **Download and install R and RStudio**
+        - R: https://cloud.r-project.org/
+        - RStudio: http://www.rstudio.com/download
+        - Follow your operating system’s normal installation process
+    - **Create a GitHub account**
+        - GitHub: https://github.com
+        - Follow optional [advice on choosing your username](https://happygitwithr.com/github-acct.html)
+        - Remember your username, email and password; we will need them for the workshop!
+    - Send me your GitHub username
+        - Survey
+        - Accept invitation
+    - Setup a GitHub Personal Access Token
+        - https://ost-hs23.github.io/website/0-2-pre-work/01-github.html
+    - **Download and install Git**
+        - Git: https://git-scm.com/downloads
+        - https://happygitwithr.com/install-git#install-git
+            - We like this because Git for Windows leaves the Git executable in a 
+              conventional location, which will help you and other programs, 
+              e.g. RStudio, find it and use it. This also supports a transition to 
+              more expert use, because the “Git Bash” shell will be useful as you 
+              venture outside of R/RStudio.
+                - **NOTE:** When asked about “Adjusting your PATH 
+                  environment”, make sure to select “Git from the command line and also 
+                  from 3rd-party software”. Otherwise, we believe it is good to accept the
+                   defaults.
+                - Note that RStudio for Windows prefers for Git to be installed below `C:/Program Files` and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at `C:/Program Files/Git/bin/`
+        - Follow your operating system’s normal installation process. Note: 
+          you will not see an application called Git listed but if the 
+          installation process completed it was likely successful, and we will 
+          confirm together
+    - **Create a repository**
+        - 
+    - **Clone a repository**
+        - 
+    - **Introduce yourself to Git**
+        - https://happygitwithr.com/hello-git#hello-git
+    - **Make a local change, commit, and push**
+        - https://happygitwithr.com/rstudio-git-github
+    - **Open an issue**
+    - **Read**
+        - https://happygitwithr.com/big-picture
+- # Module 1: Prepare a personal website
+    - ## Part 1 (15 minutes)
+        - ### Slides: **GitHub for supporting, contributing, and failing safely** (15 minutes)
+            - https://docs.google.com/presentation/d/1OuLcJHWxpauVic0WEfGsWVreHbkmnINiEXldV5pjD5Q/edit?slide=id.g12aa8910998_0_17#slide=id.g12aa8910998_0_17
+    - ## Part 2 (32 minutes)
+        - ### Our turn: exercise (24 minutes)
+            - Open personal GitHub profile (1) (be logged in)
+            - Create new repository (1)
+                - Name it `website`
+                - Add README
+                - Copy repository link
+            - Open RStudio (3)
+                - Settings (Tools > Global Options)
+                    - Do not save .Rdata
+                    - Change pipe
+                - Clone repository
+            - Inspect your local repo (3)
+                - First, our working directory is set to `~/github/website`, and `website` is also named in the top right hand corner.
+                - Second, we have a Git tab in the top right pane! Let’s click on it.
+                - Our Git tab has 2 items:
+                    - Files
+                        - .gitignore file
+                        - .Rproj file
+                    - Comments
+                        - These have been added to our repo by RStudio — we can also see them  in the File pane in the bottom right of RStudio. These are helper files  that RStudio has added to streamline our workflow with GitHub and R. We will talk about these a bit more soon. One thing to note about these files is that they begin with a period (`.`) which means they are hidden files: they show up in the Files pane of RStudio but won’t show up in your Finder or Windows Explorer.
+                        - Going back to the Git tab, both these files have little yellow icons with question marks `?`. This is GitHub’s way of saying: “I am responsible for tracking everything that happens in this repo, but I’m not sure what is going on with these files yet. Do you want me to track them too?”
+                        - We will handle this in a moment; first let’s look at the README.md file.
+            - Open README (1)
+                - Write: This repo contains a personal website.
+            - Save it and point out the M (2)
+                - When I save this, notice how it shows up in my Git tab. It has a blue “M”: GitHub is already tracking this file, and tracking it line-by-line, so it knows that something is different: it’s Modified with an M.
+                - Great. Now let’s sync back to GitHub in 4 steps.
+            - Sync from RStudio (local) to GitHub (remote) (5)
+                - Pull
+                - Stage
+                - Commit
+                - Push
+                - Commit History
+            - Hands-up: Who needs to enter a username and password?
+            - Store Git credentials (2)
+                - `gitcreds::gitcreds_set()`
+            - Open on GitHub (5)
+                - Open website repository on GitHub
+                - Show commit message and "2 Commits"
+                - Show Files changes
+        - ### Your turn exercise: Clone a repo of another student (8 minutes) did not have for this
+            - Clone a repo of a fellow student, make a change and try to commit & push the changes to GitHub
+                - {{[[TODO]]}} Share username clones
+                - Open RStudio
+                    - Clone repository
+                - Inspect your local repo
+                    - Point out that it now highlights the parent folder of the repository
+                - Open README
+                    - Write. This repo contains a personal website for USERNAME.
+                - Sync from RStudio (local) to GitHub (remote) (5)
+                    - Pull
+                    - Stage
+                    - Commit
+                    - Push
+                    - Commit History
+                - No push access
+                    - You do not have push access to any repository
+                    - To get push (write) access, people need to add you as a collaborator
+                    - Fork
+                        - The other alternative is to fork the repository to your personal GitHub profile, clone it from there and then push changes. More on that later. 
+                        - Not getting there today
+- # Break (15 minutes)
+- # Module 2: Branching and PR (36 minutes)
+    - ## Part 1 (19 minutes): Branch
+        - ### Our turn exercise: branching (19 minutes)
+            - Find and clone (5)
+                - man-washinvestments-username 
+            - Use sticky note to indicate when done 
+            - Branch (2)
+                - Open Git pane
+                - Click on New Branch
+                - Branch name: dev
+                    - Point out what the message says
+                    - {{[[TODO]]}} What's origin in git language?
+            - Open index.qmd (1)
+            - Install packages (3)
+                - remove hash inside first code-chunks and run code-chunk
+                - comment out again
+            - Edit file (3)
+                - Change Name
+                - Change ORCID id
+                - Change Emal
+                - Change institution
+            - Render (1)
+            - RStudio GIT GUI (2)
+                - Checkout main branch 
+                    - Highlight that nothing is stored yet in a branch because we have not made a commit
+                    - Highlight that all content is equal
+                - Checkout dev branch
+                    - Highlight that all content is equal
+            - RStudio Terminal (1)
+                - git checkout dev
+                - git checkout main
+            - RStudio GUI (1)
+                - status
+                    - this is our status
+                - pull
+                    - we always pull first
+            - RStudio Terminal (2)
+                - git status
+                    - describe all text
+                - git pull
+                    - 
+            - RStudio GUI (1)
+                - Commit: 
+                - Commit message: update author details
+                - Push
+            - RStudio GUI (1)
+                - Click Changes
+            - RStudio GUI
+                - Checkout main branch
+                    - Show that content changes
+                    - What's on dev is not on main
+            - Not showing terminal
+    - ## Part 2 (15 minutes): PR & Merge
+        - ### Our turn exercise: PR (10 minutes)
+            - Open man-washinvestments repo on GitHub
+            - Message
+                - dev had recent pushes 2 seconds ago
+            - GitHub GUI 
+                - Switch branches to dev
+            - Click Compare and PR
+                - Add title
+                    - Add author details to manuscript
+                    - Request reviewer
+                        - Use the same as you had earlier cloned a repository from
+            - Click Open PR
+            - Show Commits
+            - Show Files changed
+                - Filter
+                    - Show select commits
+                    - Show File filter
+                - Start review
+                    - At line 2:
+                        - That's not a good title for a manuscript. Please suggest 2 alternatives.
+                    - At line 4:
+                        - This list is not complete. Please add @larnsce, etc.
+                    - Click: Finish your review
+                        - Comment
+                            - Nice manuscript. Please see comments for details.
+                    - Click: submit review
+        - ### Our turn exercise: Merge PR (5 minutes)
+            - On GitHub
+                - Open an issue
+                    - Show Pull requests list
+                    - Open issue for pull request
+                    - Make list of tasks
+                - Open the PR1
+                    - Click: Merge pull request
+                    - Click: Confirm merge
+                - Highlight PR closed
+                - Open Issue
+                    - See how PR is merged
+                        - Tick off TODO
+            - Open RStudio GUI
+                - Open Git and show which branch we are on
+                - Switch branch to main
+                - Highlight message
+                    - Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+                - Pull
+                - Switch back to dev !!!
+    - ## Part 3 (5 minutes): Publish
+        - ### Our turn exercise: Publish (5)
+            - Open repo on GitHub
+            - Open settings
+            - Find pages service
+            - Publish
+            - Add address to Description
+            - Watch manuscript published
+    - ## Questions
+        - Why do .Rproj session files show up
+        - How do I take a commit back before I push it?
