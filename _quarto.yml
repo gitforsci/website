@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "Git for Science"
+  title: "Git for Scientists"
   author: "Lars Schöbitz"
   reader-mode: true
   site-url: https://gitforsci.github.io/website/
@@ -21,8 +21,8 @@ book:
         - ch-live-drawings.qmd
     - part: part-prerequisites.qmd
       chapters:
-        - ch-learner-setup.qmd
         - ch-teacher-setup.qmd
+        - ch-learner-setup.qmd
     - part: part-setup.qmd
       chapters:
         - ch-three-orgs.qmd

@@ -1,64 +1,50 @@
-# Create the organizations and repositories {#sec-create-orgs}
+# Create the iteration organization {#sec-create-orgs}
 
-This chapter is a click-by-click checklist for creating the three organizations and their repositories in the GitHub web interface. Nothing here requires scripting.
+This chapter is the checklist for creating your iteration organization and populating it from the templates in `gitforsci-dev`. The central `gitforsci` org and the development `gitforsci-dev` org already exist (@sec-three-orgs); you do not create those. The only organization you create here is the one for this cohort.
 
-Replace `course` with your course slug throughout.
+Throughout, replace the iteration tag `00x` with your own, for example `cis` or `001`.
+
+## GitHub organizations are created in the browser
+
+One manual fact to know up front: GitHub organizations are created through the website, under your account settings, not from the command line. The step below that says "create an organization" means doing it in the browser. Everything after that, once the org exists, can be scripted.
+
+## Step 1: Create the iteration organization
+
+- [ ] Sign in to GitHub as the instructor account.
+- [ ] Go to <https://github.com/account/organizations/new> and create a free organization named `gitforsci-00x` (substitute your tag).
+- [ ] Confirm you are listed as an owner.
+- [ ] Invite your **test-learner account** (@sec-teacher-setup) as a plain member, so you can later verify the member view.
+
+## Step 2: Generate the cohort website
+
+The cohort website is generated from the `gitforsci-dev/website` template into your new org. The full walk-through, including filling in the iteration variables, is in @sec-website. In short:
+
+- [ ] On `gitforsci-dev/website`, use **Use this template** to create a new repository named `website` inside `gitforsci-00x`.
+- [ ] Follow @sec-website to fill in the cohort variables, render, and publish.
+
+## Step 3: Create the per-cohort material repositories
+
+Learners need their own copies of the material to work in. These are generated from the exercise and assignment templates in `gitforsci-dev`:
+
+- [ ] For each exercise and assignment template in `gitforsci-dev`, use **Use this template** to create a copy in `gitforsci-00x`.
+- [ ] Confirm each copied repository is visible to org members.
+- [ ] If learners each need their own copy of a repository, the `ghclass` scripts in step 4 create them; you do not do this by hand.
+
+## Step 4: Invite learners and create their repositories with `ghclass`
+
+Inviting learners and creating per-learner repositories one by one in the web interface does not scale and is error-prone. This work is scripted with the `ghclass` R package (<https://rundel.github.io/ghclass/>), and the scripts live in `gitforsci-dev/admin`.
+
+- [ ] Collect learner GitHub usernames from the pre-course survey (@sec-before).
+- [ ] Open the admin project (`gitforsci-dev/admin`) in RStudio and confirm `ghclass` is installed (@sec-teacher-setup).
+- [ ] Run the invitation script to invite every learner to `gitforsci-00x` from the username list.
+- [ ] If the cohort uses per-learner repositories, run the script that creates them from the templates.
+- [ ] Ask learners to accept the email invitation as part of their pre-work (@sec-learner-setup).
 
 ::: {.callout-note appearance="simple"}
-**New educator** — if you only want to teach the course once, you can do just the iteration org (steps 3 and 4) and skip the central and development orgs for now. The full set pays off the second time you teach. The order below builds the reusable foundation first; jump to step 3 if you want the minimum.
+**New educator** — the `ghclass` scripts are the reason the `admin` repository exists in `gitforsci-dev`. You do not write them from scratch; you run the existing scripts against this cohort's username list.
 :::
 
-## GitHub organizations cannot be created from the command line
-
-One manual fact to know up front: GitHub organizations are created through the website, under your account settings. There is no shortcut. Each step below that says "create an organization" means doing it in the browser.
-
-## Step 1: Create the central organization
-
-- [ ] Sign in to GitHub as the teacher account.
-- [ ] Go to <https://github.com/account/organizations/new> and create a free organization named `course`.
-- [ ] Confirm you are listed as an owner.
-- [ ] In the new org, create a repository named `website`. This will hold this handbook and the course landing page. Initialize it with a README.
-- [ ] Add a `LICENSE` file and a `CITATION.cff` (@sec-citation-license covers what goes in them).
-
-## Step 2: Create the development organization
-
-- [ ] Create a second organization named `course-dev`.
-- [ ] Inside it, create these repositories, each initialized with a README:
-  - [ ] `website` — the template the cohort sites are generated from.
-  - [ ] `setup` — the learner setup and Git configuration instructions.
-  - [ ] `admin` — any administrative material (optional; not every course needs it).
-  - [ ] One repository per exercise set and per assignment, named consistently (for example `md-01-exercises`, `md-01-assignment`).
-- [ ] Turn the `website` repository into a **template repository**: open the repository's **Settings**, and check **Template repository** near the top. This is what lets you generate cohort sites from it with the "Use this template" button (@sec-website).
-
-::: {.callout-important}
-If **Template repository** is not checked on `course-dev/website`, the "Use this template" button will not appear and you cannot generate a cohort site. Verify this box before moving on.
-:::
-
-## Step 3: Create the iteration organization
-
-Do this once per cohort. Pick an iteration tag (`001`, `002`, `2026spring`).
-
-- [ ] Create an organization named `course-001` (substitute your tag).
-- [ ] Confirm you are an owner.
-- [ ] Invite your **test-learner account** (@sec-teacher-setup) as a plain member, to verify the member view works.
-
-The `website` repository for this org is created in @sec-website by generating it from the template, so do not create it by hand here.
-
-## Step 4: Create the per-cohort material repositories
-
-Learners need their own copies of the material to work in. For each material repository in `course-dev`, create a working copy in the iteration org:
-
-- [ ] For each exercise and assignment repository, use **Use this template** on the `course-dev` repository to create a copy in `course-001`.
-- [ ] Confirm each copied repository is visible to org members.
-- [ ] If learners each need their own private copy of a repository, plan to create one per learner during onboarding; for a small cohort this is manual, repository by repository.
-
-## Step 5: Invite the learners
-
-- [ ] Collect learner GitHub usernames (the pre-course survey is a good place to gather these; see @sec-before).
-- [ ] In `course-001`, go to **People** and invite each learner as a member.
-- [ ] Ask learners to accept the email invitation as part of their pre-work (@sec-learner-setup, step 7).
-
-## Verify with the test-learner account
+## Step 5: Verify with the test-learner account
 
 Before you consider the setup done, switch to your test-learner browser and confirm, as an ordinary member:
 
@@ -66,4 +52,23 @@ Before you consider the setup done, switch to your test-learner browser and conf
 - [ ] A material repository can be cloned in RStudio.
 - [ ] A commit pushed from the test-learner account appears on GitHub.
 
-If all three pass from the learner's point of view, your organizations are ready. Next, build the website (@sec-website).
+If all three pass from the learner's point of view, your organization is ready.
+
+## A timeline that leaves buffer
+
+The setup above has to land in a sequence that gives learners time to finish the pre-work and gives you time to follow up with anyone who hasn't. Work backwards from the workshop date so that every due date still leaves a buffer of working days before the day itself. A workable shape, counting back from the workshop:
+
+| When (before the workshop) | Do this |
+|---|---|
+| ~3 weeks | Generate the cohort website, fill in all platform links (chat, survey), and publish it (@sec-website). |
+| ~3 weeks | Send the first email: course website link and a clear due date for completing the pre-work. |
+| 2 days before the pre-work due date | Review who has and has not completed the pre-course survey. |
+| Pre-work due date | Reach out to explain the next steps (accept the GitHub invitation, clone the setup repository). |
+| ~1 week | Give a second due date to finish setup, leaving room before the day. |
+| Second due date | Check who has not completed setup. |
+| 1 day after the second due date | Reach out to anyone still stuck to offer support; this should still leave at least 2 working days of buffer before the workshop. |
+| ~2 days | Run the pre-flight dry-run (@sec-before). |
+
+Adjust the exact spacing to your cohort, but keep the principle: every due date is followed by a follow-up window, and the last follow-up still sits clear of the workshop day.
+
+Next, build the website (@sec-website).

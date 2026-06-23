@@ -2,13 +2,13 @@
 
 ## The workshop in one page
 
-**Git for Science** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
+**Git for Scientists** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
 
-The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio interface. Git is the new thing; R is the familiar ground it stands on.
+The focus is doing all of this through the point-and-click interface: the buttons and menus in RStudio and on the GitHub website, not commands typed at a prompt. Researchers do not need to memorize Git commands to collaborate well, and starting with the graphical interface lowers the barrier and keeps attention on the workflow rather than on syntax.
 
-Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first step onto the terminal. These are not the headline outcome, but they are part of why the workshop is worth four hours. @sec-course-shape says more about this.
+The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio IDE interface. Git is the new thing; R is the familiar ground it stands on.
 
-This is the first of a planned two-workshop series. The second workshop, on agentic coding for collaboration and scientific work, builds on these foundations and is out of scope here.
+Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first look at the terminal. The terminal is included as a brief taste, not as the central skill. Working with Git at the command line matters less than it used to, now that agentic coding tools can drive Git on your behalf, so this workshop builds confidence with the concepts and vocabulary first. That foundation is exactly what a follow-up workshop on agentic tools builds on. @sec-course-shape says more about this.
 
 ## How this handbook is organized
 
@@ -16,7 +16,7 @@ This is the first of a planned two-workshop series. The second workshop, on agen
 flowchart TD
     P[Preface and Introduction<br/>what this is, who it is for] --> A
     A[Part 1: Pedagogy<br/>why the workshop is shaped this way] --> B
-    B[Part 2: Prerequisites<br/>accounts and software, for learner and teacher] --> C
+    B[Part 2: Prerequisites<br/>accounts and software, for learner and instructor] --> C
     C[Part 3: Three-org setup<br/>create the GitHub organizations and the website] --> D
     D[Part 4: Delivering the session<br/>pre-flight checks and the run of show] --> E
     E[Part 5: Reusing and re-running<br/>next iteration, license, citation] --> F
@@ -30,28 +30,18 @@ Read the parts in order the first time through. Parts 2 and 3 are the setup core
 The workshop is not a single repository. It is a small family of repositories spread across three GitHub organizations, plus the accounts and software each person needs. Before any of that makes sense, it helps to see the whole board.
 
 ```{mermaid}
-flowchart LR
-    subgraph people[People]
-        T[Teacher]
-        L[Learner]
-    end
-    subgraph tools[Accounts and software]
-        GH[GitHub account]
-        R[R and RStudio]
-        G[Git]
-        EL[Element / Matrix chat]
-    end
-    subgraph orgs[Three GitHub organizations]
-        C[Central org<br/>handbook, citation, DOI]
-        DEV[Dev org<br/>templates and material]
-        IT[Iteration org<br/>one per cohort]
-    end
-    T --> GH & R & G & EL
-    L --> GH & R & G & EL
-    T --> C & DEV & IT
-    L --> IT
-    DEV -->|template| IT
-    C -.->|citation| DEV & IT
+%%| label: fig-overview
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    P["People<br/><b>Instructor</b> and <b>Learner</b>"]:::layer
+    A["Accounts and software<br/>GitHub account · R and RStudio · Git · Element/Matrix chat"]:::layer
+    O["Three GitHub organizations<br/><b>gitforsci</b> (handbook, citation, DOI)<br/><b>gitforsci-dev</b> (templates, material)<br/><b>gitforsci-00x</b> (one per cohort)"]:::layer
+
+    P --> A
+    A --> O
 ```
 
-Do not worry about the detail yet. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.
+Read it top to bottom. **People** (you and your learners) each need the **accounts and software** in the middle row. Those, in turn, are what let everyone work across the **three GitHub organizations** at the bottom: the instructor sets up the iteration org from the templates in the development org, the canonical citation flows down from the central org, and learners live in the iteration org. The detail of those three organizations is the whole of Part 3 (@sec-three-orgs).
+
+The detail comes later. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.

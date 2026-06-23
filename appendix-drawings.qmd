@@ -4,10 +4,10 @@ The live visual drawings (@sec-live-drawings) are still in development. This app
 
 | # | Drawing | Makes clear | When in the session | Status |
 |---|---|---|---|---|
-| 1 | Local and remote (@drawing-local-remote) | Two copies of the work, and Git moving changes between them | Start of "create and clone" | To develop |
-| 2 | The commit cycle (@drawing-commit-cycle) | Stage, commit, push; a commit as a labeled snapshot | First commit in "create and clone" | To develop |
-| 3 | Branching (@drawing-branching) | A branch as a parallel line of work that splits and rejoins | Start of "branch" | To develop |
-| 4 | The pull request (@drawing-pull-request) | A merge with a human review step in the middle | Start of "pull request and merge" | To develop |
+| 1 | Local and remote (@sec-drawing-local-remote) | Two copies of the work, and Git moving changes between them | Start of "create and clone" | To develop |
+| 2 | The commit cycle (@sec-drawing-commit-cycle) | Stage, commit, push; a commit as a labeled snapshot | First commit in "create and clone" | To develop |
+| 3 | Branching (@sec-drawing-branching) | A branch as a parallel line of work that splits and rejoins | Start of "branch" | To develop |
+| 4 | The pull request (@sec-drawing-pull-request) | A merge with a human review step in the middle | Start of "pull request and merge" | To develop |
 
 ## How to use this list
 

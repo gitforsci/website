@@ -1,10 +1,10 @@
 # You are ready to teach {#sec-summary .unnumbered}
 
-If you have worked through this handbook, you now have everything you need to run **Git for Science**.
+If you have worked through this handbook, you now have everything you need to run **Git for Scientists**.
 
 You understand why the workshop is shaped the way it is: taught on a need-to-know basis, in a room that is safe to fail in, with collaboration at the center (@sec-philosophy). You know the journey runs from pre-course work through four hours of hands-on practice to a forward-looking wrap-up, and that learners pick up R, Quarto, and the terminal as side benefits along the way (@sec-course-shape).
 
-You have the setup in place: the accounts and software every learner and the teacher needs (Part 2), the three GitHub organizations and their repositories (@sec-create-orgs), and a published cohort website (@sec-website). You know how to run the day, from pre-flight checks (@sec-before) to the timed run of show (@sec-run-of-show).
+You have the setup in place: the accounts and software every learner and the instructor needs (Part 2), the three GitHub organizations and their repositories (@sec-create-orgs), and a published cohort website (@sec-website). You know how to run the day, from pre-flight checks (@sec-before) to the timed run of show (@sec-run-of-show).
 
 And you know how to keep it going: spinning up the next cohort from the templates (@sec-new-iteration), and keeping the material a genuine Open Educational Resource through its license and citation (@sec-citation-license).
 
@@ -12,18 +12,7 @@ And you know how to keep it going: spinning up the next cohort from the template
 
 Two things in this handbook are deliberately unfinished, and they are yours to develop:
 
-- **The live drawings** (@sec-live-drawings) are placeholders. Develop them and replace the placeholders as you go; @sec-appendix-drawings tracks the list.
+- **The live drawings** (@sec-live-drawings) are placeholders. The canonical set of four is developed centrally and replaces the placeholders in this handbook as it is ready; @sec-appendix-drawings tracks the list. Beyond that canonical set, each iteration produces its own drawings, including ones learners make, and these are worth keeping as part of the record of how that cohort went. Capture them as photos attached to issues in the iteration org (@sec-three-orgs), so each cohort's specifics and learnings live alongside that cohort's material rather than getting lost.
+
 - **The follow-up workshop** on agentic coding for collaboration and scientific work builds on these foundations. It is a separate effort, out of scope here, but this workshop is its prerequisite.
 
-## The shortest possible path
-
-If you want the absolute minimum to teach the course once:
-
-1. Create one iteration organization and its material repositories (@sec-create-orgs, step 3 onward).
-2. Generate and publish the cohort website (@sec-website).
-3. Send the learner pre-work (@sec-learner-setup) and invite your learners.
-4. Run the pre-flight (@sec-before) and teach the run of show (@sec-run-of-show).
-
-The central and development organizations, the DOI, and the citation flow all make the course more reusable and more citable, but you can add them once you know you will teach it again.
-
-Go teach it.

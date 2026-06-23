@@ -2,6 +2,20 @@
 
 Every checklist in the handbook, collected here as one printable tick sheet. Each links back to the chapter with the full context.
 
+## Instructor setup {#sec-appendix-teacher}
+
+From @sec-teacher-setup.
+
+- [ ] Complete the full learner pre-course work yourself.
+- [ ] Create a second "test learner" GitHub account with no special rights, kept in Chrome.
+- [ ] Confirm owner rights on the iteration organization.
+- [ ] Confirm Quarto is installed (`quarto --version`).
+- [ ] Install `ghclass` and the R packages used in teaching.
+- [ ] Book a room with projector, power, and reliable internet, and visit it before the day.
+- [ ] Arrange the live-teaching equipment: flipchart/whiteboard and markers, a pointer, a second screen.
+- [ ] Arrange catering or breaks for the four-hour session.
+- [ ] Decide and communicate the participation model.
+
 ## Learner pre-course work {#sec-appendix-learner}
 
 From @sec-learner-setup. Hand this to participants.
@@ -17,40 +31,23 @@ From @sec-learner-setup. Hand this to participants.
 - [ ] Confirm your change appears on GitHub.
 - [ ] Read the "Why Git? Why GitHub?" introduction from *Happy Git and GitHub for the useR*.
 
-## Teacher setup {#sec-appendix-teacher}
+## Create the iteration organization {#sec-appendix-orgs}
 
-From @sec-teacher-setup.
+From @sec-create-orgs. The central `gitforsci` and development `gitforsci-dev` orgs already exist; you create only the iteration org.
 
-- [ ] Complete the full learner pre-course work yourself.
-- [ ] Create a second "test learner" GitHub account with no special rights.
-- [ ] Keep the test-learner account logged in to a second browser.
-- [ ] Confirm owner rights on the cohort organization.
-- [ ] Confirm Quarto is installed (`quarto --version`).
-- [ ] Confirm you can open and use the RStudio terminal.
-- [ ] Book a room with projector, power, and reliable internet.
-- [ ] Arrange catering or breaks for the four-hour session.
-- [ ] Decide and communicate the participation model.
-
-## Create organizations and repositories {#sec-appendix-orgs}
-
-From @sec-create-orgs.
-
-- [ ] Create the central `course` organization and its `website` repository.
-- [ ] Add `LICENSE` and `CITATION.cff` to the central website.
-- [ ] Create the `course-dev` organization.
-- [ ] Create the dev repositories: `website`, `setup`, `admin`, and exercise/assignment repos.
-- [ ] Mark `course-dev/website` as a template repository in its settings.
-- [ ] Create the `course-00x` iteration organization.
-- [ ] Invite the test-learner account as a plain member.
-- [ ] Copy material repositories into the iteration org with "Use this template."
-- [ ] Invite learners using usernames from the survey.
+- [ ] Create the `gitforsci-00x` iteration organization (in the browser).
+- [ ] Confirm you are an owner; invite the test-learner account as a plain member.
+- [ ] Generate `gitforsci-00x/website` from the `gitforsci-dev/website` template.
+- [ ] Copy the exercise and assignment templates from `gitforsci-dev` into the iteration org with "Use this template."
+- [ ] Invite learners and create their repositories with the `ghclass` scripts in `gitforsci-dev/admin`.
 - [ ] Verify, as the test-learner, the org view, a clone, and a commit.
+- [ ] Work the pre-course timeline backwards from the workshop date, leaving buffer after each due date.
 
 ## Build and publish the website {#sec-appendix-website}
 
 From @sec-website.
 
-- [ ] Generate `course-00x/website` from the template with "Use this template."
+- [ ] Generate `gitforsci-00x/website` from the template with "Use this template."
 - [ ] Clone it in RStudio.
 - [ ] Fill in every field in `_variables.yml`.
 - [ ] Update cohort-specific fields in `_quarto.yml`.
@@ -63,14 +60,14 @@ From @sec-website.
 
 From @sec-before.
 
-- [ ] Send pre-work with a deadline a few days before.
-- [ ] Open the pre-course survey and collect GitHub usernames.
-- [ ] Confirm room, projector, power, internet, catering.
-- [ ] Invite learners to the iteration org.
-- [ ] Check who has accepted invitations and made a first commit; chase stragglers.
+- [ ] Send pre-work with a due date a few days before.
+- [ ] Open the pre-course survey (KoboToolbox) and collect GitHub usernames.
+- [ ] Confirm room, projector, power, internet, equipment, catering.
+- [ ] Invite learners to the iteration org with the `ghclass` scripts.
+- [ ] Check who has accepted invitations and made a first commit; follow up with anyone who hasn't finished.
 - [ ] Dry-run the whole workshop as the test-learner the day before.
-- [ ] Morning of: confirm projector and internet, log in to both accounts, open site/slides/terminal/chat, ready the drawing surface.
-- [ ] Have a triage plan for stragglers (pairing, cloud fallback).
+- [ ] Morning of: confirm projector and internet, log in to both accounts, open site/slides/chat, set up the drawing surface and pointer.
+- [ ] Have a triage plan for anyone who hasn't finished (pairing, direct follow-up).
 
 ## Run of show {#sec-appendix-runofshow}
 
@@ -88,12 +85,13 @@ From @sec-run-of-show.
 
 From @sec-new-iteration.
 
-- [ ] Update the templates in `course-dev` first.
+- [ ] Update the templates in `gitforsci-dev` first.
 - [ ] Create the new iteration organization.
 - [ ] Generate and publish the cohort website.
 - [ ] Copy material repositories into the new org.
 - [ ] Sync the canonical `CITATION.cff` into the new repos.
-- [ ] Invite and verify learners.
+- [ ] After the cohort runs, release the iteration website for its own DOI.
+- [ ] Invite and verify learners with `ghclass`.
 - [ ] Run the pre-flight checklist.
 
 ## Keep it open and citable {#sec-appendix-citation}
@@ -101,7 +99,8 @@ From @sec-new-iteration.
 From @sec-citation-license.
 
 - [ ] Add a `LICENSE` (CC-BY-4.0 for content, MIT for code).
-- [ ] Maintain the canonical `CITATION.cff` in `course/website` with real ORCIDs.
-- [ ] Mint a DOI via Zenodo from a GitHub release.
-- [ ] Add the DOI to `CITATION.cff` and the landing page.
+- [ ] Maintain the canonical `CITATION.cff` in `gitforsci/website` with real ORCIDs.
+- [ ] Mint the canonical course DOI via Zenodo from a GitHub release.
+- [ ] Mint a per-iteration DOI from a release of each iteration org's website.
+- [ ] Add the DOIs to the relevant `CITATION.cff` files and the landing page.
 - [ ] Copy the canonical citation down into every other repository when it changes.

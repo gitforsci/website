@@ -1,6 +1,6 @@
 # Keep it open and citable {#sec-citation-license}
 
-Publishing the workshop as an Open Educational Resource (OER) means two practical things: a license that grants reuse, and a citation that lets people credit it. This chapter is how to set both up and keep them consistent across the org family.
+Publishing the course as an Open Educational Resource (OER) rests on two things: a license that grants reuse, and a citation that lets people credit it. This chapter describes how both are set up for this course and how they stay consistent across the org family. It is written from that perspective: this is how it is done here, so that an instructor adapting the material can see the pattern and follow it.
 
 ## Choose a license
 
@@ -11,13 +11,15 @@ A license is what makes the material legally reusable. Without one, "open" is ju
 
 A course that mixes both can carry both: CC-BY for the writing, MIT for the code. State clearly which applies to what.
 
-- [ ] Add a `LICENSE` file to the central `course/website` repository.
+- [ ] Add a `LICENSE` file to the central `gitforsci/website` repository.
 - [ ] Make the license choice visible on the course landing page.
 - [ ] Apply the same license consistently across the material repositories.
 
 ## The canonical citation
 
-There is one citation for the course, not one per repository or per cohort. It lives in a `CITATION.cff` file in the central `course/website`. That file is the single source of truth: authors, title, version, release date, and (once you have one) the DOI.
+There is one canonical citation for the course. It lives in a `CITATION.cff` file in the central `gitforsci/website`, and it is the single source of truth: authors, title, version, release date, and the canonical DOI. Every repository in the org family carries a copy of this file so that anyone who lands on any part of the course cites it the same way.
+
+Each iteration also has its own citation on top of the canonical one. The canonical citation answers "how do I cite this course?"; an iteration's citation answers "how do I cite the course exactly as it was taught in this cohort?". The two coexist: the canonical `CITATION.cff` names the course as a whole, and each iteration org's `CITATION.cff` names that specific run, with its own DOI (see below).
 
 A `CITATION.cff` should include at least:
 
@@ -30,20 +32,28 @@ Do not fabricate ORCIDs, DOIs, or author details. An incorrect identifier is wor
 
 ## Mint a DOI with Zenodo
 
-A DOI is a permanent identifier that makes the course formally citable in the academic record. The usual route is Zenodo (<https://zenodo.org>), which integrates with GitHub:
+A DOI is a permanent identifier that makes the course formally citable in the academic record. The route is Zenodo (<https://zenodo.org>), which integrates with GitHub. The course uses DOIs at two levels.
+
+**The canonical course DOI.** This represents the course as a whole and lives with the canonical citation in `gitforsci/website`.
 
 - [ ] Sign in to Zenodo with your GitHub account.
-- [ ] Enable the Zenodo integration for the `course/website` repository.
+- [ ] Enable the Zenodo integration for the `gitforsci/website` repository.
 - [ ] Create a release of the repository on GitHub. Zenodo archives that release and mints a DOI.
-- [ ] Add the DOI back into `CITATION.cff` and display its badge on the landing page.
+- [ ] Add the DOI back into the canonical `CITATION.cff` and display its badge on the landing page.
 
-One DOI represents the course. New releases get new versioned DOIs under it, so you can cite both "the course" and "the course as of this version."
+**A per-iteration DOI.** Each iteration org gets its own DOI so the course exactly as taught in that cohort is an independently citable, frozen artifact. This is what lets someone cite "the CIS 2026 run" rather than only "the course."
+
+- [ ] Enable the Zenodo integration for the iteration org's `website` repository (for example `gitforsci-cis/website`).
+- [ ] Create a release of that repository once the cohort is complete and its site is final.
+- [ ] Add the iteration DOI into that org's `CITATION.cff`, alongside a reference to the canonical course DOI.
+
+The canonical DOI stays the same across iterations; each iteration adds one more, pointing at its own frozen snapshot. A reuser can then cite the course (canonical DOI) or a specific run (that iteration's DOI), whichever is appropriate.
 
 ## Keep the citation consistent across repositories
 
-When the canonical citation changes (a new author, a corrected ORCID, a new DOI version), the other repositories should match. The flow is one-directional: edit the canonical file in `course/website`, then copy it down.
+When the canonical citation changes (a new author, a corrected ORCID, a new DOI version), the other repositories should match. The flow is one-directional: edit the canonical file in `gitforsci/website`, then copy it down.
 
-- [ ] Edit `CITATION.cff` in `course/website` only.
+- [ ] Edit `CITATION.cff` in `gitforsci/website` only.
 - [ ] Copy the updated file into each other repository in the org family (the dev org's repositories and each cohort's repositories) so they all carry the same citation.
 - [ ] Never edit a downstream `CITATION.cff` as the source of truth; downstream copies are always overwritten from the canonical one.
 
@@ -51,4 +61,6 @@ This keeps every part of the course pointing at the same authorship and DOI, whi
 
 ## What a reuser needs from you
 
-If someone else adapts this course, the license and citation are what let them do it properly: the license grants the right to reuse, and the citation tells them whom to credit. Making both clear and correct on the central landing page is the single most important thing you can do to make the material a genuine Open Educational Resource.
+If someone else adapts this course, the license and citation are what let them do it properly: the license grants the right to reuse, and the citation tells them whom to credit. Making both clear and correct on the central landing page is essential to making the material a genuine Open Educational Resource.
+
+But a license and a citation are not enough on their own. Slides and exercises that you can legally copy still leave a reuser guessing how the course is meant to be taught: why it is shaped the way it is, where learners stall, what you say at each step. An OER is only as reusable as its instructor and lesson notes, and capturing those is exactly what this handbook is for. The license opens the door, the citation credits the work, and the handbook is what makes the material teachable by someone who was not in the room the first time.
