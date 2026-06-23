@@ -10,12 +10,17 @@ The timings below are a starting point for a four-hour session including one sub
 
 ```{mermaid}
 flowchart TD
-    A[0:00 Welcome and motivation] --> B[0:30 Create and clone]
-    B --> C[1:15 Branch]
-    C --> BR[2:00 Break]
-    BR --> D[2:15 Pull request and merge]
-    D --> E[3:15 Publish]
-    E --> F[3:45 Wrap-up]
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    A["<b>0:00</b> Welcome and motivation"]:::layer
+    B["<b>0:30</b> Create and clone"]:::layer
+    C["<b>1:15</b> Branch"]:::layer
+    BR["<b>2:00</b> Break"]:::layer
+    D["<b>2:15</b> Pull request and merge"]:::layer
+    E["<b>3:15</b> Publish"]:::layer
+    F["<b>3:45</b> Wrap-up"]:::layer
+
+    A --> B --> C --> BR --> D --> E --> F
 ```
 
 ## 0:00 to 0:30 — Welcome and motivation

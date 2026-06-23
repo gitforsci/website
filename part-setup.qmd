@@ -10,8 +10,13 @@ The important thing to understand up front: you are not creating three organizat
 
 ```{mermaid}
 flowchart TD
-    A["Understand the model<br/>(three-orgs)"] --> B["Create your iteration org<br/>from the dev templates<br/>(create-orgs)"]
-    B --> C["Build and publish<br/>the cohort website<br/>(website)"]
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    A["<b>Understand the model</b><br/>three-orgs"]:::layer
+    B["<b>Create your iteration org</b><br/>from the dev templates (create-orgs)"]:::layer
+    C["<b>Build and publish the cohort website</b><br/>website"]:::layer
+
+    A --> B --> C
 ```
 
 You would only ever create a new central or development organization if you were starting a substantially different course, with its own pedagogy and structure. For running another iteration of this course, the answer is always one new iteration org.
