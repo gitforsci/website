@@ -1,15 +1,15 @@
 # Before the day {#sec-before}
-
+TODO: revise chapter with tasks from chapters before.
 Most of what makes a hands-on workshop go smoothly happens before anyone walks in. This is the pre-flight checklist, grouped by how far ahead each item sits.
 
 ## One to two weeks before
 
 - [ ] Send the pre-course work (@sec-learner-setup) with a clear deadline a few days before the workshop.
 - [ ] Open the pre-course survey and share the link. Use it to collect GitHub usernames and to gauge prior experience.
-- [ ] Confirm the room, projector, power, and reliable internet (@sec-teacher-setup).
+- [ ] Confirm the room, projector, power, and reliable internet (@sec-teacher-setup). TODO: flipchart and markers for live drawings, pointer for changing slides, second screen, so that laptop, projector and second screen with instructor notes are available (this can be more detailed in appendix with explanation and photos of instructor setup)
 - [ ] Confirm catering or breaks for the four-hour session if your venue needs it arranged ahead.
 
-## The pre-course survey
+## The pre-course survey (TODO: share template survey and how to set it up: Google forms or Kobo, decide.)
 
 The survey does double duty: it tells you who your learners are, and it surfaces who has not finished the setup. At a minimum, ask for:
 
@@ -24,7 +24,7 @@ The survey does double duty: it tells you who your learners are, and it surfaces
 - [ ] Check who has accepted invitations and made their first commit. Chase the ones who have not, in the chat channel.
 - [ ] Hold a short virtual office hour or offer chat support for setup problems, so they are solved before the day, not during it.
 
-## Dry-run as the test-learner
+## Dry-run as the test-learner (TODO: throughout the book, you can add https://github.com/rainbow-train as an example learner profile of @larnsce)
 
 This is the highest-value pre-flight step. Using your test-learner account (@sec-teacher-setup), walk the entire workshop as a student would, the day before:
 
@@ -35,7 +35,7 @@ This is the highest-value pre-flight step. Using your test-learner account (@sec
 
 If you can complete the whole workshop from a clean learner account, the material is ready.
 
-## The morning of
+## The morning of (TODO: revise)
 
 - [ ] Arrive early and confirm the projector and internet work in the actual room.
 - [ ] Log in to your teacher account in one browser and your test-learner account in a second (@sec-teacher-setup).
@@ -43,11 +43,11 @@ If you can complete the whole workshop from a clean learner account, the materia
 - [ ] Open the chat channel on a device you can monitor during the session.
 - [ ] Have a whiteboard or drawing surface ready for the live drawings (@sec-live-drawings).
 
-## A short triage plan for stragglers
+## A short triage plan for stragglers (TODO: revise)
 
 Some learners will still arrive with broken setups. Decide in advance how you will handle it so it does not derail the room:
 
 - [ ] Identify who is not set up in the first few minutes (a quick "make a commit now" check).
 - [ ] Pair them with a neighbor who is ready, or seat them near you.
-- [ ] If software cannot be fixed quickly, fall back to a cloud environment such as Posit Cloud (@sec-learner-setup) so they can still participate.
+- [ ] If software cannot be fixed quickly, fall back to a cloud environment such as Posit Cloud (@sec-learner-setup) so they can still participate. TODO: nope, no cloud environment at this point. 
 - [ ] Keep moving for the rest of the room; do not hold the whole session for one setup.

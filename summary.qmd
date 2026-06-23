@@ -10,20 +10,9 @@ And you know how to keep it going: spinning up the next cohort from the template
 
 ## What is still to come
 
-Two things in this handbook are deliberately unfinished, and they are yours to develop:
+Two things in this handbook are deliberately unfinished, and they are yours to develop: TODO: still being developed. 
 
-- **The live drawings** (@sec-live-drawings) are placeholders. Develop them and replace the placeholders as you go; @sec-appendix-drawings tracks the list.
+- **The live drawings** (@sec-live-drawings) are placeholders. Develop them and replace the placeholders as you go; @sec-appendix-drawings tracks the list. TODO: The central drawings will be done by me, but there should be a place where drawings for each iteration are captured. Also those of learners. How can that best be achieved? Maybe by adding photos as issues. This guidebook requires a smart way to cover each iterations specifics and learnings.
+
 - **The follow-up workshop** on agentic coding for collaboration and scientific work builds on these foundations. It is a separate effort, out of scope here, but this workshop is its prerequisite.
 
-## The shortest possible path
-
-If you want the absolute minimum to teach the course once:
-
-1. Create one iteration organization and its material repositories (@sec-create-orgs, step 3 onward).
-2. Generate and publish the cohort website (@sec-website).
-3. Send the learner pre-work (@sec-learner-setup) and invite your learners.
-4. Run the pre-flight (@sec-before) and teach the run of show (@sec-run-of-show).
-
-The central and development organizations, the DOI, and the citation flow all make the course more reusable and more citable, but you can add them once you know you will teach it again.
-
-Go teach it.

@@ -1,5 +1,5 @@
 # Spin up the next cohort {#sec-new-iteration}
-
+TODO: update page based on everything that was covered in tasks from previous sections.  
 ::: {.callout-tip}
 **Repeat instructor** — this chapter is the short version. It assumes you already understand the three-org model (@sec-three-orgs) and have a working `course-dev` with templates. If this is your first time, read Parts 2 and 3 in full instead.
 :::

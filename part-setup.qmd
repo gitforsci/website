@@ -2,11 +2,14 @@
 
 This is the infrastructure part. By the end of it you will have three GitHub organizations, the repositories the workshop needs, and a published cohort website.
 
+TODO: Revise, because the instructor will not create three new GitHub organizations. Rather, they will create one new GitHub org for the specific course iteration which uses the template from gitforsci-dev/website. The gitforsci org is only for this main guide, which doesn't need to be copied or forked as it holds the main overview of the overall course structure. Only if there is a substantial change in the overall course structure or pedagogy would it make sense to establish a new org for the OER guide, however, in that case it might be a new course overall. All exercises and assignments for the new course to be taught also come from templates in gitforsci-dev/, so again only one new org to establish. This section should therefore follow more on the overall strategy of this 3-org mode. 
+
 - @sec-three-orgs explains the three-organization model: what each org is for and how material flows between them. Read this before you create anything.
 - @sec-create-orgs is the checklist to create the three organizations and their core repositories, click by click in the GitHub interface.
 - @sec-website is the checklist to stand up and publish the cohort website from the template.
 
 ```{mermaid}
+TODO: Redraw based on the new information.
 flowchart LR
     A[Understand the model<br/>three-orgs] --> B[Create the orgs and repos<br/>create-orgs]
     B --> C[Build and publish the website<br/>website]

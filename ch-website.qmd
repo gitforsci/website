@@ -1,5 +1,5 @@
 # Build and publish the cohort website {#sec-website}
-
+TODO: revise based on new info you have from previous chapters.
 Each cohort gets its own website, generated from the template in `course-dev`. The website is the learners' home base: it holds the pre-course work, the schedule, and links to everything. This chapter is the checklist to generate it, fill in its details, render it, and publish it.
 
 Replace `course` with your course slug and `001` with your iteration tag throughout.

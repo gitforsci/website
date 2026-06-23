@@ -1,5 +1,7 @@
 # Run of show {#sec-run-of-show}
 
+TODO: This page needs a complete revision. In it's current version it should only hold the gitforsci-cis iteration, which is two hours long without the terminal work. Once the first DOI is created, I rework the material for the gitforsci-ghe iteration, which can then update the book and bump the version to another release for new DOI. I have added the lesson plan from gitforsci-cis in @gitforsci-cis-lesson-plan.md, use it to infer times here. A new lesson plan will be prepared for gitforsci-ghe. Evaluate if this book could show the specific lesson plan for each iteration. What is missing from the lesson plan that is not already somewhere else? What makes a good lesson plan? 
+
 This is the four hours, block by block. Each block follows the same rhythm: motivate it, demonstrate it once, hand it over as a "your turn" task, then regroup. The live drawings (@sec-live-drawings) are cued where they fit.
 
 The timings below are a starting point for a four-hour session including one substantial break. Adjust to your room, but keep the proportion: most of the time is learners' hands on keyboards, not slides.

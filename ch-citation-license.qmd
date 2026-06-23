@@ -1,5 +1,7 @@
 # Keep it open and citable {#sec-citation-license}
 
+TODO: Do not describe how someone should do it for this course, but rather describe that this is how it's done for this course. I do still need to add the appropriate licenses to all repos, but it can already be written from this perspective. 
+
 Publishing the workshop as an Open Educational Resource (OER) means two practical things: a license that grants reuse, and a citation that lets people credit it. This chapter is how to set both up and keep them consistent across the org family.
 
 ## Choose a license
@@ -16,6 +18,8 @@ A course that mixes both can carry both: CC-BY for the writing, MIT for the code
 - [ ] Apply the same license consistently across the material repositories.
 
 ## The canonical citation
+
+TODO: Update once I have taken a decision on whether there will be a 2nd DOI, a new one per iteration while this stays canonical
 
 There is one citation for the course, not one per repository or per cohort. It lives in a `CITATION.cff` file in the central `course/website`. That file is the single source of truth: authors, title, version, release date, and (once you have one) the DOI.
 
@@ -51,4 +55,4 @@ This keeps every part of the course pointing at the same authorship and DOI, whi
 
 ## What a reuser needs from you
 
-If someone else adapts this course, the license and citation are what let them do it properly: the license grants the right to reuse, and the citation tells them whom to credit. Making both clear and correct on the central landing page is the single most important thing you can do to make the material a genuine Open Educational Resource.
+If someone else adapts this course, the license and citation are what let them do it properly: the license grants the right to reuse, and the citation tells them whom to credit. Making both clear and correct on the central landing page is the single most important thing you can do to make the material a genuine Open Educational Resource. TODO: An OER is nothing without instructor and lesson notes, which is what this book is supposed to capture. 

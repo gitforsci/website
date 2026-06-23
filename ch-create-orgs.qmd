@@ -1,5 +1,5 @@
 # Create the organizations and repositories {#sec-create-orgs}
-
+TODO: revise this whole page with the new information from previous chapters.
 This chapter is a click-by-click checklist for creating the three organizations and their repositories in the GitHub web interface. Nothing here requires scripting.
 
 Replace `course` with your course slug throughout.
@@ -55,7 +55,9 @@ Learners need their own copies of the material to work in. For each material rep
 ## Step 5: Invite the learners
 
 - [ ] Collect learner GitHub usernames (the pre-course survey is a good place to gather these; see @sec-before).
-- [ ] In `course-001`, go to **People** and invite each learner as a member.
+
+- [ ] In `course-001`, go to **People** and invite each learner as a member. TODO: Nope, this will be using R scripts using ghclass R package that live in gitforsci-dev/admin
+
 - [ ] Ask learners to accept the email invitation as part of their pre-work (@sec-learner-setup, step 7).
 
 ## Verify with the test-learner account
@@ -67,3 +69,14 @@ Before you consider the setup done, switch to your test-learner browser and conf
 - [ ] A commit pushed from the test-learner account appears on GitHub.
 
 If all three pass from the learner's point of view, your organizations are ready. Next, build the website (@sec-website).
+
+TODO: I want to create a timeline for:
+
+- use website template and create course specific iteration
+- prepare all links for platforms (e.g. chat) that need to be added to website iteration
+- send out initial email with course website link and due date for completion
+- review two days prior due date who has and hasn't completed the pre-course survey 
+- on due date, reach out to explain next steps (accept GitHub invite), clone setup repo, etc.
+- give another due date to complete before course start
+- on day of due date, check who hasn't completed
+- day after due date, reach out to ask if they need support (this should still leave 2 working days buffer b efore the workshop starts). Work yourself backwards to create a timeline that allows for these buffers. 

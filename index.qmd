@@ -2,8 +2,10 @@
 
 This is a teacher handbook. It is not the course itself, it is the guide for the person who runs the course.
 
+TODO: The whole course is called "Git for Scientists". Change throughout 
 TODO: use instructor instead of teacher throughout.
 TODO: as this book is written for the gitforsci workshop, the book should not have placeholders like "course-dev" but can rather use the gitforsci-dev acronym.
+TODO: I have deleted references.bib and created a new gitforsci.bib. The new bib contains a range of papers about teaching concepts all related to this class. Do nothing with it yet, I want to use it in the next iteration of redevelopment. However, some deleted references are missing now.
 
 **Git for Science** is a four-hour, hands-on workshop that teaches researchers the foundations of Git and GitHub for collaboration. The teaching material (slides, pre-work, exercises) lives in separate repositories. This book explains how those pieces fit together and gives you the checklists to set up and deliver the workshop yourself.
 
