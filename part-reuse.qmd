@@ -6,6 +6,11 @@ The workshop is taught; now keep it alive and reusable.
 - @sec-citation-license is how to keep the material a genuine Open Educational Resource: the license, the canonical citation, and minting a DOI so others can credit it.
 
 ```{mermaid}
-flowchart LR
-    A[Spin up the next cohort<br/>new-iteration] --> B[Keep it open and citable<br/>citation-license]
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    A["<b>Spin up the next cohort</b><br/>new-iteration"]:::layer
+    B["<b>Keep it open and citable</b><br/>citation-license"]:::layer
+
+    A --> B
 ```

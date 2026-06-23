@@ -4,20 +4,15 @@ The course is spread across three GitHub organizations, not one. Each has a dist
 
 ```{mermaid}
 flowchart TD
-    subgraph central["gitforsci (central)"]
-        CW["website<br/>this handbook + canonical CITATION.cff + course DOI"]
-    end
-    subgraph dev["gitforsci-dev (development)"]
-        DT["website<br/>course landing-page template"]
-        DM["setup, admin (ghclass scripts),<br/>exercise + assignment templates"]
-    end
-    subgraph iter["gitforsci-00x (iteration)"]
-        IW["website<br/>generated from the dev template"]
-        IM["per-cohort material repos"]
-    end
-    dev -->|"generate fresh each cohort"| iter
-    central -.->|"canonical citation copied down"| dev
-    central -.->|"canonical citation copied down"| iter
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    C["<b>gitforsci (central)</b><br/>handbook · canonical CITATION.cff · course DOI"]:::layer
+    DEV["<b>gitforsci-dev (development)</b><br/>website template · setup · admin (ghclass scripts) · exercise and assignment templates"]:::layer
+    IT["<b>gitforsci-00x (iteration)</b><br/>website generated from the dev template · per-cohort material repos"]:::layer
+
+    DEV -->|"generate fresh each cohort"| IT
+    C -.->|"canonical citation copied down"| DEV
+    C -.->|"canonical citation copied down"| IT
 ```
 
 ## What each organization is for

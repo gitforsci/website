@@ -10,18 +10,11 @@ The two chapters overlap on purpose: an instructor needs the full learner setup 
 
 ```{mermaid}
 flowchart TD
-    subgraph L[Learner needs]
-        GH[GitHub account]
-        R[R and RStudio]
-        G[Git]
-        PAT[Personal access token]
-        EL[Element / Matrix chat]
-    end
-    subgraph T[Instructor also needs]
-        TL[A second 'test learner' GitHub account]
-        OWN[Owner rights on the org]
-        TWO[Two browsers or profiles]
-    end
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    L["<b>Learner needs</b><br/>GitHub account · R and RStudio · Git · personal access token · Element/Matrix chat"]:::layer
+    T["<b>Instructor also needs</b><br/>a second test-learner account · owner rights on the org · two browsers or profiles"]:::layer
+
     L --> T
 ```
 

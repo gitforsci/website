@@ -3,21 +3,14 @@
 The workshop is four hours in the room, but the learner journey is longer. It starts with pre-course work done at home and ends with a wrap-up that points forward. Understanding this shape tells you where to put your effort.
 
 ```{mermaid}
-flowchart LR
-    subgraph before[Before the day]
-        PW[Pre-course work<br/>accounts, installs, first commit]
-    end
-    subgraph day[The four hours]
-        I[Intro and motivation] --> H1[Hands-on: create and clone]
-        H1 --> H2[Hands-on: branch]
-        H2 --> H3[Hands-on: pull request and merge]
-        H3 --> H4[Hands-on: publish]
-        H4 --> W[Wrap-up]
-    end
-    subgraph after[After the day]
-        F[Follow-up workshop<br/>agentic coding]
-    end
-    before --> day --> after
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    B["<b>Before the day</b><br/>pre-course work: accounts, installs, first commit"]:::layer
+    D["<b>The four hours</b><br/>intro and motivation → create and clone → branch →<br/>pull request and merge → publish → wrap-up"]:::layer
+    A["<b>After the day</b><br/>follow-up workshop: agentic coding"]:::layer
+
+    B --> D --> A
 ```
 
 ## Pre-course work carries the setup

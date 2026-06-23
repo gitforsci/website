@@ -6,6 +6,11 @@ Setup is done; now you teach. This part is the day itself.
 - @sec-run-of-show is the run of show: the four hours broken into timed blocks, each pairing a short concept, a hands-on task, and a live drawing cue.
 
 ```{mermaid}
-flowchart LR
-    A[Pre-flight checks<br/>before] --> B[Run of show<br/>the four hours]
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    A["<b>Pre-flight checks</b><br/>before"]:::layer
+    B["<b>Run of show</b><br/>the four hours"]:::layer
+
+    A --> B
 ```

@@ -13,21 +13,13 @@ An instructor needs everything a learner needs, and then some. This chapter cove
 | A projector or screen share | Demonstrate to the room |
 
 ```{mermaid}
-flowchart LR
-    subgraph shared[Same as learners]
-        GH[GitHub account]
-        R[R and RStudio]
-        G[Git]
-        PAT[PAT]
-        EL[Element chat]
-    end
-    subgraph extra[Instructor-only]
-        TEST[Test-learner account]
-        OWNER[Org owner rights]
-        BROWSERS[Two browsers]
-        SCREEN[Projector / screen share]
-    end
-    shared --> extra
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    S["<b>Same as learners</b><br/>GitHub account · R and RStudio · Git · personal access token · Element chat"]:::layer
+    E["<b>Instructor-only</b><br/>test-learner account · org owner rights · two browsers · projector or screen share"]:::layer
+
+    S --> E
 ```
 
 ## The test-learner account
