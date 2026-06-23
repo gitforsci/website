@@ -3,6 +3,7 @@
 This part lists every account and piece of software the workshop needs, split by who needs it.
 
 - @sec-learner-setup is the learner checklist. It is the pre-course work you hand to participants, and it is also the list every learner must complete before the day.
+
 - @sec-teacher-setup is the teacher checklist. It is everything a learner needs, plus the extra accounts and setup that only the person running the course requires.
 
 The two chapters overlap on purpose: a teacher needs the full learner setup too, because the best way to find a broken instruction is to follow it yourself as a learner (@sec-teacher-setup explains the test-learner account that makes this concrete).
@@ -25,3 +26,5 @@ flowchart TD
 ```
 
 This handbook assumes a **local-first** setup: learners install R, RStudio, and Git on their own machines. A cloud option (Posit Cloud) is noted where relevant for groups that cannot install software, but the default path is local.
+
+TODO: Why does the learner setup go first? I would put the teacher setup first, because the Chat channel, GitHub organization, survey forms, etc. need to be there before a learner profile could actually use them.

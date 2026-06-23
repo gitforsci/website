@@ -1,6 +1,6 @@
 # Learner setup {#sec-learner-setup}
 
-This is the pre-course work. Every learner completes it at home, before the workshop, in order. Hand it out with a clear deadline that gives you time to help stragglers (@sec-before).
+This is the pre-course work. Every learner completes it at home, before the workshop, in order. Hand it out with a clear due date (TODO: never use term deadline. add to my Claude profile.) that gives you time to help stragglers (@sec-before). TODO: use  "...time to follow up with anyone who hasn't finished." instead of stragglers. Never use stragglers. Add to my Claude profile. 
 
 The steps are numbered because they build on each other: you need an account before a token, Git installed before a first commit, and so on.
 
@@ -22,6 +22,8 @@ Items 2 and 3 (R and RStudio) are listed as prerequisites the learner should alr
 :::
 
 ## The pre-course checklist
+
+TODO: Note that these checklists are already integrated into the course website with placeholders for the links, but are listed here for complete documentation of the material.
 
 Give learners this list verbatim. Each item links to a detailed instruction page in the cohort website (Part 3 covers building that website).
 
@@ -80,5 +82,7 @@ This is the verification step. If your change shows up on GitHub, every piece of
 - [ ] Come with one question about collaboration you would like answered.
 
 ## If a learner cannot install software
+
+TODO: Make a note that this handbook does not yet describe the workflow to teach the course using Posit Cloud, but it is planned to add this as an alternative option.
 
 Some learners are on locked-down machines and cannot install R, RStudio, or Git. For them, a cloud environment such as Posit Cloud (<https://posit.cloud>) provides R, RStudio, and Git in the browser with nothing to install. Treat this as the exception, not the default: the local setup above is the baseline this handbook assumes. If you expect several such learners, set up a Posit Cloud workspace in advance and hand those learners its link instead of steps 2, 3, and 6.

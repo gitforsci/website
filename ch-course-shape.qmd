@@ -26,28 +26,36 @@ The single biggest risk to a hands-on workshop is spending the first ninety minu
 
 The pre-work is a short, numbered sequence the learner follows on their own: create a GitHub account, install R and RStudio, install Git, generate a personal access token, join the chat channel, make a first commit to a test repository, and do one short reading. @sec-learner-setup turns this into the exact checklist you hand out.
 
-The verification step is the point. A learner whose first commit landed before the workshop arrives ready to learn. A learner who skipped the pre-work is a support case you handle during the break, not during the teaching.
+The verification step is the point. A learner whose first commit landed before the workshop arrives ready to learn. A learner who skipped the pre-work is a support case you handle during the break (TODO: this cannot happen during the break, but needs to be addressed via direct communication with the learner prior to the workshop), not during the teaching.
 
 ::: {.callout-note appearance="simple"}
-**New educator** — protect the pre-work deadline. Send it with enough lead time that you can catch stragglers before the day. The pre-course survey (@sec-before) is partly there to tell you who has not finished.
+**New educator** — protect the pre-work deadline. Send it with enough lead time. The pre-course survey (@sec-before) is partly there to tell you who has not finished.
 :::
 
 ## The four hours are mostly hands-on
 
 The in-room time is a tight loop: a short concept, then a "your turn" task where everyone does it, then a regroup. The slides exist to frame each loop, not to fill time. The real content is the learners' own hands on their own keyboards.
 
+TODO: Don't use the term "show". 
+
 @sec-run-of-show breaks the four hours into a timed run of show. The structure is always the same: motivate, demonstrate once, hand it over, regroup.
 
 ## The side benefits are real
 
-The headline outcome is Git and GitHub for collaboration. But because the workshop runs inside R, RStudio, and real project files, learners absorb three things almost for free:
+The headline outcome is Git and GitHub for collaboration. But because the workshop runs inside R, RStudio, and real project files, learners absorb three things additionally:
 
 - **More fluency in R and RStudio.** They use the interface for real work, not toy examples, and grow more comfortable with it.
+
 - **A first taste of Quarto.** The material they touch is authored in Quarto. They see how prose, code, and output live in one document, which plants a seed for reproducible reporting.
-- **A first step onto the terminal.** Earlier versions stayed entirely in the RStudio interface. This version introduces a small amount of terminal work, so learners leave less afraid of the command line.
+
+- **A first step onto the terminal.** Earlier versions stayed entirely in the RStudio interface. TODO: This version does not yet have the terminal work. It will be build into the next iteration, based on which this guide will be updated. Revise:
+
+This version introduces a small amount of terminal work, so learners leave less afraid of the command line.
 
 Name these benefits in the wrap-up. Learners came for Git, and it helps them to notice they also moved forward on three other fronts.
 
 ## The wrap-up points forward
 
 The last block is not a summary slide. It is a short reflection on what they can now do, an explicit naming of the side benefits above, and a pointer to the follow-up workshop on agentic coding. The goal is momentum: they should leave wanting to use this on their own work tomorrow.
+
+

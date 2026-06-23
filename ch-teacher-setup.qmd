@@ -35,13 +35,15 @@ flowchart LR
 The most valuable thing on the teacher list is a second GitHub account that you treat as a student. Instructors have owner rights and see a different view of the organization than learners do, so they routinely miss broken instructions that only fail for ordinary members. A test-learner account catches those.
 
 - [ ] Create a second GitHub account with a separate email address.
-- [ ] Do not give it any special rights; add it to the cohort organization as a plain member, exactly the role learners get.
+- [ ] Do not give it any special rights; add it to the cohort organization as a plain member, exactly the role learners get. TODO: run through the steps on the website on the pre-course survey to imitate the learners behavioour.
 - [ ] Keep it logged in to a second browser or browser profile so you can switch between teacher and learner views instantly.
 
-You will use this account twice: once now, to walk the entire pre-course checklist end to end as a learner would (@sec-learner-setup), and again before the day, to dry-run the workshop itself (@sec-before).
+You will use this account twice: once now, to walk the entire pre-course checklist end to end as a learner would (@sec-learner-setup), and again before the day, to dry-run the workshop itself (@sec-before). TODO: And it is actually used while teaching the workshop.
 
 ::: {.callout-tip}
-Use two different browsers (for example one for teacher, one for test-learner) rather than two tabs in the same browser. GitHub logs one account per browser session, and mixing them is how you accidentally demonstrate from the wrong account in front of the room.
+Use two different browsers (for example one for teacher (e.g. Firefox), one for test-learner (e.g. Chrome)) rather than two tabs in the same browser. GitHub logs one account per browser session, and mixing them is how you accidentally demonstrate from the wrong account in front of the room.
+
+TODO: revise and mention specific browser. Use chrome for learner, as it's the most widely used browser and therefore best mimics what learners see.
 :::
 
 ## Owner rights on the organization
@@ -56,13 +58,17 @@ To run a cohort you must be an owner of its GitHub organization, not just a memb
 Everything in @sec-learner-setup applies to you. In addition:
 
 - [ ] Confirm Quarto is installed. Recent RStudio installs bundle it; check by running `quarto --version` in the RStudio terminal. You need it to render the course website locally (@sec-website).
+
 - [ ] Confirm you are comfortable opening the RStudio terminal. The workshop introduces a small amount of terminal work, and you should be a step ahead of learners there.
+
+TODO: packages, such as ghclass for course administration. All other relevant R packages used in teaching. Add instructions if they aren't available yet, maybe in appendix?
 
 ## Logistics to arrange
 
 These are not software, but they belong on the teacher's setup list because they take lead time:
 
-- [ ] Book a room with a projector or large screen and reliable power.
+- [ ] Book a room with a projector or large screen and reliable power. 
+- TODO: Check out the room before teaching the class
 - [ ] Confirm reliable internet for the whole room; the workshop is entirely online-dependent.
 - [ ] Arrange catering or breaks for a four-hour session if appropriate for your venue.
 - [ ] Decide and communicate the participation model (open sign-up, application, or invited group).

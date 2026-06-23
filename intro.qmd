@@ -4,11 +4,13 @@
 
 **Git for Science** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
 
-The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio interface. Git is the new thing; R is the familiar ground it stands on.
+TODO: integrate that the focus is being able to use point & click method to interact with the git/github technology and interface.
+
+The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio IDE interface. Git is the new thing; R is the familiar ground it stands on.
 
 Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first step onto the terminal. These are not the headline outcome, but they are part of why the workshop is worth four hours. @sec-course-shape says more about this.
 
-This is the first of a planned two-workshop series. The second workshop, on agentic coding for collaboration and scientific work, builds on these foundations and is out of scope here.
+TODO: adapt that a first taste of the terminal is included, but not the central aspect of this workshop. The reason is that interacting with git at the terminal has become less necessary with the advance of agentic tools. Mention here that this workshop builds the foundation for a follow-up workshop on agentic tools. 
 
 ## How this handbook is organized
 
@@ -30,6 +32,7 @@ Read the parts in order the first time through. Parts 2 and 3 are the setup core
 The workshop is not a single repository. It is a small family of repositories spread across three GitHub organizations, plus the accounts and software each person needs. Before any of that makes sense, it helps to see the whole board.
 
 ```{mermaid}
+TODO: The flow diagram is poorly visualized. Dark grey background box, the arrows don't flow well. Offer me some alternatives. Is there an alternative technology that would be better to visualize the flow?
 flowchart LR
     subgraph people[People]
         T[Teacher]
@@ -54,4 +57,4 @@ flowchart LR
     C -.->|citation| DEV & IT
 ```
 
-Do not worry about the detail yet. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.
+Do not worry about the detail yet (TODO remove statements like this. Add to my Claude profile. Do not say "don't worry" or "simply / simple / easy". Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.

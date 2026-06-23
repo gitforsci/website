@@ -1,15 +1,17 @@
 # Teaching philosophy {#sec-philosophy}
 
-Three principles drive every decision in this workshop. If you remember nothing else from this part, remember these.
+Three principles drive every decision in this workshop. 
 
 ## Teach on a need-to-know basis
 
-Git is large. The workshop is not. You are not teaching Git; you are teaching the smallest set of Git that lets a researcher collaborate on GitHub without fear. That means a handful of actions (clone, pull, stage, commit, push, branch, pull request) and almost no theory about how Git works underneath.
+Git is large. The workshop is not. You are not teaching Git; you are teaching the smallest set of Git that lets a researcher collaborate on GitHub confidently. That means a handful of actions (clone, pull, stage, commit, push, branch, pull request) and almost no theory about how Git works underneath.
+
+TODO: add a simple git revert to the latest commit and showing the safety net that exists when making commits regularly.
 
 Resist the urge to explain the object model, the staging area as a concept, or rebasing. A learner who can complete the collaboration cycle has succeeded. The mechanics underneath can wait until they have a reason to care.
 
 ::: {.callout-note appearance="simple"}
-**New educator** — you will be tempted to add "just one more useful thing." Every addition costs hands-on time, which is the scarcest resource in the room. When in doubt, cut.
+**New educator** — you will be tempted to add "just one more useful thing." Every addition adds cognitive load and costs hands-on time, which is the scarcest resource in the room. When in doubt, cut.
 :::
 
 ## Make the room safe to fail
@@ -20,16 +22,30 @@ Practically, this means:
 
 - Everyone works in their own repositories inside a dedicated organization for the cohort. Nobody can damage the real material.
 - Mistakes are demonstrated on purpose. Show a bad commit, then revert it. Show a merge that needs attention, then resolve it.
-- The chat channel (see @sec-learner-setup) is for "I am stuck" messages with no embarrassment attached.
+- The chat channel (see @sec-learner-setup) is for "I am stuck" messages and support beyond the course.
 
 The emotional outcome matters as much as the technical one. A learner who leaves believing "I can try things and undo them" will keep using Git. A learner who leaves anxious will not.
+
+TODO: Add a note on growth mindset ("I can do this") and stereotype threat: https://teachtogether.tech/en/index.html#s:motivation-demotivation
+
+TODO: Add somewhere that the pedagogy and teaching philosophy are based on the work by Greg Wilson and the book Teaching Tech Together. Recommend it as a key resource to read in addition to this guide and mention that The Carpentries offer instructor trainings where the principles are taught: https://carpentries.org/instructor-training/
 
 ## Put collaboration at the center
 
 Many Git courses teach the solo workflow first and add collaboration as an advanced topic. This workshop inverts that. Collaboration is the reason researchers care about Git and GitHub, so it is the spine of the day from the first hands-on task.
 
-The pull request is the centerpiece. Branching, committing, and pushing all exist in the workshop because they lead to a pull request that a collaborator reviews and merges. When you sequence the session (@sec-run-of-show), keep asking: does this step move us toward a pull request a human can review? If not, it probably does not belong.
+TODO: Revise section with my new text.
+
+The pull request is the centerpiece. Branching, committing, and pushing all exist in the workshop because they lead to a pull request that a collaborator reviews and merges. The possibility to add comments to changes that were made in a file highlight the often requested MS Word functionality of adding comments to a document, refer to this often to highlight how MS Word of Google Doc functionality translate into the same functionality on GitHub. 
+
+TODO: needs revision. Unclear what this achieves:
+
+When you sequence the session (@sec-run-of-show), keep asking: does this step move us toward a pull request a human can review? If not, it probably does not belong.
+
+TODO: Add the point that GitHub simplifies project management. Issues, as in Tasks, live at the level of the repository, add analogy of adding comments to folders. They are where they belong.
 
 ## Where these principles come from
 
-These are not abstract ideals. They come from running this workshop with real research groups and watching where people get stuck and where they light up. The illustrations used in the slides, by Allison Horst for Openscapes, carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room.
+TODO: revise with new text.
+
+These are not abstract ideals. They come from observing a research group from ther inside, and running this workshop with real research groups and watching where people get stuck and where they light up. The illustrations used in the slides, by Allison Horst for Openscapes, carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room.
