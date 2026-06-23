@@ -32,13 +32,9 @@ This is where mindset matters. Aim to leave every learner with "I can do this," 
 
 Many Git courses teach the solo workflow first and add collaboration as an advanced topic. This workshop inverts that. Collaboration is the reason researchers care about Git and GitHub, so it is the spine of the day from the first hands-on task.
 
-TODO: Revise section with my new text.
+The pull request is the centerpiece. Branching, committing, and pushing all exist in the workshop because they lead to a pull request that a collaborator reviews and merges. Lean hard on a comparison your learners already know: a pull request is where you comment on a change before accepting it, exactly like tracked changes and comments in Microsoft Word or Google Docs. Someone proposes an edit, someone else reads it, leaves comments on specific lines, and only then is it accepted. Make this analogy early and return to it often. It turns an unfamiliar Git concept into a familiar habit, and it is the moment most researchers realize GitHub is doing something they already do, just kept next to the code and data instead of in a separate document.
 
-The pull request is the centerpiece. Branching, committing, and pushing all exist in the workshop because they lead to a pull request that a collaborator reviews and merges. The possibility to add comments to changes that were made in a file highlight the often requested MS Word functionality of adding comments to a document, refer to this often to highlight how MS Word of Google Doc functionality translate into the same functionality on GitHub. 
-
-TODO: needs revision. Unclear what this achieves:
-
-When you sequence the session (@sec-run-of-show), keep asking: does this step move us toward a pull request a human can review? If not, it probably does not belong.
+This also gives you a test for what belongs in the session. When you sequence the day (@sec-run-of-show), ask of each step: does it move learners toward opening or reviewing a pull request a human can read? Branching, committing, and pushing all pass that test, because they set up the review. A step that does not lead toward a reviewed change is probably not worth the scarce hands-on time.
 
 Collaboration on GitHub is also project management, and it is worth naming that. GitHub Issues are tasks, and they live at the level of the repository, attached to the work they describe rather than scattered across email or a separate tracker. If a pull request is a comment on a change, an issue is a comment on the project as a whole: a note pinned to the folder the work lives in, where the next person will actually find it. Researchers recognize this immediately, because it is the same instinct as leaving a comment in a shared document, only kept next to the code and data instead of away from it.
 
