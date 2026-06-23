@@ -1,15 +1,15 @@
-# Teacher setup {#sec-teacher-setup}
+# Instructor setup {#sec-teacher-setup}
 
-A teacher needs everything a learner needs, and then some. This chapter covers the extra accounts and the extra setup. Do the full learner setup (@sec-learner-setup) first; this chapter assumes you have.
+An instructor needs everything a learner needs, and then some. This chapter covers the extra accounts and the extra setup. Do the full learner setup (@sec-learner-setup) first; this chapter assumes you have.
 
-## What a teacher needs beyond the learner list
+## What an instructor needs beyond the learner list
 
-| Account or software | Why the teacher needs it |
+| Account or software | Why the instructor needs it |
 |---|---|
 | Everything in @sec-learner-setup | You must be able to do every step you ask learners to do |
 | A second "test learner" GitHub account | Walk the pre-work and the workshop as a real student would |
 | Owner rights on the cohort GitHub organization | Invite learners, create repositories, manage the org |
-| Two browsers or browser profiles | Stay logged in as teacher and test-learner at once |
+| Two browsers or browser profiles | Stay logged in as instructor and test-learner at once |
 | A projector or screen share | Demonstrate to the room |
 
 ```{mermaid}
@@ -21,7 +21,7 @@ flowchart LR
         PAT[PAT]
         EL[Element chat]
     end
-    subgraph extra[Teacher-only]
+    subgraph extra[Instructor-only]
         TEST[Test-learner account]
         OWNER[Org owner rights]
         BROWSERS[Two browsers]
@@ -32,18 +32,17 @@ flowchart LR
 
 ## The test-learner account
 
-The most valuable thing on the teacher list is a second GitHub account that you treat as a student. Instructors have owner rights and see a different view of the organization than learners do, so they routinely miss broken instructions that only fail for ordinary members. A test-learner account catches those.
+The most valuable thing on the instructor list is a second GitHub account that you treat as a student. Instructors have owner rights and see a different view of the organization than learners do, so they routinely miss broken instructions that only fail for ordinary members. A test-learner account catches those.
 
 - [ ] Create a second GitHub account with a separate email address.
-- [ ] Do not give it any special rights; add it to the cohort organization as a plain member, exactly the role learners get. TODO: run through the steps on the website on the pre-course survey to imitate the learners behavioour.
-- [ ] Keep it logged in to a second browser or browser profile so you can switch between teacher and learner views instantly.
+- [ ] Do not give it any special rights; add it to the cohort organization as a plain member, exactly the role learners get.
+- [ ] Using this account, run through every step on the cohort website, including the pre-course survey, exactly as a learner would. This is how you catch instructions that only break for ordinary members.
+- [ ] Keep it logged in to a second browser or browser profile so you can switch between instructor and learner views instantly.
 
-You will use this account twice: once now, to walk the entire pre-course checklist end to end as a learner would (@sec-learner-setup), and again before the day, to dry-run the workshop itself (@sec-before). TODO: And it is actually used while teaching the workshop.
+You will use this account at three points: now, to walk the entire pre-course checklist end to end as a learner would (@sec-learner-setup); again before the day, to dry-run the workshop itself (@sec-before); and during the workshop, when you demonstrate steps from the learner's point of view so the room sees exactly the screen they have in front of them.
 
 ::: {.callout-tip}
-Use two different browsers (for example one for teacher (e.g. Firefox), one for test-learner (e.g. Chrome)) rather than two tabs in the same browser. GitHub logs one account per browser session, and mixing them is how you accidentally demonstrate from the wrong account in front of the room.
-
-TODO: revise and mention specific browser. Use chrome for learner, as it's the most widely used browser and therefore best mimics what learners see.
+Use two different browsers rather than two tabs in the same browser, because GitHub logs in one account per browser session and mixing them is how you accidentally demonstrate from the wrong account in front of the room. Run the test-learner account in **Chrome**: it is the most widely used browser, so it best mimics what most learners see on their own screens. Keep your instructor account in a different browser, for example Firefox.
 :::
 
 ## Owner rights on the organization
@@ -53,7 +52,7 @@ To run a cohort you must be an owner of its GitHub organization, not just a memb
 - [ ] Confirm you can reach the organization's settings page.
 - [ ] Confirm you can invite a member (you will invite your test-learner account as a check).
 
-## Software the teacher should double-check
+## Software the instructor should double-check
 
 Everything in @sec-learner-setup applies to you. In addition:
 
@@ -61,14 +60,16 @@ Everything in @sec-learner-setup applies to you. In addition:
 
 - [ ] Confirm you are comfortable opening the RStudio terminal. The workshop introduces a small amount of terminal work, and you should be a step ahead of learners there.
 
-TODO: packages, such as ghclass for course administration. All other relevant R packages used in teaching. Add instructions if they aren't available yet, maybe in appendix?
+- [ ] Install the R packages you use to administer the course. The main one is **ghclass** (<https://rundel.github.io/ghclass/>), which scripts the bulk GitHub work: inviting learners to the organization and creating their repositories from templates. The administration scripts that use it live in `gitforsci-dev/admin` (@sec-create-orgs).
+
+- [ ] Install the R packages used in teaching: **quarto** support for rendering, plus any packages the exercise material loads. Render the cohort website locally (@sec-website) as the check that your teaching environment is complete; if a package is missing, the render will tell you.
 
 ## Logistics to arrange
 
-These are not software, but they belong on the teacher's setup list because they take lead time:
+These are not software, but they belong on the instructor's setup list because they take lead time:
 
-- [ ] Book a room with a projector or large screen and reliable power. 
-- TODO: Check out the room before teaching the class
+- [ ] Book a room with a projector or large screen and reliable power.
+- [ ] Visit the room before the day to check sightlines, the projector connection, power sockets, and where you will stand and draw.
 - [ ] Confirm reliable internet for the whole room; the workshop is entirely online-dependent.
 - [ ] Arrange catering or breaks for a four-hour session if appropriate for your venue.
 - [ ] Decide and communicate the participation model (open sign-up, application, or invited group).

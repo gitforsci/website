@@ -17,7 +17,7 @@ From @sec-learner-setup. Hand this to participants.
 - [ ] Confirm your change appears on GitHub.
 - [ ] Read the "Why Git? Why GitHub?" introduction from *Happy Git and GitHub for the useR*.
 
-## Teacher setup {#sec-appendix-teacher}
+## Instructor setup {#sec-appendix-teacher}
 
 From @sec-teacher-setup.
 
@@ -35,12 +35,12 @@ From @sec-teacher-setup.
 
 From @sec-create-orgs.
 
-- [ ] Create the central `course` organization and its `website` repository.
+- [ ] Create the central `gitforsci` organization and its `website` repository.
 - [ ] Add `LICENSE` and `CITATION.cff` to the central website.
-- [ ] Create the `course-dev` organization.
+- [ ] Create the `gitforsci-dev` organization.
 - [ ] Create the dev repositories: `website`, `setup`, `admin`, and exercise/assignment repos.
-- [ ] Mark `course-dev/website` as a template repository in its settings.
-- [ ] Create the `course-00x` iteration organization.
+- [ ] Mark `gitforsci-dev/website` as a template repository in its settings.
+- [ ] Create the `gitforsci-00x` iteration organization.
 - [ ] Invite the test-learner account as a plain member.
 - [ ] Copy material repositories into the iteration org with "Use this template."
 - [ ] Invite learners using usernames from the survey.
@@ -50,7 +50,7 @@ From @sec-create-orgs.
 
 From @sec-website.
 
-- [ ] Generate `course-00x/website` from the template with "Use this template."
+- [ ] Generate `gitforsci-00x/website` from the template with "Use this template."
 - [ ] Clone it in RStudio.
 - [ ] Fill in every field in `_variables.yml`.
 - [ ] Update cohort-specific fields in `_quarto.yml`.
@@ -63,14 +63,14 @@ From @sec-website.
 
 From @sec-before.
 
-- [ ] Send pre-work with a deadline a few days before.
+- [ ] Send pre-work with a due date a few days before.
 - [ ] Open the pre-course survey and collect GitHub usernames.
 - [ ] Confirm room, projector, power, internet, catering.
 - [ ] Invite learners to the iteration org.
-- [ ] Check who has accepted invitations and made a first commit; chase stragglers.
+- [ ] Check who has accepted invitations and made a first commit; follow up with anyone who hasn't finished.
 - [ ] Dry-run the whole workshop as the test-learner the day before.
 - [ ] Morning of: confirm projector and internet, log in to both accounts, open site/slides/terminal/chat, ready the drawing surface.
-- [ ] Have a triage plan for stragglers (pairing, cloud fallback).
+- [ ] Have a triage plan for anyone who hasn't finished (pairing, direct follow-up).
 
 ## Run of show {#sec-appendix-runofshow}
 
@@ -88,7 +88,7 @@ From @sec-run-of-show.
 
 From @sec-new-iteration.
 
-- [ ] Update the templates in `course-dev` first.
+- [ ] Update the templates in `gitforsci-dev` first.
 - [ ] Create the new iteration organization.
 - [ ] Generate and publish the cohort website.
 - [ ] Copy material repositories into the new org.
@@ -101,7 +101,7 @@ From @sec-new-iteration.
 From @sec-citation-license.
 
 - [ ] Add a `LICENSE` (CC-BY-4.0 for content, MIT for code).
-- [ ] Maintain the canonical `CITATION.cff` in `course/website` with real ORCIDs.
+- [ ] Maintain the canonical `CITATION.cff` in `gitforsci/website` with real ORCIDs.
 - [ ] Mint a DOI via Zenodo from a GitHub release.
 - [ ] Add the DOI to `CITATION.cff` and the landing page.
 - [ ] Copy the canonical citation down into every other repository when it changes.

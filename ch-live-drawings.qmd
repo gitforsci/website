@@ -6,7 +6,7 @@ Some concepts land better when you draw them by hand, live, in front of the room
 **These drawings are still in development.** This chapter is a set of placeholders. Each section below names a drawing, says what it should make clear, and notes when in the session to use it. Replace each placeholder with the actual drawing (a photo of a whiteboard sketch, a scan, or a digital illustration) as it is developed. Until then, treat these as the design brief.
 :::
 
-The main (TODO: do not use the term master. Add to my Claude profile) list of planned drawings is collected in @sec-appendix-drawings so you can see them in one place. The detail for each lives here.
+The main list of planned drawings is collected in @sec-appendix-drawings so you can see them in one place. The detail for each lives here.
 
 ## Drawing 1: Local and remote {#drawing-local-remote}
 

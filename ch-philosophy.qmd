@@ -6,7 +6,7 @@ Three principles drive every decision in this workshop.
 
 Git is large. The workshop is not. You are not teaching Git; you are teaching the smallest set of Git that lets a researcher collaborate on GitHub confidently. That means a handful of actions (clone, pull, stage, commit, push, branch, pull request) and almost no theory about how Git works underneath.
 
-TODO: add a simple git revert to the latest commit and showing the safety net that exists when making commits regularly.
+One small addition earns its place: reverting the latest commit. Demonstrate it once, live. Make a change, commit it, then undo that commit and watch the file return to its earlier state. This is the safety net that regular committing buys you, and seeing it work does more to settle nerves than any reassurance. It also reinforces the habit of committing often, because frequent commits are what make the net fine-grained.
 
 Resist the urge to explain the object model, the staging area as a concept, or rebasing. A learner who can complete the collaboration cycle has succeeded. The mechanics underneath can wait until they have a reason to care.
 
@@ -26,9 +26,7 @@ Practically, this means:
 
 The emotional outcome matters as much as the technical one. A learner who leaves believing "I can try things and undo them" will keep using Git. A learner who leaves anxious will not.
 
-TODO: Add a note on growth mindset ("I can do this") and stereotype threat: https://teachtogether.tech/en/index.html#s:motivation-demotivation
-
-TODO: Add somewhere that the pedagogy and teaching philosophy are based on the work by Greg Wilson and the book Teaching Tech Together. Recommend it as a key resource to read in addition to this guide and mention that The Carpentries offer instructor trainings where the principles are taught: https://carpentries.org/instructor-training/
+This is where mindset matters. Aim to leave every learner with "I can do this," not "this is not for me." Be alert to stereotype threat: people who do not see themselves as typical programmers can underperform simply from the worry that they will confirm a stereotype, and an offhand remark or an impatient response can trigger it. Keep the room warm, treat every question as reasonable, and never imply that a step is obvious. The chapter on motivation and demotivation in *Teaching Tech Together* (<https://teachtogether.tech/en/index.html#s:motivation-demotivation>) covers this well.
 
 ## Put collaboration at the center
 
@@ -42,10 +40,10 @@ TODO: needs revision. Unclear what this achieves:
 
 When you sequence the session (@sec-run-of-show), keep asking: does this step move us toward a pull request a human can review? If not, it probably does not belong.
 
-TODO: Add the point that GitHub simplifies project management. Issues, as in Tasks, live at the level of the repository, add analogy of adding comments to folders. They are where they belong.
+Collaboration on GitHub is also project management, and it is worth naming that. GitHub Issues are tasks, and they live at the level of the repository, attached to the work they describe rather than scattered across email or a separate tracker. If a pull request is a comment on a change, an issue is a comment on the project as a whole: a note pinned to the folder the work lives in, where the next person will actually find it. Researchers recognize this immediately, because it is the same instinct as leaving a comment in a shared document, only kept next to the code and data instead of away from it.
 
 ## Where these principles come from
 
-TODO: revise with new text.
+These principles are not abstract ideals. They come from observing a research group from the inside, and from running this workshop with real research groups and watching where people get stuck and where they light up. The illustrations used in the slides, by Allison Horst for Openscapes [@openscapes-illustrations], carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room.
 
-These are not abstract ideals. They come from observing a research group from ther inside, and running this workshop with real research groups and watching where people get stuck and where they light up. The illustrations used in the slides, by Allison Horst for Openscapes, carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room.
+The pedagogy also rests on the work of Greg Wilson and the book *Teaching Tech Together* [@wilson2019teaching], which distills how people actually learn technical skills. Read it alongside this guide; it is the single best companion to what follows. The Carpentries, which Wilson co-founded, run instructor training where these principles are taught in depth (<https://carpentries.org/instructor-training/>), and it is well worth the time if you plan to teach often.

@@ -2,15 +2,13 @@
 
 ## The workshop in one page
 
-**Git for Science** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
+**Git for Scientists** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
 
-TODO: integrate that the focus is being able to use point & click method to interact with the git/github technology and interface.
+The focus is doing all of this through the point-and-click interface: the buttons and menus in RStudio and on the GitHub website, not commands typed at a prompt. Researchers do not need to memorize Git commands to collaborate well, and starting with the graphical interface lowers the barrier and keeps attention on the workflow rather than on syntax.
 
 The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio IDE interface. Git is the new thing; R is the familiar ground it stands on.
 
-Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first step onto the terminal. These are not the headline outcome, but they are part of why the workshop is worth four hours. @sec-course-shape says more about this.
-
-TODO: adapt that a first taste of the terminal is included, but not the central aspect of this workshop. The reason is that interacting with git at the terminal has become less necessary with the advance of agentic tools. Mention here that this workshop builds the foundation for a follow-up workshop on agentic tools. 
+Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first look at the terminal. The terminal is included as a brief taste, not as the central skill. Working with Git at the command line matters less than it used to, now that agentic coding tools can drive Git on your behalf, so this workshop builds confidence with the concepts and vocabulary first. That foundation is exactly what a follow-up workshop on agentic tools builds on. @sec-course-shape says more about this.
 
 ## How this handbook is organized
 
@@ -18,7 +16,7 @@ TODO: adapt that a first taste of the terminal is included, but not the central 
 flowchart TD
     P[Preface and Introduction<br/>what this is, who it is for] --> A
     A[Part 1: Pedagogy<br/>why the workshop is shaped this way] --> B
-    B[Part 2: Prerequisites<br/>accounts and software, for learner and teacher] --> C
+    B[Part 2: Prerequisites<br/>accounts and software, for learner and instructor] --> C
     C[Part 3: Three-org setup<br/>create the GitHub organizations and the website] --> D
     D[Part 4: Delivering the session<br/>pre-flight checks and the run of show] --> E
     E[Part 5: Reusing and re-running<br/>next iteration, license, citation] --> F
@@ -35,7 +33,7 @@ The workshop is not a single repository. It is a small family of repositories sp
 TODO: The flow diagram is poorly visualized. Dark grey background box, the arrows don't flow well. Offer me some alternatives. Is there an alternative technology that would be better to visualize the flow?
 flowchart LR
     subgraph people[People]
-        T[Teacher]
+        T[Instructor]
         L[Learner]
     end
     subgraph tools[Accounts and software]
@@ -57,4 +55,4 @@ flowchart LR
     C -.->|citation| DEV & IT
 ```
 
-Do not worry about the detail yet (TODO remove statements like this. Add to my Claude profile. Do not say "don't worry" or "simply / simple / easy". Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.
+The detail comes later. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.

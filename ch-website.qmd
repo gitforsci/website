@@ -1,25 +1,25 @@
 # Build and publish the cohort website {#sec-website}
 TODO: revise based on new info you have from previous chapters.
-Each cohort gets its own website, generated from the template in `course-dev`. The website is the learners' home base: it holds the pre-course work, the schedule, and links to everything. This chapter is the checklist to generate it, fill in its details, render it, and publish it.
+Each cohort gets its own website, generated from the template in `gitforsci-dev`. The website is the learners' home base: it holds the pre-course work, the schedule, and links to everything. This chapter is the checklist to generate it, fill in its details, render it, and publish it.
 
-Replace `course` with your course slug and `001` with your iteration tag throughout.
+Replace `gitforsci` with your course slug and `001` with your iteration tag throughout.
 
 ## Step 1: Generate the site from the template
 
-- [ ] Go to `course-dev/website` on GitHub.
+- [ ] Go to `gitforsci-dev/website` on GitHub.
 - [ ] Click **Use this template**, then **Create a new repository**.
-- [ ] Set the owner to `course-001` and the repository name to `website`.
+- [ ] Set the owner to `gitforsci-001` and the repository name to `website`.
 - [ ] Create the repository.
 
-This produces `course-001/website` as an independent repository with clean history and no live link back to the template. It is a frozen snapshot you can edit freely without affecting the template or other cohorts.
+This produces `gitforsci-001/website` as an independent repository with clean history and no live link back to the template. It is a frozen snapshot you can edit freely without affecting the template or other cohorts.
 
 ::: {.callout-note appearance="simple"}
-**New educator** — if the **Use this template** button is missing, the template flag is not set on `course-dev/website`. Go back to @sec-create-orgs, step 2, and check **Template repository** in its settings.
+**New educator** — if the **Use this template** button is missing, the template flag is not set on `gitforsci-dev/website`. Go back to @sec-create-orgs, step 2, and check **Template repository** in its settings.
 :::
 
 ## Step 2: Clone the new website locally
 
-- [ ] In RStudio, create a new project from version control, pointing at `course-001/website`.
+- [ ] In RStudio, create a new project from version control, pointing at `gitforsci-001/website`.
 - [ ] Confirm the project opens and you can see the files, including `_quarto.yml` and `_variables.yml`.
 
 ## Step 3: Fill in the iteration variables
@@ -31,13 +31,13 @@ Fields you will set in `_variables.yml`:
 | Field | What to put |
 |---|---|
 | Course title | The human-readable course title |
-| Course slug | Your `course` slug |
+| Course slug | Your `gitforsci` slug |
 | Iteration | This cohort's tag (`001`) |
 | Cohort label | A free-form label, for example "Spring 2026" |
 | Start and end dates | ISO dates for the cohort |
 | Timezone | The IANA timezone for live sessions |
 | Course website URL | The published URL of this site |
-| GitHub organization | `course-001` |
+| GitHub organization | `gitforsci-001` |
 | Instructor name, ORCID, affiliation, GitHub, email | Your details |
 
 ::: {.callout-important}
@@ -55,11 +55,11 @@ Open `_quarto.yml` and update the fields that are specific to this cohort:
 |---|---|
 | Project / site title | Match the iteration |
 | Site URL | The published URL of this cohort site |
-| Repository URL | `https://github.com/course-001/website` |
+| Repository URL | `https://github.com/gitforsci-001/website` |
 | Repository branch | Usually `main` |
 
 - [ ] Update each cohort-specific field in `_quarto.yml`.
-- [ ] Leave template-level fields (theme, navbar, sidebar structure) alone. If you find yourself changing those every cohort, push the change back into `course-dev/website` so future cohorts inherit it.
+- [ ] Leave template-level fields (theme, navbar, sidebar structure) alone. If you find yourself changing those every cohort, push the change back into `gitforsci-dev/website` so future cohorts inherit it.
 
 ## Step 5: Render the site locally
 
@@ -71,7 +71,7 @@ If the variables show as placeholders in the rendered pages, you missed an entry
 
 ## Step 6: Publish the site
 
-- [ ] Commit your changes and push them to `course-001/website`.
+- [ ] Commit your changes and push them to `gitforsci-001/website`.
 - [ ] Enable GitHub Pages for the repository (Settings, then Pages), or publish with `quarto publish gh-pages` from the terminal.
 - [ ] Confirm the published URL loads and matches the site URL you set in the configuration.
 
@@ -89,7 +89,7 @@ This is optional. The workshop runs fine without it.
 
 ## Verify as the test-learner
 
-- [ ] Open the published site in your test-learner browser (logged out of the teacher account).
+- [ ] Open the published site in your test-learner browser (logged out of the instructor account).
 - [ ] Confirm the pre-course work pages are reachable and the links work.
 
 A site that a logged-out learner can read end to end is ready to hand out.

@@ -4,9 +4,9 @@ This part lists every account and piece of software the workshop needs, split by
 
 - @sec-learner-setup is the learner checklist. It is the pre-course work you hand to participants, and it is also the list every learner must complete before the day.
 
-- @sec-teacher-setup is the teacher checklist. It is everything a learner needs, plus the extra accounts and setup that only the person running the course requires.
+- @sec-teacher-setup is the instructor checklist. It is everything a learner needs, plus the extra accounts and setup that only the person running the course requires.
 
-The two chapters overlap on purpose: a teacher needs the full learner setup too, because the best way to find a broken instruction is to follow it yourself as a learner (@sec-teacher-setup explains the test-learner account that makes this concrete).
+The two chapters overlap on purpose: an instructor needs the full learner setup too, because the best way to find a broken instruction is to follow it yourself as a learner (@sec-teacher-setup explains the test-learner account that makes this concrete).
 
 ```{mermaid}
 flowchart TD
@@ -17,7 +17,7 @@ flowchart TD
         PAT[Personal access token]
         EL[Element / Matrix chat]
     end
-    subgraph T[Teacher also needs]
+    subgraph T[Instructor also needs]
         TL[A second 'test learner' GitHub account]
         OWN[Owner rights on the org]
         TWO[Two browsers or profiles]

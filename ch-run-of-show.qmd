@@ -23,7 +23,7 @@ flowchart TD
 - Welcome, who you are, and the safe-to-fail promise (@sec-philosophy).
 - Why researchers care: collaboration, a reliable record of changes, reuse, and the freedom to try things because almost everything is reversible.
 - The shape of the next four hours, so learners know hands-on work is coming.
-- Quick check that everyone can reach GitHub and has their pre-work done; triage stragglers (@sec-before).
+- Quick check that everyone can reach GitHub and has their pre-work done; follow up with anyone who hasn't finished (@sec-before).
 
 No hands-on task yet. Keep this short; the energy comes from the doing.
 

@@ -2,7 +2,7 @@
 
 The workshop's material is spread across three GitHub organizations, not one. This looks like more than you need at first, but each organization has a distinct job, and keeping them separate is what makes the course reusable and citable over time.
 
-Throughout this chapter, `course` stands in for your course's short name. Replace it with your own slug everywhere (for example a course named `gitforsci` would have organizations `gitforsci`, `gitforsci-dev`, and `gitforsci-001`).
+Throughout this chapter, `gitforsci` stands in for your course's short name. Replace it with your own slug everywhere (for example a course named `gitforsci` would have organizations `gitforsci`, `gitforsci-dev`, and `gitforsci-001`).
 
 TODO: see part-setup.qmd and my comment about the github org that a new instructor needs. I have also added a previous comment that this guide should not use "course" placeholder but use gitforsci directly.
 
@@ -28,7 +28,7 @@ flowchart TD
     central -.->|canonical citation copied down| iter
 ```
 
-### The central org: `course`
+### The central org: `gitforsci`
 
 The long-lived, public face of the course. There is one central org, ever, not one per cohort. It holds:
 
@@ -39,7 +39,7 @@ The long-lived, public face of the course. There is one central org, ever, not o
 TODO: The central org website provides all information to run the course, however, it also evolves over time and each iteration provides an opportunity for learning. This website should actually have a section (towards the end of the book or appendix) which documents each iteration. Start with: https://github.com/gitforsci-cis
 
 
-### The development org: `course-dev`
+### The development org: `gitforsci-dev`
 
 TODO: A new instructor should be added to the org as a contributor and through PRs be able to improve material. This needs a CONTRIBUTING.md guide for this specific GitHub org. The idea is not that the material is changed siginificantly between iterations, but should allow for opportunities to improve over time. 
 
@@ -51,11 +51,11 @@ Where you author and maintain the teaching material between cohorts. It holds th
 TODO: Revise next paragraph based on TODO above.
 When you improve the material, you do it here. Those improvements reach future cohorts because each new cohort is generated fresh from these templates.
 
-### The iteration org: `course-00x`
+### The iteration org: `gitforsci-00x`
 
-One organization per time you teach the course. Name it with an iteration tag: `course-001`, `course-002`, or something descriptive like `course-2026spring`. It holds:
+One organization per time you teach the course. Name it with an iteration tag: `gitforsci-001`, `gitforsci-002`, or something descriptive like `gitforsci-2026spring`. It holds:
 
-- A `website` **generated from the `course-dev` template**. This is an independent copy with its own clean history and no live link back to the template. TODO: Here would be the consideration to give it it's own DOI. I have setup a task for you to research and assess.
+- A `website` **generated from the `gitforsci-dev` template**. This is an independent copy with its own clean history and no live link back to the template. TODO: Here would be the consideration to give it it's own DOI. I have setup a task for you to research and assess.
 
 - Per-cohort copies of the material repositories your learners will work in.
 
@@ -65,9 +65,9 @@ Each iteration org is a frozen snapshot: the course exactly as you taught it tha
 
 Two flows matter, and they go in different directions.
 
-**Templates flow forward.** When you generate a new cohort from `course-dev`, it picks up every improvement you have made to the templates since the last cohort. Past cohorts do not change; they are frozen. Only future cohorts inherit your edits. If you ever need to carry a fix into a cohort that already exists, you apply it there as an ordinary commit.
+**Templates flow forward.** When you generate a new cohort from `gitforsci-dev`, it picks up every improvement you have made to the templates since the last cohort. Past cohorts do not change; they are frozen. Only future cohorts inherit your edits. If you ever need to carry a fix into a cohort that already exists, you apply it there as an ordinary commit.
 
-**Citation flows down.** The canonical `CITATION.cff` lives in the central `course/website`. When it changes (a new author, a corrected ORCID, a new DOI), you copy it down into the other repositories so everything cites the course the same way. @sec-citation-license covers this. TODO: re-asses with the new information you have.
+**Citation flows down.** The canonical `CITATION.cff` lives in the central `gitforsci/website`. When it changes (a new author, a corrected ORCID, a new DOI), you copy it down into the other repositories so everything cites the course the same way. @sec-citation-license covers this. TODO: re-asses with the new information you have.
 
 ## Why not just one organization
 

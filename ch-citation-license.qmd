@@ -13,7 +13,7 @@ A license is what makes the material legally reusable. Without one, "open" is ju
 
 A course that mixes both can carry both: CC-BY for the writing, MIT for the code. State clearly which applies to what.
 
-- [ ] Add a `LICENSE` file to the central `course/website` repository.
+- [ ] Add a `LICENSE` file to the central `gitforsci/website` repository.
 - [ ] Make the license choice visible on the course landing page.
 - [ ] Apply the same license consistently across the material repositories.
 
@@ -21,7 +21,7 @@ A course that mixes both can carry both: CC-BY for the writing, MIT for the code
 
 TODO: Update once I have taken a decision on whether there will be a 2nd DOI, a new one per iteration while this stays canonical
 
-There is one citation for the course, not one per repository or per cohort. It lives in a `CITATION.cff` file in the central `course/website`. That file is the single source of truth: authors, title, version, release date, and (once you have one) the DOI.
+There is one citation for the course, not one per repository or per cohort. It lives in a `CITATION.cff` file in the central `gitforsci/website`. That file is the single source of truth: authors, title, version, release date, and (once you have one) the DOI.
 
 A `CITATION.cff` should include at least:
 
@@ -37,7 +37,7 @@ Do not fabricate ORCIDs, DOIs, or author details. An incorrect identifier is wor
 A DOI is a permanent identifier that makes the course formally citable in the academic record. The usual route is Zenodo (<https://zenodo.org>), which integrates with GitHub:
 
 - [ ] Sign in to Zenodo with your GitHub account.
-- [ ] Enable the Zenodo integration for the `course/website` repository.
+- [ ] Enable the Zenodo integration for the `gitforsci/website` repository.
 - [ ] Create a release of the repository on GitHub. Zenodo archives that release and mints a DOI.
 - [ ] Add the DOI back into `CITATION.cff` and display its badge on the landing page.
 
@@ -45,9 +45,9 @@ One DOI represents the course. New releases get new versioned DOIs under it, so 
 
 ## Keep the citation consistent across repositories
 
-When the canonical citation changes (a new author, a corrected ORCID, a new DOI version), the other repositories should match. The flow is one-directional: edit the canonical file in `course/website`, then copy it down.
+When the canonical citation changes (a new author, a corrected ORCID, a new DOI version), the other repositories should match. The flow is one-directional: edit the canonical file in `gitforsci/website`, then copy it down.
 
-- [ ] Edit `CITATION.cff` in `course/website` only.
+- [ ] Edit `CITATION.cff` in `gitforsci/website` only.
 - [ ] Copy the updated file into each other repository in the org family (the dev org's repositories and each cohort's repositories) so they all carry the same citation.
 - [ ] Never edit a downstream `CITATION.cff` as the source of truth; downstream copies are always overwritten from the canonical one.
 

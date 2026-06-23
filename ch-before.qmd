@@ -4,7 +4,7 @@ Most of what makes a hands-on workshop go smoothly happens before anyone walks i
 
 ## One to two weeks before
 
-- [ ] Send the pre-course work (@sec-learner-setup) with a clear deadline a few days before the workshop.
+- [ ] Send the pre-course work (@sec-learner-setup) with a clear due date a few days before the workshop.
 - [ ] Open the pre-course survey and share the link. Use it to collect GitHub usernames and to gauge prior experience.
 - [ ] Confirm the room, projector, power, and reliable internet (@sec-teacher-setup). TODO: flipchart and markers for live drawings, pointer for changing slides, second screen, so that laptop, projector and second screen with instructor notes are available (this can be more detailed in appendix with explanation and photos of instructor setup)
 - [ ] Confirm catering or breaks for the four-hour session if your venue needs it arranged ahead.
@@ -38,7 +38,7 @@ If you can complete the whole workshop from a clean learner account, the materia
 ## The morning of (TODO: revise)
 
 - [ ] Arrive early and confirm the projector and internet work in the actual room.
-- [ ] Log in to your teacher account in one browser and your test-learner account in a second (@sec-teacher-setup).
+- [ ] Log in to your instructor account in one browser and your test-learner account in a second (@sec-teacher-setup).
 - [ ] Open the cohort website, the slides, and a terminal, ready to demonstrate.
 - [ ] Open the chat channel on a device you can monitor during the session.
 - [ ] Have a whiteboard or drawing surface ready for the live drawings (@sec-live-drawings).

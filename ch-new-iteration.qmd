@@ -1,50 +1,50 @@
 # Spin up the next cohort {#sec-new-iteration}
 TODO: update page based on everything that was covered in tasks from previous sections.  
 ::: {.callout-tip}
-**Repeat instructor** — this chapter is the short version. It assumes you already understand the three-org model (@sec-three-orgs) and have a working `course-dev` with templates. If this is your first time, read Parts 2 and 3 in full instead.
+**Repeat instructor** — this chapter is the short version. It assumes you already understand the three-org model (@sec-three-orgs) and have a working `gitforsci-dev` with templates. If this is your first time, read Parts 2 and 3 in full instead.
 :::
 
-You have taught the course before. The templates in `course-dev` hold your latest material. Here is the condensed path to the next cohort.
+You have taught the course before. The templates in `gitforsci-dev` hold your latest material. Here is the condensed path to the next cohort.
 
 ## What carries forward and what stays frozen
 
 Before you start, hold the two rules in mind:
 
-- **Templates carry forward.** The new cohort is generated fresh from `course-dev`, so it inherits every improvement you have made since the last cohort.
+- **Templates carry forward.** The new cohort is generated fresh from `gitforsci-dev`, so it inherits every improvement you have made since the last cohort.
 - **Past cohorts stay frozen.** Existing iteration orgs are independent repositories, not forks. Editing the template does not touch them. That is intentional: each past cohort is the archival record of how the course was taught that time.
 
 If you need a template fix inside a cohort that already exists, apply it there as an ordinary commit; it will not flow in automatically.
 
 ## The run-book
 
-Replace `course` with your slug and `002` with the new iteration tag.
+Replace `gitforsci` with your slug and `002` with the new iteration tag.
 
 ### 1. Update the templates first
 
-- [ ] Make any teaching improvements in `course-dev` (the website template and the material repositories) before generating the new cohort, so the cohort picks them up.
+- [ ] Make any teaching improvements in `gitforsci-dev` (the website template and the material repositories) before generating the new cohort, so the cohort picks them up.
 
 ### 2. Create the iteration org
 
-- [ ] Create the `course-002` organization on GitHub (organizations are created in the browser).
+- [ ] Create the `gitforsci-002` organization on GitHub (organizations are created in the browser).
 - [ ] Confirm you are an owner.
 
 ### 3. Generate the cohort website
 
-- [ ] On `course-dev/website`, click **Use this template**, then create `course-002/website`.
+- [ ] On `gitforsci-dev/website`, click **Use this template**, then create `gitforsci-002/website`.
 - [ ] Clone it in RStudio and fill in `_variables.yml` and `_quarto.yml` with this cohort's dates, URLs, and labels (@sec-website).
 - [ ] Render with `quarto preview`, then publish.
 
 ### 4. Create the per-cohort material repositories
 
-- [ ] Use **Use this template** to copy each exercise and assignment repository from `course-dev` into `course-002`.
+- [ ] Use **Use this template** to copy each exercise and assignment repository from `gitforsci-dev` into `gitforsci-002`.
 
 ### 5. Sync the citation
 
-- [ ] Copy the canonical `CITATION.cff` from `course/website` into the new cohort's repositories so they all cite the course the same way (@sec-citation-license).
+- [ ] Copy the canonical `CITATION.cff` from `gitforsci/website` into the new cohort's repositories so they all cite the course the same way (@sec-citation-license).
 
 ### 6. Invite and verify
 
-- [ ] Invite learners (from the new cohort's survey) to `course-002`.
+- [ ] Invite learners (from the new cohort's survey) to `gitforsci-002`.
 - [ ] Switch to your test-learner account and verify the member view, a clone, and a commit (@sec-create-orgs).
 
 ### 7. Run the pre-flight
