@@ -1,11 +1,30 @@
 # Before the day {#sec-before}
 
-Most of what makes a hands-on workshop go smoothly happens before anyone walks in. This is the pre-flight checklist, grouped by how far ahead each item sits. It pulls together the tasks introduced in earlier chapters (setup in Part 2, the iteration org and website in Part 3) into the order you actually do them.
+Most of what makes a hands-on workshop go smoothly happens before anyone walks in. This chapter is the pre-flight: the timeline you work to, the survey that tells you who is ready, the dry-run that proves the material, and the checks for the morning itself. It pulls together tasks introduced earlier (setup in Part 2, the iteration org and website in Part 3) into the order you actually do them.
 
-## One to two weeks before
+## The pre-course timeline
 
-- [ ] Send the pre-course work (@sec-learner-setup) with a clear due date a few days before the workshop, following the timeline in @sec-create-orgs.
-- [ ] Open the pre-course survey and share the link. Use it to collect GitHub usernames and to gauge prior experience.
+The setup tasks have to land in a sequence that gives learners time to finish the pre-work and gives you time to follow up with anyone who has not. Work backwards from the workshop date so that every due date still leaves a buffer of working days before the day itself. A workable shape, counting back from the workshop:
+
+| When (before the workshop) | Do this |
+|---|---|
+| ~3 weeks | Generate the cohort website, fill in all platform links (chat, survey), and publish it (@sec-website). |
+| ~3 weeks | Send the first email: the course website link and a clear due date for completing the pre-work. |
+| 2 days before the pre-work due date | Review who has and has not completed the pre-course survey. |
+| Pre-work due date | Reach out to explain the next steps (accept the GitHub invitation, clone the setup repository). |
+| ~1 week | Give a second due date to finish setup, leaving room before the day. |
+| Second due date | Check who has not completed setup. |
+| 1 day after the second due date | Reach out to anyone still stuck to offer support; this should still leave at least 2 working days of buffer before the workshop. |
+| ~2 days | Run the pre-flight dry-run (below). |
+
+Adjust the exact spacing to your cohort, but keep the principle: every due date is followed by a follow-up window, and the last follow-up still sits clear of the workshop day. The sections below expand the key milestones on that timeline.
+
+## Around three weeks before: launch and invite
+
+- [ ] Generate and publish the cohort website, with every platform link (chat, survey) filled in (@sec-website).
+- [ ] Send the pre-course work (@sec-learner-setup) with the website link and a clear due date.
+- [ ] Open the pre-course survey and share its link (see below).
+- [ ] Invite every learner to the iteration org from the survey usernames, via the `ghclass` scripts (@sec-create-orgs).
 - [ ] Confirm the room, projector, power, and reliable internet (@sec-teacher-setup).
 - [ ] Confirm the equipment for live teaching: a flipchart or whiteboard with markers for the live drawings (@sec-live-drawings), a pointer or clicker for advancing slides, and ideally a second screen so your laptop, the projector, and your instructor notes are all visible at once.
 - [ ] Confirm catering or breaks for the four-hour session if your venue needs it arranged ahead.
@@ -25,15 +44,19 @@ At a minimum, ask for:
 Build the survey once as a KoboToolbox form you can clone for each cohort. Keep the GitHub-username field as a required short-text question, since it is the one answer the `ghclass` scripts depend on.
 :::
 
-## A few days before
+## At each due date: check and follow up
 
-- [ ] Invite every learner to the iteration org using the usernames from the survey, via the `ghclass` scripts (@sec-create-orgs).
+The timeline puts a follow-up window after every due date. Use it to close the gap before the day, not on the day:
+
+- [ ] Two days before the pre-work due date, review the survey to see who has and has not completed it.
+- [ ] On the pre-work due date, reach out to explain the next steps: accept the GitHub invitation, clone the setup repository.
 - [ ] Check who has accepted invitations and made their first commit. Follow up with anyone who has not, in the chat channel.
+- [ ] On the second due date, check who has not finished setup; the day after, reach out to anyone still stuck to offer support.
 - [ ] Hold a short virtual office hour or offer chat support for setup problems, so they are solved before the day, not during it.
 
-## Dry-run as the test-learner
+## Around two days before: dry-run as the test-learner
 
-This is the highest-value pre-flight step. Using your test-learner account (@sec-teacher-setup), walk the entire workshop as a student would, the day before. The example account used throughout this handbook is the test learner `rainbow-train` (<https://github.com/rainbow-train>), the test profile of the course author; use your own equivalent. Walk through:
+This is the highest-value pre-flight step, and it sits near the end of the timeline so any fix you find still lands before the day. Using your test-learner account (@sec-teacher-setup), walk the entire workshop as a student would. The example account used throughout this handbook is the test learner `rainbow-train` (<https://github.com/rainbow-train>), the test profile of the course author; use your own equivalent. Walk through:
 
 - [ ] Clone the material repositories fresh, as the test-learner.
 - [ ] Complete every hands-on task in the run of show (@sec-run-of-show) in order.
@@ -58,4 +81,4 @@ Some learners will still arrive with broken setups. Decide in advance how you wi
 - [ ] Pair them with a neighbor who is ready, or seat them near you.
 - [ ] Keep moving for the rest of the room; do not hold the whole session for one setup.
 
-The real fix for setup problems is before the day, not during it. Pre-work that is genuinely broken should be caught and resolved through the survey and follow-up (above), so that the morning-of triage is a safety net for a handful of edge cases, not a plan for the whole room.
+The real fix for setup problems is before the day, not during it. The timeline above, with its follow-up windows, exists so that the morning-of triage is a safety net for a handful of edge cases, not a plan for the whole room.

@@ -54,21 +54,8 @@ Before you consider the setup done, switch to your test-learner browser and conf
 
 If all three pass from the learner's point of view, your organization is ready.
 
-## A timeline that leaves buffer
+## When to do all this
 
-The setup above has to land in a sequence that gives learners time to finish the pre-work and gives you time to follow up with anyone who hasn't. Work backwards from the workshop date so that every due date still leaves a buffer of working days before the day itself. A workable shape, counting back from the workshop:
-
-| When (before the workshop) | Do this |
-|---|---|
-| ~3 weeks | Generate the cohort website, fill in all platform links (chat, survey), and publish it (@sec-website). |
-| ~3 weeks | Send the first email: course website link and a clear due date for completing the pre-work. |
-| 2 days before the pre-work due date | Review who has and has not completed the pre-course survey. |
-| Pre-work due date | Reach out to explain the next steps (accept the GitHub invitation, clone the setup repository). |
-| ~1 week | Give a second due date to finish setup, leaving room before the day. |
-| Second due date | Check who has not completed setup. |
-| 1 day after the second due date | Reach out to anyone still stuck to offer support; this should still leave at least 2 working days of buffer before the workshop. |
-| ~2 days | Run the pre-flight dry-run (@sec-before). |
-
-Adjust the exact spacing to your cohort, but keep the principle: every due date is followed by a follow-up window, and the last follow-up still sits clear of the workshop day.
+The setup in this chapter has to land in a sequence that gives learners time to finish the pre-work and gives you time to follow up with anyone who has not. That count-back timeline, with its buffer windows, lives in the pre-flight chapter (@sec-before), since it ties the org and website setup together with the survey, the follow-up windows, and the dry-run into one schedule you work to.
 
 Next, build the website (@sec-website).
