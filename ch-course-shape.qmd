@@ -36,8 +36,6 @@ The verification step is the point. A learner whose first commit landed before t
 
 The in-room time is a tight loop: a short concept, then a "your turn" task where everyone does it, then a regroup. The slides exist to frame each loop, not to fill time. The real content is the learners' own hands on their own keyboards.
 
-TODO: Don't use the term "show". 
-
 @sec-run-of-show breaks the four hours into a timed run of show. The structure is always the same: motivate, demonstrate once, hand it over, regroup.
 
 ## The side benefits are real
@@ -48,9 +46,7 @@ The headline outcome is Git and GitHub for collaboration. But because the worksh
 
 - **A first taste of Quarto.** The material they touch is authored in Quarto. They see how prose, code, and output live in one document, which plants a seed for reproducible reporting.
 
-- **A first step onto the terminal.** Earlier versions stayed entirely in the RStudio interface. TODO: This version does not yet have the terminal work. It will be build into the next iteration, based on which this guide will be updated. Revise:
-
-This version introduces a small amount of terminal work, so learners leave less afraid of the command line.
+- **A first look at the terminal (in later iterations).** This version of the course stays entirely in the point-and-click interface of RStudio and GitHub. A small amount of terminal work is planned for a future iteration, at which point this guide will be updated and the side benefit becomes "less afraid of the command line." For now, name the first two benefits and leave the terminal out of the list for the cohorts that do not include it.
 
 Name these benefits in the wrap-up. Learners came for Git, and it helps them to notice they also moved forward on three other fronts.
 

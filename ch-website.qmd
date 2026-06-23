@@ -1,8 +1,8 @@
 # Build and publish the cohort website {#sec-website}
-TODO: revise based on new info you have from previous chapters.
-Each cohort gets its own website, generated from the template in `gitforsci-dev`. The website is the learners' home base: it holds the pre-course work, the schedule, and links to everything. This chapter is the checklist to generate it, fill in its details, render it, and publish it.
 
-Replace `gitforsci` with your course slug and `001` with your iteration tag throughout.
+Each cohort gets its own website, generated from the `gitforsci-dev/website` template into your iteration org. The website is the learners' home base: it holds the pre-course work, the schedule, and links to everything. This chapter is the checklist to generate it, fill in its details, render it, and publish it.
+
+Replace the iteration tag `001` with your own throughout (for example `cis`).
 
 ## Step 1: Generate the site from the template
 
@@ -30,9 +30,8 @@ Fields you will set in `_variables.yml`:
 
 | Field | What to put |
 |---|---|
-| Course title | The human-readable course title |
-| Course slug | Your `gitforsci` slug |
-| Iteration | This cohort's tag (`001`) |
+| Course title | The human-readable course title ("Git for Scientists") |
+| Iteration | This cohort's tag (`001` or `cis`) |
 | Cohort label | A free-form label, for example "Spring 2026" |
 | Start and end dates | ISO dates for the cohort |
 | Timezone | The IANA timezone for live sessions |

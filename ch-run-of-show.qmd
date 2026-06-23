@@ -1,8 +1,10 @@
 # Run of show {#sec-run-of-show}
 
-TODO: This page needs a complete revision. In it's current version it should only hold the gitforsci-cis iteration, which is two hours long without the terminal work. Once the first DOI is created, I rework the material for the gitforsci-ghe iteration, which can then update the book and bump the version to another release for new DOI. I have added the lesson plan from gitforsci-cis in @gitforsci-cis-lesson-plan.md, use it to infer times here. A new lesson plan will be prepared for gitforsci-ghe. Evaluate if this book could show the specific lesson plan for each iteration. What is missing from the lesson plan that is not already somewhere else? What makes a good lesson plan? 
+This chapter is the run of show: the session, block by block. The first part is the **general structure** that every iteration of the course shares, written as a reusable template. The second part is a **worked example**, the `gitforsci-cis` iteration, showing how that structure becomes a concrete, timed lesson plan.
 
-This is the four hours, block by block. Each block follows the same rhythm: motivate it, demonstrate it once, hand it over as a "your turn" task, then regroup. The live drawings (@sec-live-drawings) are cued where they fit.
+Each block follows the same rhythm: motivate it, demonstrate it once, hand it over as a "your turn" task, then regroup. The live drawings (@sec-live-drawings) are cued where they fit.
+
+## The general structure
 
 The timings below are a starting point for a four-hour session including one substantial break. Adjust to your room, but keep the proportion: most of the time is learners' hands on keyboards, not slides.
 
@@ -31,11 +33,11 @@ No hands-on task yet. Keep this short; the energy comes from the doing.
 
 **Concept:** there are two copies of the work, local and remote, and Git moves changes between them.
 
-**Live drawing:** Drawing 1, local and remote (@drawing-local-remote). Draw it before the demonstration.
+**Live drawing:** Drawing 1, local and remote (@sec-drawing-local-remote). Draw it before the demonstration.
 
 **Demonstrate once:** create a repository on GitHub, clone it into RStudio, make a change, then the commit cycle (stage, commit, push) and watch the change appear on GitHub.
 
-**Live drawing:** Drawing 2, the commit cycle (@drawing-commit-cycle), as you make the first commit.
+**Live drawing:** Drawing 2, the commit cycle (@sec-drawing-commit-cycle), as you make the first commit.
 
 **Your turn:**
 
@@ -50,7 +52,7 @@ No hands-on task yet. Keep this short; the energy comes from the doing.
 
 **Concept:** a branch is a parallel line of work that splits off and rejoins, which is what makes collaboration safe.
 
-**Live drawing:** Drawing 3, branching (@drawing-branching). Draw the split live.
+**Live drawing:** Drawing 3, branching (@sec-drawing-branching). Draw the split live.
 
 **Demonstrate once:** create a branch, make a commit on it, and push the branch.
 
@@ -72,7 +74,7 @@ This is the centerpiece of the workshop. Give it the most time and care.
 
 **Concept:** a pull request is a request to merge one branch into another, reviewed by a human before it happens.
 
-**Live drawing:** Drawing 4, the pull request (@drawing-pull-request), completing the merge point from Drawing 3 and showing the review step.
+**Live drawing:** Drawing 4, the pull request (@sec-drawing-pull-request), completing the merge point from Drawing 3 and showing the review step.
 
 **Demonstrate once:** open a pull request from a branch, show the diff, review it, and merge it.
 
@@ -103,8 +105,36 @@ Keep this light. The aim is the satisfaction of seeing their work live, not a de
 **Goal:** consolidate and point forward.
 
 - Recap what they can now do: create, clone, commit, branch, pull request, merge, publish.
-- Name the side benefits explicitly (@sec-course-shape): more comfort with R and RStudio, a first taste of Quarto, a first step onto the terminal.
-- Point to the follow-up workshop on agentic coding.
+- Name the side benefits explicitly (@sec-course-shape): more comfort with R and RStudio, a first taste of Quarto, and (where the iteration includes it) a first look at the terminal.
+- Point to the follow-up workshop on agentic coding, framed as building on the confidence and vocabulary they just gained.
 - Invite them to keep the chat channel and try this on their own work this week.
 
 End on momentum: they should leave wanting to use it tomorrow.
+
+## What makes a good lesson plan
+
+The structure above is the skeleton. A lesson plan is what you flesh it out into for a specific iteration, and a good one earns its place by holding the things the general structure deliberately leaves out:
+
+- **Real timings per step, not per block.** "Create and clone, 45 minutes" is a block; "create the repo (1), clone in RStudio (3), first commit cycle (5)" is a plan you can actually pace against in the room.
+- **The exact demonstration script.** What you click, in order, and the one or two sentences you say at each click. This is what lets a second instructor teach it the way it was designed.
+- **The concrete artifacts.** The actual repository names, the example usernames, the specific files learners edit. Generic instructions become specific tasks.
+- **Teaching cues.** The questions you ask ("what is origin in Git language?"), the hands-up checks, the points where you expect learners to stall.
+- **What you are deliberately not doing.** Naming the things you skip (forking, conflict resolution, the terminal) keeps the plan honest about its scope.
+
+Most of this does not belong in the general structure, because it is specific to one run. It belongs in the iteration's own lesson plan, which is why the course keeps one per iteration rather than trying to make a single plan serve every cohort.
+
+## Worked example: the `gitforsci-cis` iteration
+
+The `gitforsci-cis` iteration is a shorter run: about two hours of teaching, split into two modules around a break, and it stays entirely in the point-and-click interface with no terminal work. It is a good illustration of how the general structure compresses for a shorter session. The full step-by-step plan, with per-step timings and the demonstration script, lives alongside the iteration material; this is the shape of it.
+
+| Block | Time | What happens |
+|---|---|---|
+| Module 1, Part 1: slides | 15 min | "GitHub for supporting, contributing, and failing safely." The motivation and the safe-to-fail promise (@sec-philosophy). |
+| Module 1, Part 2: our turn | 24 min | Demonstrate creating a `website` repo, cloning into RStudio, editing the README, and the full commit cycle (pull, stage, commit, push), including storing Git credentials. |
+| Module 1, Part 2: your turn | 8 min | Learners clone a fellow learner's repository, make a change, and try to push, discovering they lack push access (the motivation for branches and pull requests). |
+| Break | 15 min | A real break; help anyone who fell behind. |
+| Module 2, Part 1: branch | 19 min | Demonstrate and practice creating a `dev` branch, editing the manuscript, committing on the branch, and seeing how `main` and `dev` differ. |
+| Module 2, Part 2: PR and merge | 15 min | Open a pull request from `dev`, request a reviewer, review the diff with line comments, then merge and pull the result back locally. |
+| Module 2, Part 3: publish | 5 min | Publish the repository with GitHub Pages and watch the manuscript reach a URL. |
+
+The total teaching time is about 83 minutes plus the 15-minute break. Compared with the four-hour general structure, the `cis` iteration drops the standalone "publish" deep dive and the terminal work, folds the commit cycle into the first module, and uses a real manuscript repository as the worked artifact throughout. A future iteration such as `gitforsci-ghe` would keep the same skeleton and its own timed plan, with whatever it adds (for example the terminal work) written into that plan rather than into this general structure.

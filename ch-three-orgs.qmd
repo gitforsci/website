@@ -1,80 +1,74 @@
 # The three-organization model {#sec-three-orgs}
 
-The workshop's material is spread across three GitHub organizations, not one. This looks like more than you need at first, but each organization has a distinct job, and keeping them separate is what makes the course reusable and citable over time.
-
-Throughout this chapter, `gitforsci` stands in for your course's short name. Replace it with your own slug everywhere (for example a course named `gitforsci` would have organizations `gitforsci`, `gitforsci-dev`, and `gitforsci-001`).
-
-TODO: see part-setup.qmd and my comment about the github org that a new instructor needs. I have also added a previous comment that this guide should not use "course" placeholder but use gitforsci directly.
-
-## The three organizations
-
-TODO: Rework based on the new information. Focus on what a new instructor needs to do rather than explaning the whole concept in too much detail.
+The course is spread across three GitHub organizations, not one. Each has a distinct job, and keeping them separate is what makes the material reusable and citable over time. Two of them, `gitforsci` and `gitforsci-dev`, already exist and stay put. The third is the one you create each time you teach: an iteration org.
 
 ```{mermaid}
 flowchart TD
-    subgraph central[course -- central org]
-        CW[website<br/>handbook, canonical citation, DOI]
+    subgraph central["gitforsci (central)"]
+        CW["website<br/>this handbook + canonical CITATION.cff + course DOI"]
     end
-    subgraph dev[course-dev -- development org]
-        DT[website template]
-        DM[setup, admin, exercises, assignments]
+    subgraph dev["gitforsci-dev (development)"]
+        DT["website<br/>course landing-page template"]
+        DM["setup, admin (ghclass scripts),<br/>exercise + assignment templates"]
     end
-    subgraph iter[course-00x -- iteration org]
-        IW[website<br/>generated from template]
-        IM[per-cohort repos]
+    subgraph iter["gitforsci-00x (iteration)"]
+        IW["website<br/>generated from the dev template"]
+        IM["per-cohort material repos"]
     end
-    dev -->|generate fresh each cohort| iter
-    central -.->|canonical citation copied down| dev
-    central -.->|canonical citation copied down| iter
+    dev -->|"generate fresh each cohort"| iter
+    central -.->|"canonical citation copied down"| dev
+    central -.->|"canonical citation copied down"| iter
 ```
+
+## What each organization is for
 
 ### The central org: `gitforsci`
 
-The long-lived, public face of the course. There is one central org, ever, not one per cohort. It holds:
+The long-lived, public face of the course. There is one central org, ever. It holds:
 
-- The `website` repository, which is **this handbook** plus the course landing page. TODO: It does not hold the course landing page, the course website is in gitforsci-dev/website from which the template is used.
+- The `website` repository, which is **this handbook**. Note that it is not the course landing page that learners use; that page is generated from a template in `gitforsci-dev` (see below). The central `website` is the instructor-facing guide and the overview of how the whole course fits together.
+- The **canonical `CITATION.cff`** and the course-level DOI. This is the single source of truth for how the course is cited (@sec-citation-license).
 
-- The **canonical `CITATION.cff`** and the course-level DOI. This is the single source of truth for how the course is cited (@sec-citation-license). TODO: Think critically whether there should a DOI for each iteration. One DOI for all material gitforsci/* and gitforsci-dev/*, but then a second DOI for each iteration (e.g. gitforsci-cis, gitforsci-ghe). Provide me with pros and cons. 
-
-TODO: The central org website provides all information to run the course, however, it also evolves over time and each iteration provides an opportunity for learning. This website should actually have a section (towards the end of the book or appendix) which documents each iteration. Start with: https://github.com/gitforsci-cis
-
+The central org rarely changes. You only revisit it when the citation changes or when the handbook itself is revised. You do not copy or fork it to run a course.
 
 ### The development org: `gitforsci-dev`
 
-TODO: A new instructor should be added to the org as a contributor and through PRs be able to improve material. This needs a CONTRIBUTING.md guide for this specific GitHub org. The idea is not that the material is changed siginificantly between iterations, but should allow for opportunities to improve over time. 
+Where the teaching material is authored and maintained between cohorts. It holds the **templates** that each new cohort is generated from:
 
-Where you author and maintain the teaching material between cohorts. It holds the **templates** that each new cohort is generated from:
+- A `website` **template repository**: the course landing page learners actually use, the starting point for each cohort's site.
+- Material repositories: the setup instructions, the `admin` repository with the `ghclass` R scripts used to invite learners and create their repositories, and the exercise and assignment templates.
 
-- A `website` **template repository**: the starting point for each cohort's site.
-- Material repositories: the setup instructions, any admin material, and the exercise and assignment templates.
+When you improve the material, you do it here. Those improvements reach future cohorts because each new cohort is generated fresh from these templates. Past cohorts stay frozen.
 
-TODO: Revise next paragraph based on TODO above.
-When you improve the material, you do it here. Those improvements reach future cohorts because each new cohort is generated fresh from these templates.
+A new instructor does not need to recreate `gitforsci-dev`. They are added to it as a contributor and propose improvements through pull requests, so the material can get better over time without diverging per cohort. This is what the org's `CONTRIBUTING.md` is for: it states how to propose a change, what stays stable between iterations, and how the maintainer reviews and merges. The expectation is small, reviewed improvements, not a rewrite per cohort.
 
 ### The iteration org: `gitforsci-00x`
 
-One organization per time you teach the course. Name it with an iteration tag: `gitforsci-001`, `gitforsci-002`, or something descriptive like `gitforsci-2026spring`. It holds:
+One organization per time the course is taught, and the only one you create to run a course. Name it with an iteration tag, either a number (`gitforsci-001`, `gitforsci-002`) or something descriptive (`gitforsci-cis`, `gitforsci-ghe`). It holds:
 
-- A `website` **generated from the `gitforsci-dev` template**. This is an independent copy with its own clean history and no live link back to the template. TODO: Here would be the consideration to give it it's own DOI. I have setup a task for you to research and assess.
+- A `website` **generated from the `gitforsci-dev` template**: an independent copy with its own clean history and no live link back to the template. This is the site this cohort uses.
+- Per-cohort copies of the material repositories your learners work in.
 
-- Per-cohort copies of the material repositories your learners will work in.
+Each iteration org is a frozen snapshot: the course exactly as you taught it that time. Learners are members of the iteration org, not of the central or development orgs.
 
-Each iteration org is a frozen snapshot: the course exactly as you taught it that time. Learners are members of the iteration org, but not of the organizations.
-
-## How material flows
+## How material and citation flow
 
 Two flows matter, and they go in different directions.
 
-**Templates flow forward.** When you generate a new cohort from `gitforsci-dev`, it picks up every improvement you have made to the templates since the last cohort. Past cohorts do not change; they are frozen. Only future cohorts inherit your edits. If you ever need to carry a fix into a cohort that already exists, you apply it there as an ordinary commit.
+**Templates flow forward.** When you generate a new cohort from `gitforsci-dev`, it picks up every improvement made to the templates since the last cohort. Past cohorts do not change; only future cohorts inherit edits. If you ever need to carry a fix into a cohort that already exists, you apply it there as an ordinary commit.
 
-**Citation flows down.** The canonical `CITATION.cff` lives in the central `gitforsci/website`. When it changes (a new author, a corrected ORCID, a new DOI), you copy it down into the other repositories so everything cites the course the same way. @sec-citation-license covers this. TODO: re-asses with the new information you have.
+**Citation flows down.** The canonical `CITATION.cff` lives in `gitforsci/website`. When it changes (a new author, a corrected ORCID, a new DOI), you copy it down into the other repositories so everything cites the course the same way. @sec-citation-license covers this in full, including how each iteration also gets its own DOI on top of the canonical one.
+
+## Documenting each iteration
+
+The central handbook tells you how to run the course, but the course also learns from every cohort. Each iteration org is a record of how it actually went: which drawings worked, where learners got stuck, what you changed on the day. This handbook keeps a place for that: @sec-new-iteration is the run-book for the next cohort, and the iteration orgs themselves (starting with <https://github.com/gitforsci-cis>) are the archive of each run. Capture the specifics there, in issues and in the cohort's own repositories, so the next instructor benefits from what this one learned.
 
 ## Why not just one organization
 
-Splitting the central org from the development org keeps your public identity (the citation, the DOI, the handbook) stable while the messy work of editing material happens elsewhere.
+Splitting the central org from the development org keeps the public identity (the citation, the DOI, the handbook) stable while the messy work of editing material happens elsewhere.
 
-Splitting the development org from each iteration org lets template improvements flow forward to future cohorts without back-contaminating the template with one cohort's specific dates, names, and URLs. Each past cohort stays exactly as it was taught, which is what makes it a trustworthy archival record.
+Splitting the development org from each iteration org lets template improvements flow forward to future cohorts without back-contaminating the template with one cohort's specific dates, names, and URLs. Each past cohort stays exactly as it was taught, which is what makes it a trustworthy archival record, and what lets it carry its own DOI.
 
 ::: {.callout-note appearance="simple"}
-**New educator** — you do not need all three on day one. To teach the course once, you need an iteration org with a website and the material repositories. The central and development orgs pay off when you teach it a second time and want a clean way to reuse and cite the material. @sec-create-orgs builds them in an order that makes this practical.
+**New educator** — to teach the course once, the only organization you create is the iteration org, generated from the existing `gitforsci-dev` templates. @sec-create-orgs walks through it.
 :::

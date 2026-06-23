@@ -8,7 +8,7 @@ Some concepts land better when you draw them by hand, live, in front of the room
 
 The main list of planned drawings is collected in @sec-appendix-drawings so you can see them in one place. The detail for each lives here.
 
-## Drawing 1: Local and remote {#drawing-local-remote}
+## Drawing 1: Local and remote {#sec-drawing-local-remote}
 
 **What it should make clear:** that there are two copies of the work, one on the learner's laptop (local) and one on GitHub (remote), and that Git moves changes between them. This is the mental model everything else hangs on.
 
@@ -20,7 +20,7 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 *Placeholder. Insert the developed drawing here.*
 :::
 
-## Drawing 2: The commit cycle {#drawing-commit-cycle}
+## Drawing 2: The commit cycle {#sec-drawing-commit-cycle}
 
 **What it should make clear:** the loop of stage, commit, push, and why a commit is a labeled snapshot rather than a save.
 
@@ -32,7 +32,7 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 *Placeholder. Insert the developed drawing here.*
 :::
 
-## Drawing 3: Branching {#drawing-branching}
+## Drawing 3: Branching {#sec-drawing-branching}
 
 **What it should make clear:** that a branch is a parallel line of work that splits off and later rejoins, and that this is what makes parallel collaboration safe.
 
@@ -44,7 +44,7 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 *Placeholder. Insert the developed drawing here.*
 :::
 
-## Drawing 4: The pull request {#drawing-pull-request}
+## Drawing 4: The pull request {#sec-drawing-pull-request}
 
 **What it should make clear:** that a pull request is a request to merge one branch into another, reviewed by a human before it happens. This is the centerpiece of the workshop, so the drawing matters most here.
 
@@ -56,4 +56,4 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 *Placeholder. Insert the developed drawing here.*
 :::
 
-TODO: Open an issue on this website for the drawings with sub-issues for each of the four drawings.
+Progress on developing these four drawings is tracked in the issues on this handbook's repository, one issue per drawing under a parent tracking issue.

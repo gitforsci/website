@@ -1,6 +1,6 @@
 # Instructor setup {#sec-teacher-setup}
 
-An instructor needs everything a learner needs, and then some. This chapter covers the extra accounts and the extra setup. Do the full learner setup (@sec-learner-setup) first; this chapter assumes you have.
+An instructor needs everything a learner needs, and then some. This chapter covers the extra accounts and the extra setup that only the person running the course requires. You also complete the full learner setup yourself; that checklist is the next chapter (@sec-learner-setup), and the test-learner account described below is how you walk it as a learner would.
 
 ## What an instructor needs beyond the learner list
 

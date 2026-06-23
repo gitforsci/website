@@ -32,6 +32,4 @@ This workshop is open. Before you teach it, see @sec-citation-license for how th
 
 ## A note on scope
 
-This handbook covers **Workshop 1: Git and GitHub foundations**. A follow-up workshop on agentic coding for collaboration and scientific work exists as a separate effort and is mentioned only where relevant. Everything here is about the foundations workshop.
-
-TODO: keep references to follow-up workshop minimal and only in relation to the fact that building confidence in using Git / GitHub terminology for collaboration sets a foundation to use agentic AI to interact with the technology more cofidently.
+This handbook covers **Workshop 1: Git and GitHub foundations**. A follow-up workshop on agentic coding for collaboration and scientific work exists as a separate effort. It is mentioned only in one respect: building confidence with the terminology of Git and GitHub for collaboration is what lets a researcher later use agentic AI tools to interact with the technology more confidently. Everything else here is about the foundations workshop.

@@ -1,18 +1,19 @@
 # Three-org setup {.unnumbered}
 
-This is the infrastructure part. By the end of it you will have three GitHub organizations, the repositories the workshop needs, and a published cohort website.
+This is the infrastructure part. It explains the three-organization model the course runs on, and what you actually have to set up to teach an iteration.
 
-TODO: Revise, because the instructor will not create three new GitHub organizations. Rather, they will create one new GitHub org for the specific course iteration which uses the template from gitforsci-dev/website. The gitforsci org is only for this main guide, which doesn't need to be copied or forked as it holds the main overview of the overall course structure. Only if there is a substantial change in the overall course structure or pedagogy would it make sense to establish a new org for the OER guide, however, in that case it might be a new course overall. All exercises and assignments for the new course to be taught also come from templates in gitforsci-dev/, so again only one new org to establish. This section should therefore follow more on the overall strategy of this 3-org mode. 
+The important thing to understand up front: you are not creating three organizations from scratch. The course already lives in two long-lived organizations, `gitforsci` and `gitforsci-dev`, and they stay as they are from one iteration to the next. To run a course, you create **one** new organization for your specific iteration, generated from the templates in `gitforsci-dev`. That single new org is the bulk of the setup work in this part.
 
-- @sec-three-orgs explains the three-organization model: what each org is for and how material flows between them. Read this before you create anything.
-- @sec-create-orgs is the checklist to create the three organizations and their core repositories, click by click in the GitHub interface.
-- @sec-website is the checklist to stand up and publish the cohort website from the template.
+- @sec-three-orgs explains the model: what each of the three organizations is for, why they are separate, and how material and citation flow between them. Read this before you create anything.
+- @sec-create-orgs is the checklist to create your iteration organization and populate it from the templates, click by click in the GitHub interface.
+- @sec-website is the checklist to stand up and publish the cohort website from the `gitforsci-dev/website` template.
 
 ```{mermaid}
-TODO: Redraw based on the new information.
-flowchart LR
-    A[Understand the model<br/>three-orgs] --> B[Create the orgs and repos<br/>create-orgs]
-    B --> C[Build and publish the website<br/>website]
+flowchart TD
+    A["Understand the model<br/>(three-orgs)"] --> B["Create your iteration org<br/>from the dev templates<br/>(create-orgs)"]
+    B --> C["Build and publish<br/>the cohort website<br/>(website)"]
 ```
 
-Everything here is described as manual steps in the GitHub web interface and RStudio. No scripting is required.
+You would only ever create a new central or development organization if you were starting a substantially different course, with its own pedagogy and structure. For running another iteration of this course, the answer is always one new iteration org.
+
+Everything here is described as manual steps in the GitHub web interface and RStudio, with the learner-invitation work scripted through the `ghclass` R package (@sec-create-orgs).

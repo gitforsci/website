@@ -30,29 +30,18 @@ Read the parts in order the first time through. Parts 2 and 3 are the setup core
 The workshop is not a single repository. It is a small family of repositories spread across three GitHub organizations, plus the accounts and software each person needs. Before any of that makes sense, it helps to see the whole board.
 
 ```{mermaid}
-TODO: The flow diagram is poorly visualized. Dark grey background box, the arrows don't flow well. Offer me some alternatives. Is there an alternative technology that would be better to visualize the flow?
-flowchart LR
-    subgraph people[People]
-        T[Instructor]
-        L[Learner]
-    end
-    subgraph tools[Accounts and software]
-        GH[GitHub account]
-        R[R and RStudio]
-        G[Git]
-        EL[Element / Matrix chat]
-    end
-    subgraph orgs[Three GitHub organizations]
-        C[Central org<br/>handbook, citation, DOI]
-        DEV[Dev org<br/>templates and material]
-        IT[Iteration org<br/>one per cohort]
-    end
-    T --> GH & R & G & EL
-    L --> GH & R & G & EL
-    T --> C & DEV & IT
-    L --> IT
-    DEV -->|template| IT
-    C -.->|citation| DEV & IT
+%%| label: fig-overview
+flowchart TD
+    classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
+
+    P["People<br/><b>Instructor</b> and <b>Learner</b>"]:::layer
+    A["Accounts and software<br/>GitHub account · R and RStudio · Git · Element/Matrix chat"]:::layer
+    O["Three GitHub organizations<br/><b>gitforsci</b> (handbook, citation, DOI)<br/><b>gitforsci-dev</b> (templates, material)<br/><b>gitforsci-00x</b> (one per cohort)"]:::layer
+
+    P --> A
+    A --> O
 ```
+
+Read it top to bottom. **People** (you and your learners) each need the **accounts and software** in the middle row. Those, in turn, are what let everyone work across the **three GitHub organizations** at the bottom: the instructor sets up the iteration org from the templates in the development org, the canonical citation flows down from the central org, and learners live in the iteration org. The detail of those three organizations is the whole of Part 3 (@sec-three-orgs).
 
 The detail comes later. Part 2 covers the accounts and software box, and Part 3 covers the three organizations. The point of the map is that everything in this handbook is somewhere on it.

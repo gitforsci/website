@@ -21,8 +21,8 @@ book:
         - ch-live-drawings.qmd
     - part: part-prerequisites.qmd
       chapters:
-        - ch-learner-setup.qmd
         - ch-teacher-setup.qmd
+        - ch-learner-setup.qmd
     - part: part-setup.qmd
       chapters:
         - ch-three-orgs.qmd
