@@ -52,9 +52,9 @@ The editable source lives next to the image (`images/drawing-3-branching.excalid
 
 **Design brief:** complete the merge point from Drawing 3, but pause at the join to show the review step: a person looking at the diff, approving, and only then the lines joining. Make the human-in-the-loop visible.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 4: the pull request. The pause at the join is the point; the lines only meet after a human has looked at the diff.](images/drawing-4-pull-request.png){#fig-drawing-pull-request fig-alt="The branching picture from drawing 3, completed. The green dev line stops short of the main line. A stick figure stands at the gap next to an orange box labelled the diff with plus added and minus removed lines. Above them a label reads: pull request, a human reviews first. A dashed green arrow labelled merge (after approval) joins the dev line onto the main line at a green commit dot."}
+
+The editable source lives next to the image (`images/drawing-4-pull-request.excalidraw`). This drawing carries the centerpiece block; the pause at the review is where to slow down and let the room look.
 
 Progress on developing these four drawings is tracked in the issues on this handbook's repository, one issue per drawing under a parent tracking issue.
 
