@@ -1,0 +1,120 @@
+- # gitforsci-ghe lesson plan (run of show)
+    - Wednesday 15 July 2026, 09:30-14:30, ETH Zurich. Pre-dry-run version; per-block times get updated after the 13 July dry-run (same file, new commit, no amend).
+- # Operating rules
+    - **Rhythm per block**: short slides, my turn (learners watch, hands off keyboards), your turn (learners repeat, countdown running, yellow sticky note as the done signal).
+    - **Bounded regroup**: at most 2 minutes fixing any one learner problem in front of the room; then park-and-pair (they pair with a neighbour or the helper) and get a 1:1 fix at the next break.
+    - **Cut-first order**: B7 Publish is cut first (fallback slide stands alone); live drawings are cut second (switch to the printed exports from the handbook appendix); B6 and B8 are never cut; B8 starts hard at 14:15, whatever block is running stops.
+    - **Seed-PR fallback (B6)**: every manuscript repo has a pre-opened seed PR ("Seed: suggestions to review"); a learner whose partner is not ready reviews the seed PR in their own repo. Nobody waits on anybody. Default is partner-pair review; if no helper was recruited by 11 July (kill criterion 4), seed-PR review becomes the default and pairs become the bonus.
+    - **Projector-off ritual**: each live drawing is a deliberate act. Say "the projector goes to sleep", blank the screen, stand at the board, draw and narrate, under 3 minutes. Fallback for any drawing: the printed export.
+    - **Undecided drafts**: the staged merge-conflict demo (ghe #23) and the terminal echo (ghe #24) are OUT by default. Decision rule: only if the 13 July dry-run comes in under time for B2-B6 does one of them go in; if any block overruns, both close as "not this iteration".
+- # Arrival (09:30-10:00, 30 min)
+    - Room set up: flipchart or whiteboard visible from all seats, chunky dark markers, A3 paper (2 sheets per learner), thin pens, yellow sticky notes on every seat.
+    - Setup check as learners arrive: Element joined, RStudio opens, GitHub login works. Anyone with a broken setup gets the helper and the rescue card, not the instructor.
+    - If kill criterion 2 fired (under 70 percent verified pushes on 13 July): this slot becomes the setup clinic, rescue card as the handout, B1 gets the clinic slide.
+- # B1: Welcome, concept-map intro, baseline map (10:00-10:30, 30 min)
+    - ## Slides (10 min)
+        - Meet the lecturer (1)
+        - What this day is, and is not (2)
+            - **Key line, said in minute 5, not minute 90**: "Today is not an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop."
+            - **Key line (safe-to-fail promise)**: "It is safe to fail here. Everything we do today is reversible, and breaking things is part of the plan."
+        - Learning objectives, teaching strategy, schedule (3)
+        - Motivation, four Openscapes slides, ending by minute 10 (4)
+    - ## Concept-map intro (8 min)
+        - Exemplar (tea map) on the slide; read one arrow out loud as a sentence: "the kettle HEATS the water."
+        - Name what it is not: not a flowchart, not a timeline, not a list.
+    - ## Your turn: baseline map (10 min, countdown 8)
+        - One single prompt: "How does a document you write reach your co-author and come back? Draw it as a concept map."
+        - Learners keep the map; it returns at 14:15.
+        - Expected content: email attachments, Dropbox, Google Docs, file naming. Do not correct anything.
+    - Buffer (2)
+- # B2: Create and clone (10:30-11:00, 30 min)
+    - ## Live drawing 1: local and remote (3 min, projector off)
+        - Two boxes, clone arrow first, push and pull as they come up.
+    - ## My turn (12 min)
+        - Create `website` repo on GitHub with README (2)
+        - RStudio settings: never save .RData, native pipe (2)
+        - Clone via File > New Project > Version Control > Git (3)
+        - Inspect the local repo: Files tab, Git tab, `.gitignore` and `.Rproj` with the yellow ? icons (5)
+            - **Carried-over cis learner question, answer it proactively**: "why do .Rproj session files show up?" These are RStudio helper files; the yellow ? means Git sees them but has no instruction yet; dot-files are hidden by the operating system.
+    - ## Your turn (12 min, countdown 10)
+        - Learners create and clone their own `website` repo. Sticky note when the two yellow ? icons are visible.
+    - Regroup (3), then the break slide: back at 11:15.
+- # Break (11:00-11:15)
+    - 1:1 fixes for parked learners happen here, helper takes the list.
+- # B3: The commit cycle (11:15-11:45, 30 min)
+    - ## Live drawing 2: the commit cycle (3 min, projector off)
+        - Working files, stage, commit as labelled snapshot on the history line, push. Leave room to the right; the history grows.
+    - ## My turn (13 min)
+        - Edit README, save, blue M (2)
+        - The mantra, in order: Pull, Stage, Commit, Push (4)
+        - History on GitHub: commit message and file change (2)
+        - **Revert demo, instructor only** (3)
+            - Make a deliberately bad commit, revert it via the history, show that history keeps both the mistake and the undo.
+            - **Key line, out loud**: "Almost everything in Git is reversible." (Carried-over cis question: "how do I take a commit back?")
+        - Credentials moment (2): hands up, who was asked for username and password? `gitcreds::gitcreds_set()` with the PAT from pre-work step 5. Fix this now, the afternoon depends on pushing.
+    - ## Your turn (12 min, countdown 10)
+        - Full cycle on their own README, verify the commit on GitHub. Target: every learner has 2 pushed commits by 11:45.
+    - Regroup (2)
+- # B4: Collaboration cliffhanger (11:45-12:15, 30 min)
+    - ## Pairing slide (5 min)
+        - Neighbour pairs formed on the day (triple if odd). GitHub usernames written on each other's sticky notes. The sticky note is the pairing record and returns in B6.
+    - ## Your turn: the push wall (12 min, countdown 10)
+        - Clone the partner's `website` repo, edit README, save, stage, commit, push. Slide asks: "What happens?"
+        - Everyone hits the 403. Lowest-stakes failure of the day, by design.
+    - ## Debrief (8 min)
+        - Read but no write; collaborator access exists but does not scale; fork in one sentence, not today.
+        - **Key line (the cliffhanger, do not resolve it)**: "After lunch we solve this properly, with branches and pull requests."
+    - ## Lunch slide (5 min)
+        - **Hard 12:55 return.** The afternoon starts hands-on; your partner is waiting.
+- # Lunch (12:15-13:00)
+    - Instructor: eat, then prep the board region for drawings 3 and 4 (they share the story). Check seed PRs are still open.
+- # B5: Branch (13:00-13:30, 30 min)
+    - ## Live drawing 3: branching (3 min, projector off)
+        - Main line splits, commits land on the branch, merge point stays EMPTY. Say: "we finish this picture in the next block."
+    - ## My turn (12 min)
+        - Clone `man-washinvestments-USERNAME` (3)
+        - Git pane: New Branch `dev`; read the origin message out loud (2)
+        - Edit author details in `index.qmd`, Render (3): packages are pre-installed from pre-work, render takes seconds; commented install chunk is fallback only, never run installs for the room
+        - Switch main and dev in the Git pane: the change lives only on dev (2)
+        - Commit "update author details", push (2)
+    - ## Your turn (12 min, countdown 10)
+        - Repeat on their own manuscript repo. Sticky note when the push finishes.
+        - If the roster pivot happened (kill criterion 1): learners without a repo use the shared demo repos, names on the board.
+    - Regroup check, before B6 (3): "Is your branch pushed? Thumbs up."
+- # B6: Pull request, review, merge (13:30-14:05, 35 min) [PROTECTED]
+    - ## Live drawing 4: the pull request (3 min, projector off)
+        - Complete the merge point from drawing 3; pause at the join; person, diff, review; only then the lines meet. Slow down at the pause, let the room look.
+    - ## My turn (12 min)
+        - On GitHub: switch to dev, Compare & pull request, title "Add author details to manuscript" (2)
+        - Request reviewer; walk Commits and Files changed (2)
+        - Review with line comments, reuse the cis examples verbatim: "That's not a good title for a manuscript. Please suggest 2 alternatives." / "This list is not complete." (3)
+        - Open an issue with a task list next to the PR (1)
+        - Merge, confirm, tick off the task in the issue (2)
+        - RStudio: switch to main, read "behind origin/main, can be fast-forwarded" out loud, Pull (1)
+        - **Key line (the gotcha, carried-over cis stumble)**: "Merged? Then pull main, and switch back to dev." (1)
+    - ## Your turn (17 min, countdown 15)
+        - Open PR from dev, request review FROM THE B4 PARTNER (sticky note), review the partner's PR with at least one line comment, merge own PR after review, pull main, switch back to dev.
+        - On the slide: "Partner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody."
+        - Target: every learner opens a PR, writes a line comment, merges, pulls, inside the block.
+    - Regroup (3). **Never cut this block.** If behind, B7 dies, not B6.
+- # B7: Publish (14:05-14:15, 10 min) [FIRST TO CUT]
+    - ## Our turn (10 min)
+        - Settings > Pages > deploy from branch, main, /docs, Save. Address into the About description. Open it: the manuscript is on the web.
+        - While Pages builds: point at the docs folder, that is the rendered manuscript.
+    - ## Cut case
+        - At 14:05, if behind: skip to the fallback slide, one breath ("Settings, Pages, deploy from branch, docs folder, save; this website is published exactly this way"), hand the time to B8.
+- # B8: Concept map revisit and wrap-up (14:15-14:30, 15 min) [PROTECTED, HARD START]
+    - ## Your turn: the second map (9 min, countdown 8)
+        - "Draw a concept map of Git and GitHub as you understand them now. Use the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review."
+        - Then side by side with the morning map, share with the partner.
+        - Consent asked on the slide: photograph both maps, anonymously, for the retrospective.
+        - Fallback if the baseline went badly in B1: instructor draws the Git map on the board, room calls out the verb for each arrow.
+    - ## Wrap-up (6 min)
+        - The day in one line: create, clone, commit, push, branch, pull request, review, merge, publish. Point at the drawings on the board while saying it.
+        - Side benefits: RStudio fluency, first taste of Quarto, reversibility as a habit.
+        - Follow-up: agentic coding workshop builds on exactly today's skills; interest capture via the pinned Element thread.
+        - Feedback: survey link into the Element channel while the slide is up. End on momentum, done by 14:30.
+- # After the room empties
+    - Photograph consenting learners' map pairs (baseline and closing).
+    - Collect parked-problem list from the helper; answer open Element questions the same week.
+    - Note actual per-block times on this plan for the retrospective (ghe #29).
