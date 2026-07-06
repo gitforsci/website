@@ -40,9 +40,9 @@ The editable source lives next to the image (`images/drawing-2-commit-cycle.exca
 
 **Design brief:** a main line with a branch splitting away, a couple of commits on the branch, and the branch rejoining at a merge point. Draw the split live, add commits as learners make them, then leave the merge point empty until Drawing 4.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 3: branching. The merge point is deliberately left empty; Drawing 4 completes it.](images/drawing-3-branching.png){#fig-drawing-branching fig-alt="A horizontal black line labelled main with two blue commit dots. A green line labelled dev (a branch) splits away upward and carries two green commit dots. A dashed grey circle sits on the main line to the right with the caption: question mark, next drawing. A label reads: split, work in parallel, safely."}
+
+The editable source lives next to the image (`images/drawing-3-branching.excalidraw`). Rehearse this one back-to-back with Drawing 4 at least once; they share the board and the story.
 
 ## Drawing 4: The pull request {#sec-drawing-pull-request}
 
