@@ -16,9 +16,9 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 
 **Design brief:** two boxes, "my computer" and "GitHub," with arrows labeled in the learners' own future vocabulary (push, pull, clone). Draw the clone arrow first, then add push and pull as those actions come up.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 1: local and remote. Draw the boxes first, then the clone arrow, then push and pull as those actions come up.](images/drawing-1-local-remote.png){#fig-drawing-local-remote fig-alt="Two rounded boxes labelled my computer (local) and GitHub (remote). A blue arrow labelled clone (first copy, once) curves from GitHub to my computer, a green arrow labelled push points from my computer to GitHub, and an orange arrow labelled pull points from GitHub to my computer."}
+
+The editable source lives next to the image (`images/drawing-1-local-remote.excalidraw`). This is the digital reference version; in the room, draw it by hand.
 
 ## Drawing 2: The commit cycle {#sec-drawing-commit-cycle}
 
