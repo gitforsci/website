@@ -28,9 +28,9 @@ The editable source lives next to the image (`images/drawing-1-local-remote.exca
 
 **Design brief:** a small loop showing working files, a staging step, a commit (drawn as a labeled box on a line), and a push to the remote. Emphasize that the line of commits is a history you can walk back along.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 2: the commit cycle. Leave room on the right of the history line; it grows as the day goes on.](images/drawing-2-commit-cycle.png){#fig-drawing-commit-cycle fig-alt="Two rounded boxes labelled working files (your edits) and staging area (what goes in), joined by a blue arrow labelled stage. A green arrow labelled commit points down from the staging area onto a horizontal history line carrying three labelled snapshot boxes c1, c2, and c3. An orange arrow labelled push leads from the history line to a box labelled GitHub (remote). A caption reads: each commit, a labeled snapshot you can walk back to."}
+
+The editable source lives next to the image (`images/drawing-2-commit-cycle.excalidraw`). When drawing this by hand, plan the board so the history line has room to grow to the right.
 
 ## Drawing 3: Branching {#sec-drawing-branching}
 
