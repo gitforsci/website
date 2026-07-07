@@ -51,7 +51,7 @@
         - **Revert demo, instructor only** (3)
             - Make a deliberately bad commit, revert it via the history, show that history keeps both the mistake and the undo.
             - **Key line, out loud**: "Almost everything in Git is reversible." (Carried-over cis question: "how do I take a commit back?")
-        - Credentials moment (2): hands up, who was asked for username and password? `gitcreds::gitcreds_set()` with the PAT from pre-work step 5. Fix this now, the afternoon depends on pushing.
+        - Credentials moment (2): hands up, who was asked for username and password? `gitcreds::gitcreds_set()` with the PAT from pre-work step 4. Fix this now, the afternoon depends on pushing.
     - ## Your turn (12 min, countdown 10)
         - Full cycle on their own README, verify the commit on GitHub. Target: every learner has 2 pushed commits by 11:45.
     - Regroup (2)
