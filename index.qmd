@@ -2,11 +2,11 @@
 
 This is an instructor handbook. It is not the course itself, it is the guide for the person who runs the course.
 
-TODO: references.bib was replaced by gitforsci.bib (papers on teaching concepts for this class), to be used in the next redevelopment iteration. Some references deleted with references.bib are still missing and need to be restored.
-
 **Git for Scientists** is a four-hour, hands-on workshop that teaches researchers the foundations of Git and GitHub for collaboration. The teaching material (slides, pre-work, exercises) lives in separate repositories. This book explains how those pieces fit together and gives you the checklists to set up and deliver the workshop yourself.
 
 The material is published as an Open Educational Resource (OER). That means you are free to take it, adapt it, and teach it. This handbook exists so that doing so is a matter of working through checklists rather than reverse-engineering someone else's setup.
+
+Teaching Git and GitHub is also teaching good scientific practice. Version control is a foundational research data management and code management skill, and the collaboration workflow at the heart of this workshop (tracked changes, reviewed pull requests, an open history) is what data stewardship and reproducible software engineering ask of a research group. This book therefore sits in two contexts at once: it is an OER for educators, and it is a contribution to the culture of open, well-managed research the course was funded to support (@sec-appendix-funding).
 
 ## Who this book is for
 
@@ -19,11 +19,11 @@ There are two readers in mind, and the book is layered so each can find their pa
 Throughout the book, look for these callouts:
 
 ::: {.callout-note appearance="simple"}
-**New educator** — context and reasoning you need the first time through.
+**New educator**: context and reasoning you need the first time through.
 :::
 
 ::: {.callout-tip appearance="simple"}
-**Repeat instructor** — the short version once you already know the setup.
+**Repeat instructor**: the short version once you already know the setup.
 :::
 
 ## How the material is licensed and cited
@@ -32,4 +32,9 @@ This workshop is open. Before you teach it, see @sec-citation-license for how th
 
 ## A note on scope
 
-This handbook covers **Workshop 1: Git and GitHub foundations**. A follow-up workshop on agentic coding for collaboration and scientific work exists as a separate effort. It is mentioned only in one respect: building confidence with the terminology of Git and GitHub for collaboration is what lets a researcher later use agentic AI tools to interact with the technology more confidently. Everything else here is about the foundations workshop.
+This handbook covers **Workshop 1: Git and GitHub foundations**. Two follow-ups build on it:
+
+- A planned **second four-hour part on task and project management** (using GitHub Projects, issues, and milestones) takes the same group from collaborating on files to planning and tracking work together. It is not developed yet, and will likely live under the same website repository template as this part.
+- A further workshop on agentic coding for collaboration and scientific work exists as a separate effort on a longer horizon. It is mentioned here only in one respect: building confidence with the terminology of Git and GitHub for collaboration is what lets a researcher later use agentic AI tools to interact with the technology more confidently.
+
+Everything else in this handbook is about the foundations workshop.

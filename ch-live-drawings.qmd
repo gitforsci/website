@@ -16,9 +16,9 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 
 **Design brief:** two boxes, "my computer" and "GitHub," with arrows labeled in the learners' own future vocabulary (push, pull, clone). Draw the clone arrow first, then add push and pull as those actions come up.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 1: local and remote. Draw the boxes first, then the clone arrow, then push and pull as those actions come up.](images/drawing-1-local-remote.png){#fig-drawing-local-remote fig-alt="Two rounded boxes labelled my computer (local) and GitHub (remote). A blue arrow labelled clone (first copy, once) curves from GitHub to my computer, a green arrow labelled push points from my computer to GitHub, and an orange arrow labelled pull points from GitHub to my computer."}
+
+The editable source lives next to the image (`images/drawing-1-local-remote.excalidraw`). This is the digital reference version; in the room, draw it by hand.
 
 ## Drawing 2: The commit cycle {#sec-drawing-commit-cycle}
 
@@ -28,9 +28,9 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 
 **Design brief:** a small loop showing working files, a staging step, a commit (drawn as a labeled box on a line), and a push to the remote. Emphasize that the line of commits is a history you can walk back along.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 2: the commit cycle. Leave room on the right of the history line; it grows as the day goes on.](images/drawing-2-commit-cycle.png){#fig-drawing-commit-cycle fig-alt="Two rounded boxes labelled working files (your edits) and staging area (what goes in), joined by a blue arrow labelled stage. A green arrow labelled commit points down from the staging area onto a horizontal history line carrying three labelled snapshot boxes c1, c2, and c3. An orange arrow labelled push leads from the history line to a box labelled GitHub (remote). A caption reads: each commit, a labeled snapshot you can walk back to."}
+
+The editable source lives next to the image (`images/drawing-2-commit-cycle.excalidraw`). When drawing this by hand, plan the board so the history line has room to grow to the right.
 
 ## Drawing 3: Branching {#sec-drawing-branching}
 
@@ -40,9 +40,9 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 
 **Design brief:** a main line with a branch splitting away, a couple of commits on the branch, and the branch rejoining at a merge point. Draw the split live, add commits as learners make them, then leave the merge point empty until Drawing 4.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 3: branching. The merge point is deliberately left empty; Drawing 4 completes it.](images/drawing-3-branching.png){#fig-drawing-branching fig-alt="A horizontal black line labelled main with two blue commit dots. A green line labelled dev (a branch) splits away upward and carries two green commit dots. A dashed grey circle sits on the main line to the right with the caption: question mark, next drawing. A label reads: split, work in parallel, safely."}
+
+The editable source lives next to the image (`images/drawing-3-branching.excalidraw`). Rehearse this one back-to-back with Drawing 4 at least once; they share the board and the story.
 
 ## Drawing 4: The pull request {#sec-drawing-pull-request}
 
@@ -52,8 +52,31 @@ The main list of planned drawings is collected in @sec-appendix-drawings so you 
 
 **Design brief:** complete the merge point from Drawing 3, but pause at the join to show the review step: a person looking at the diff, approving, and only then the lines joining. Make the human-in-the-loop visible.
 
-::: {.callout-note appearance="simple"}
-*Placeholder. Insert the developed drawing here.*
-:::
+![Drawing 4: the pull request. The pause at the join is the point; the lines only meet after a human has looked at the diff.](images/drawing-4-pull-request.png){#fig-drawing-pull-request fig-alt="The branching picture from drawing 3, completed. The green dev line stops short of the main line. A stick figure stands at the gap next to an orange box labelled the diff with plus added and minus removed lines. Above them a label reads: pull request, a human reviews first. A dashed green arrow labelled merge (after approval) joins the dev line onto the main line at a green commit dot."}
+
+The editable source lives next to the image (`images/drawing-4-pull-request.excalidraw`). This drawing carries the centerpiece block; the pause at the review is where to slow down and let the room look.
 
 Progress on developing these four drawings is tracked in the issues on this handbook's repository, one issue per drawing under a parent tracking issue.
+
+## Concept maps as bookends {#sec-concept-maps}
+
+A concept map is a small diagram of things (nodes) joined by labelled arrows, where the label on each arrow is a verb: the kettle HEATS the water, the cup HOLDS the tea. Concept maps surface mental models. What a learner draws shows how they currently believe a system fits together, including the parts they have wired up wrongly, which no quiz question would reveal [@wilson2019teaching].
+
+In this workshop, concept maps are used as bookends. At the start of the day, learners draw a baseline map of how a document currently travels between them and a co-author. At the end of the day, they draw a map of Git and GitHub using the vocabulary of the day, then compare the two. The comparison is the point: the closing map makes the day's learning visible to the learner, not just to the instructor.
+
+### Introducing concept maps
+
+Most learners have not drawn a concept map before, and without an introduction they produce flowcharts or bullet lists instead. Introduce the technique with an exemplar on an everyday topic, deliberately far away from Git, so nobody confuses learning the technique with being assessed on content:
+
+1. Show the exemplar (below) and name its parts: nodes are things, arrows are relationships, and every arrow carries a verb label.
+2. Point at one arrow and read it aloud as a sentence ("the kettle HEATS the water"). If an arrow cannot be read as a sentence, it needs a better label.
+3. Say explicitly what a concept map is not: not a flowchart, not a timeline, not a list. There is no start or end, only things and how they relate.
+4. Give a single, concrete prompt and a time box, then step back.
+
+![The exemplar concept map on an everyday topic: things joined by labelled verbs.](images/concept-map-exemplar.png){#fig-concept-map-exemplar fig-alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS."}
+
+The editable source for this exemplar lives next to the image (`images/concept-map-exemplar.excalidraw`). Test the exemplar and your baseline prompt on one colleague before the workshop; if they hand back a flowchart or a list, the introduction needs revising, not the colleague.
+
+### Fallback for the closing map
+
+If the morning baseline was skipped or went badly, do not force the comparison at the end. Instead, draw the Git concept map yourself on the board as the closing recap, and ask learners to call out the verb for each arrow before you write it. The room still rehearses the vocabulary and still sees the day assembled into one picture, without anyone being put on the spot with an unfamiliar technique.

@@ -14,5 +14,5 @@ Two things in this handbook are deliberately unfinished, and they are yours to d
 
 - **The live drawings** (@sec-live-drawings) are placeholders. The canonical set of four is developed centrally and replaces the placeholders in this handbook as it is ready; @sec-appendix-drawings tracks the list. Beyond that canonical set, each iteration produces its own drawings, including ones learners make, and these are worth keeping as part of the record of how that cohort went. Capture them as photos attached to issues in the iteration org (@sec-three-orgs), so each cohort's specifics and learnings live alongside that cohort's material rather than getting lost.
 
-- **The follow-up workshop** on agentic coding for collaboration and scientific work builds on these foundations. It is a separate effort, out of scope here, but this workshop is its prerequisite.
+- **The second part** on task and project management (GitHub Projects, issues, and milestones) is planned as another four-hour workshop that builds directly on these foundations. It is not developed yet, and is expected to live under the same website repository template as this part. A further workshop on agentic coding for collaboration and scientific work sits on a longer horizon as a separate effort; this workshop is its prerequisite too.
 

@@ -7,8 +7,8 @@ flowchart TD
     classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
 
     B["<b>Before the day</b><br/>pre-course work: accounts, installs, first commit"]:::layer
-    D["<b>The four hours</b><br/>intro and motivation → create and clone → branch →<br/>pull request and merge → publish → wrap-up"]:::layer
-    A["<b>After the day</b><br/>follow-up workshop: agentic coding"]:::layer
+    D["<b>The four hours</b><br/>welcome and baseline map → create and clone → commit cycle →<br/>team work → branch → pull request → wrap-up and closing map"]:::layer
+    A["<b>After the day</b><br/>second part: task and project management; later, agentic coding"]:::layer
 
     B --> D --> A
 ```
@@ -22,7 +22,7 @@ The pre-work is a short, numbered sequence the learner follows on their own: cre
 The verification step is the point. A learner whose first commit landed before the workshop arrives ready to learn. A learner who skipped the pre-work is a support case you address through direct communication before the workshop, not during the teaching. Pre-work gaps cannot be fixed in a break; the pre-course survey and follow-up (@sec-before) exist so that nobody arrives unprepared.
 
 ::: {.callout-note appearance="simple"}
-**New educator** — protect the pre-work due date. Send it with enough lead time. The pre-course survey (@sec-before) is partly there to tell you who has not finished.
+**New educator**: protect the pre-work due date. Send it with enough lead time. The pre-course survey (@sec-before) is partly there to tell you who has not finished.
 :::
 
 ## The four hours are mostly hands-on
@@ -39,12 +39,14 @@ The headline outcome is Git and GitHub for collaboration. But because the worksh
 
 - **A first taste of Quarto.** The material they touch is authored in Quarto. They see how prose, code, and output live in one document, which plants a seed for reproducible reporting.
 
-- **A first look at the terminal (in later iterations).** This version of the course stays entirely in the point-and-click interface of RStudio and GitHub. A small amount of terminal work is planned for a future iteration, at which point this guide will be updated and the side benefit becomes "less afraid of the command line." For now, name the first two benefits and leave the terminal out of the list for the cohorts that do not include it.
+- **Reversibility as a habit.** The `gitforsci-ghe` run made this an explicit side benefit: a revert demonstration and the repeated message that almost everything in Git is reversible leave learners more willing to try things, on their own work, because they trust they can undo. Name it in the wrap-up alongside the two above.
+
+The course stays entirely in the point-and-click interface of RStudio and GitHub; there is no terminal work in the base workshop, and the run of show (@sec-run-of-show) is built on that. A small amount of terminal work could be added in a future iteration, at which point "less afraid of the command line" would join this list; until then, do not promise it.
 
 Name these benefits in the wrap-up. Learners came for Git, and it helps them to notice they also moved forward on three other fronts.
 
 ## The wrap-up points forward
 
-The last block is not a summary slide. It is a short reflection on what they can now do, an explicit naming of the side benefits above, and a pointer to the follow-up workshop on agentic coding. The goal is momentum: they should leave wanting to use this on their own work tomorrow.
+The last block is not a summary slide. It is a short reflection on what they can now do, an explicit naming of the side benefits above, and a pointer to what comes next: the planned second part on task and project management, and agentic coding on the longer horizon (see [what is still to come](summary.qmd)). The goal is momentum: they should leave wanting to use this on their own work tomorrow.
 
 
