@@ -1,0 +1,9 @@
+# Funding and support {#sec-appendix-funding}
+
+The development of this course was funded and supported by the following institutions and networks. This handbook and the workshop it describes exist because of that support.
+
+- **[swissuniversities Open Science Programme](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme)** funded the work through the **[Data Stewardship Network at ETH Zurich](https://library.ethz.ch/en/researching-and-publishing/data-management-and-policies/research-data-management/data-stewardship.html)**, which places the course in the wider effort to strengthen research data management and data stewardship at Swiss universities.
+- The **[Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/)** hosted and developed the course.
+- The **[Swiss Reproducibility Network (SwissRN)](https://www.swissrn.org/contents/community/nodes/)** local node at ETH Zurich supported the work as part of its mission to promote rigorous and reproducible research.
+
+If you reuse or adapt this material, an acknowledgement of this support alongside the citation (@sec-citation-license) is appreciated, though the license does not require it.

@@ -6,6 +6,8 @@ This is an instructor handbook. It is not the course itself, it is the guide for
 
 The material is published as an Open Educational Resource (OER). That means you are free to take it, adapt it, and teach it. This handbook exists so that doing so is a matter of working through checklists rather than reverse-engineering someone else's setup.
 
+Teaching Git and GitHub is also teaching good scientific practice. Version control is a foundational research data management and code management skill, and the collaboration workflow at the heart of this workshop (tracked changes, reviewed pull requests, an open history) is what data stewardship and reproducible software engineering ask of a research group. This book therefore sits in two contexts at once: it is an OER for educators, and it is a contribution to the culture of open, well-managed research the course was funded to support (@sec-appendix-funding).
+
 ## Who this book is for
 
 There are two readers in mind, and the book is layered so each can find their path.
