@@ -32,4 +32,9 @@ This workshop is open. Before you teach it, see @sec-citation-license for how th
 
 ## A note on scope
 
-This handbook covers **Workshop 1: Git and GitHub foundations**. A follow-up workshop on agentic coding for collaboration and scientific work exists as a separate effort. It is mentioned only in one respect: building confidence with the terminology of Git and GitHub for collaboration is what lets a researcher later use agentic AI tools to interact with the technology more confidently. Everything else here is about the foundations workshop.
+This handbook covers **Workshop 1: Git and GitHub foundations**. Two follow-ups build on it:
+
+- A planned **second four-hour part on task and project management** (using GitHub Projects, issues, and milestones) takes the same group from collaborating on files to planning and tracking work together. It is not developed yet, and will likely live under the same website repository template as this part.
+- A further workshop on agentic coding for collaboration and scientific work exists as a separate effort on a longer horizon. It is mentioned here only in one respect: building confidence with the terminology of Git and GitHub for collaboration is what lets a researcher later use agentic AI tools to interact with the technology more confidently.
+
+Everything else in this handbook is about the foundations workshop.
