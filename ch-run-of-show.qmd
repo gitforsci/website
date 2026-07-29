@@ -149,7 +149,7 @@ If you are behind when you reach this block, skip the demo with one sentence (a 
 - Recap what they can now do, mapped to the three objectives: commit cycle, collaboration, concept map.
 - Name why it matters: issues, commit messages, and reviews are visible to other people and show how you work, a signal that grows as more content is AI-generated.
 - Name the side benefits explicitly (@sec-course-shape): more comfort with R and RStudio, a first taste of Quarto, and reversibility as a habit.
-- Point forward to the planned second part on task and project management, and to agentic coding on the longer horizon (@sec-summary).
+- Point forward to the planned second part on task and project management, and to agentic coding on the longer horizon (see [what is still to come](summary.qmd)).
 - Collect feedback while the closing slide is up.
 
 End on momentum: they should leave wanting to use it tomorrow.

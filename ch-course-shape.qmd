@@ -47,6 +47,6 @@ Name these benefits in the wrap-up. Learners came for Git, and it helps them to 
 
 ## The wrap-up points forward
 
-The last block is not a summary slide. It is a short reflection on what they can now do, an explicit naming of the side benefits above, and a pointer to what comes next: the planned second part on task and project management, and agentic coding on the longer horizon (@sec-summary). The goal is momentum: they should leave wanting to use this on their own work tomorrow.
+The last block is not a summary slide. It is a short reflection on what they can now do, an explicit naming of the side benefits above, and a pointer to what comes next: the planned second part on task and project management, and agentic coding on the longer horizon (see [what is still to come](summary.qmd)). The goal is momentum: they should leave wanting to use this on their own work tomorrow.
 
 
