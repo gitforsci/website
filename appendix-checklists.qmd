@@ -71,15 +71,19 @@ From @sec-before.
 
 ## Run of show {#sec-appendix-runofshow}
 
-From @sec-run-of-show.
+From @sec-run-of-show. The eight-part arc; example timings from the `gitforsci-ghe` run.
 
-- [ ] 0:00 Welcome and motivation; pre-work check.
-- [ ] 0:30 Create and clone (Drawings 1 and 2).
-- [ ] 1:15 Branch (Drawing 3).
-- [ ] 2:00 Break.
-- [ ] 2:15 Pull request and merge (Drawing 4).
-- [ ] 3:15 Publish.
-- [ ] 3:45 Wrap-up; name side benefits; point to follow-up.
+- [ ] Arrival (30 min): setup check, no teaching; helper handles broken setups.
+- [ ] Part 1 (30 min): welcome, safe-to-fail framing, three objectives, baseline concept map (pinned on the wall).
+- [ ] Part 2 (20 min): create and clone (Drawing 1).
+- [ ] Part 3 (30 min): the commit cycle; revert demo; credentials moment (Drawing 2).
+- [ ] Part 4 (20 min): team work, the push wall (the 403 cliffhanger).
+- [ ] Lunch (55 min).
+- [ ] Part 5 (20 min): work on a branch, on the manuscript repo (Drawing 3).
+- [ ] Part 6 (40 min): pull request, review, merge; author and reviewer, then swap (Drawing 4). Protected.
+- [ ] Movement break (5 min).
+- [ ] Part 7 (10 min): merge conflict, instructor demo only. First to cut.
+- [ ] Part 8 (30 min): second concept map beside the baseline; wrap-up; side benefits; point forward; feedback. Protected.
 
 ## Spin up the next cohort {#sec-appendix-iteration}
 

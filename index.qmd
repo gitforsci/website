@@ -19,11 +19,11 @@ There are two readers in mind, and the book is layered so each can find their pa
 Throughout the book, look for these callouts:
 
 ::: {.callout-note appearance="simple"}
-**New educator** — context and reasoning you need the first time through.
+**New educator**: context and reasoning you need the first time through.
 :::
 
 ::: {.callout-tip appearance="simple"}
-**Repeat instructor** — the short version once you already know the setup.
+**Repeat instructor**: the short version once you already know the setup.
 :::
 
 ## How the material is licensed and cited
