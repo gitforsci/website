@@ -2,8 +2,6 @@
 
 This is an instructor handbook. It is not the course itself, it is the guide for the person who runs the course.
 
-TODO: references.bib was replaced by gitforsci.bib (papers on teaching concepts for this class), to be used in the next redevelopment iteration. Some references deleted with references.bib are still missing and need to be restored.
-
 **Git for Scientists** is a four-hour, hands-on workshop that teaches researchers the foundations of Git and GitHub for collaboration. The teaching material (slides, pre-work, exercises) lives in separate repositories. This book explains how those pieces fit together and gives you the checklists to set up and deliver the workshop yourself.
 
 The material is published as an Open Educational Resource (OER). That means you are free to take it, adapt it, and teach it. This handbook exists so that doing so is a matter of working through checklists rather than reverse-engineering someone else's setup.

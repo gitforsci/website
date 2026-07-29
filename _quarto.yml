@@ -43,7 +43,9 @@ book:
     - appendix-drawings.qmd
     - references.qmd
 
-bibliography: references.bib
+bibliography:
+  - references.bib
+  - gitforsci.bib
 
 format:
   html:
