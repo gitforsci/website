@@ -8,7 +8,7 @@ The setup tasks have to land in a sequence that gives learners time to finish th
 
 | When (before the workshop) | Do this |
 |---|---|
-| ~3 weeks | Generate the cohort website, fill in all platform links (chat, survey), and publish it (@sec-website). |
+| ~3 weeks | Generate the cohort website, fill in the survey link and due dates, and publish it (@sec-website). |
 | ~3 weeks | Send the first email: the course website link and a clear due date for completing the pre-work. |
 | 2 days before the pre-work due date | Review who has and has not completed the pre-course survey. |
 | Pre-work due date | Reach out to explain the next steps (accept the GitHub invitation, clone the setup repository). |
@@ -21,17 +21,17 @@ Adjust the exact spacing to your cohort, but keep the principle: every due date 
 
 ## Around three weeks before: launch and invite
 
-- [ ] Generate and publish the cohort website, with every platform link (chat, survey) filled in (@sec-website).
+- [ ] Generate and publish the cohort website, with the survey link and the due dates filled in (@sec-website).
 - [ ] Send the pre-course work (@sec-learner-setup) with the website link and a clear due date.
 - [ ] Open the pre-course survey and share its link (see below).
 - [ ] Invite every learner to the iteration org from the survey usernames, via the `ghclass` scripts (@sec-create-orgs).
 - [ ] Confirm the room, projector, power, and reliable internet (@sec-teacher-setup).
-- [ ] Confirm the equipment for live teaching: a flipchart or whiteboard with markers for the live drawings (@sec-live-drawings), a pointer or clicker for advancing slides, and ideally a second screen so your laptop, the projector, and your instructor notes are all visible at once.
+- [ ] Confirm the room equipment: a whiteboard or flipchart visible from every seat, with markers, for the concept-map fallback (@sec-concept-maps); A3 paper (two sheets per learner) and pens for the concept maps; yellow sticky notes for every seat (the done-signal, @sec-run-of-show); wall space to pin the maps; a pointer or clicker for advancing slides; and ideally a second screen so your laptop, the projector, and your instructor notes are all visible at once.
 - [ ] Confirm catering or breaks for the four-hour session if your venue needs it arranged ahead.
 
 ## The pre-course survey
 
-The survey does double duty: it tells you who your learners are, and it surfaces who has not finished the setup. Set it up in **KoboToolbox** (<https://www.kobotoolbox.org>): it is open-source, keeps the data under your control, and exports cleanly to a table you can feed to the `ghclass` invitation scripts (@sec-create-orgs). If you would rather trade the privacy story for the lowest possible friction, Google Forms is a workable alternative; the questions are the same.
+The survey does double duty: it tells you who your learners are, and it surfaces who has not finished the setup. The reference run used **Google Forms**: the lowest friction for learners, and a straight export to the table you feed to the `ghclass` invitation scripts (@sec-create-orgs). If you would rather keep the data fully under your own control, **KoboToolbox** (<https://www.kobotoolbox.org>) is the open-source alternative; the questions are the same either way.
 
 At a minimum, ask for:
 
@@ -41,7 +41,7 @@ At a minimum, ask for:
 - [ ] Whether they completed the pre-work, with a space to describe where they got stuck.
 
 ::: {.callout-tip}
-Build the survey once as a KoboToolbox form you can clone for each cohort. Keep the GitHub-username field as a required short-text question, since it is the one answer the `ghclass` scripts depend on.
+Build the survey once and clone it for each cohort. Keep the GitHub-username field as a required short-text question, since it is the one answer the `ghclass` scripts depend on.
 :::
 
 ## At each due date: check and follow up
@@ -50,9 +50,9 @@ The timeline puts a follow-up window after every due date. Use it to close the g
 
 - [ ] Two days before the pre-work due date, review the survey to see who has and has not completed it.
 - [ ] On the pre-work due date, reach out to explain the next steps: accept the GitHub invitation, clone the setup repository.
-- [ ] Check who has accepted invitations and made their first commit. Follow up with anyone who has not, in the chat channel.
+- [ ] Check who has accepted invitations, pushed their setup commit, and opened the "Completed setup tasks" issue. Follow up with anyone who has not, by email.
 - [ ] On the second due date, check who has not finished setup; the day after, reach out to anyone still stuck to offer support.
-- [ ] Hold a short virtual office hour or offer chat support for setup problems, so they are solved before the day, not during it.
+- [ ] Hold a short virtual office hour or offer email support for setup problems, so they are solved before the day, not during it.
 
 ## Around two days before: dry-run as the test-learner
 
@@ -70,8 +70,8 @@ If you can complete the whole workshop from a clean learner account, the materia
 - [ ] Arrive early and confirm the projector, internet, and power work in the actual room.
 - [ ] Log in to your instructor account in one browser and your test-learner account in a second, in Chrome (@sec-teacher-setup).
 - [ ] Open the cohort website and the slides, ready to demonstrate from the point-and-click interface.
-- [ ] Open the chat channel on a device you can monitor during the session.
-- [ ] Set up the flipchart or whiteboard and markers for the live drawings (@sec-live-drawings), and check your pointer or clicker works.
+- [ ] If remote participants join, open the video call and keep its chat visible; it carries their done-signals (@sec-run-of-show).
+- [ ] Lay out the concept-map materials: A3 paper and pens ready to hand out, a yellow sticky note on every seat, the whiteboard or flipchart clear for the concept-map fallback (@sec-concept-maps). Check your pointer or clicker works.
 
 ## A short triage plan for setup problems
 

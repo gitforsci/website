@@ -17,7 +17,7 @@ flowchart TD
 
 The single biggest risk to a hands-on workshop is spending the first ninety minutes installing software. So none of that happens in the room. Every account and install is pre-course work, done at home, days before, with a verification step that proves it worked.
 
-The pre-work is a short, numbered sequence the learner follows on their own: create a GitHub account, install R and RStudio, install Git, generate a personal access token, join the chat channel, make a first commit to a test repository, and do one short reading. @sec-learner-setup turns this into the exact checklist you hand out.
+The pre-work is a short, numbered sequence the learner follows on their own: install R and RStudio, create a GitHub account, complete the pre-course survey (which is what triggers the invitation to the cohort organization), generate a personal access token, install Git, work through a three-part setup test that ends with a first pushed commit and an issue assigned to the instructor, and do one short reading. @sec-learner-setup turns this into the exact checklist you hand out.
 
 The verification step is the point. A learner whose first commit landed before the workshop arrives ready to learn. A learner who skipped the pre-work is a support case you address through direct communication before the workshop, not during the teaching. Pre-work gaps cannot be fixed in a break; the pre-course survey and follow-up (@sec-before) exist so that nobody arrives unprepared.
 

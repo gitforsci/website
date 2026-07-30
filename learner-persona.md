@@ -1,4 +1,4 @@
-# Learner personas
+# Learner personas {#sec-personas}
 
 These are learner personas for the Git for Scientists workshop, in the sense used by Greg Wilson in [Teaching Tech Together](https://teachtogether.tech/en/index.html#s:process-personas): short, concrete characterisations of the people we actually teach, so the course serves real learners rather than an average of everyone. There are three, synthesised from the pre-course survey and the goals participants wrote in their own words. Each follows the same four-part shape: general background, what they already know, what they want to do, and any special needs. We use them as a check: every learning objective should answer a need that at least one persona has, and every formative check should target a gap one of them arrives with.
 

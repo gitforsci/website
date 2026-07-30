@@ -12,7 +12,7 @@ From @sec-teacher-setup.
 - [ ] Confirm Quarto is installed (`quarto --version`).
 - [ ] Install `ghclass` and the R packages used in teaching.
 - [ ] Book a room with projector, power, and reliable internet, and visit it before the day.
-- [ ] Arrange the live-teaching equipment: flipchart/whiteboard and markers, a pointer, a second screen.
+- [ ] Arrange the room equipment: whiteboard or flipchart and markers (concept-map fallback), A3 paper and pens, a sticky note per seat, wall space for the maps, a pointer, a second screen.
 - [ ] Arrange catering or breaks for the four-hour session.
 - [ ] Decide and communicate the participation model.
 
@@ -20,15 +20,18 @@ From @sec-teacher-setup.
 
 From @sec-learner-setup. Hand this to participants.
 
-- [ ] Join the chat channel (Element / Matrix) and post a hello.
 - [ ] Install the latest R from <https://cran.r-project.org>.
 - [ ] Install the latest RStudio from <https://posit.co/download/rstudio-desktop/>.
 - [ ] Create a GitHub account and verify your email.
+- [ ] Complete the pre-course survey by its due date (it triggers the organization invitation).
 - [ ] Generate a personal access token and save it safely.
 - [ ] Install Git for your operating system from <https://git-scm.com>.
 - [ ] Accept the cohort organization invitation and bookmark the org page.
-- [ ] Clone the test repository in RStudio, commit a change, and push it.
+- [ ] Clone your personal setup repository in RStudio.
+- [ ] Run the token and configuration scripts, then commit and push the change.
 - [ ] Confirm your change appears on GitHub.
+- [ ] Run the package-install script so the workshop packages are on your machine.
+- [ ] Report done: open an issue titled "Completed setup tasks" and assign the instructor.
 - [ ] Read the "Why Git? Why GitHub?" introduction from *Happy Git and GitHub for the useR*.
 
 ## Create the iteration organization {#sec-appendix-orgs}
@@ -61,12 +64,12 @@ From @sec-website.
 From @sec-before.
 
 - [ ] Send pre-work with a due date a few days before.
-- [ ] Open the pre-course survey (KoboToolbox) and collect GitHub usernames.
+- [ ] Open the pre-course survey (Google Forms, or KoboToolbox) and collect GitHub usernames.
 - [ ] Confirm room, projector, power, internet, equipment, catering.
 - [ ] Invite learners to the iteration org with the `ghclass` scripts.
-- [ ] Check who has accepted invitations and made a first commit; follow up with anyone who hasn't finished.
+- [ ] Check who has accepted invitations, pushed the setup commit, and opened the report-done issue; follow up by email with anyone who hasn't finished.
 - [ ] Dry-run the whole workshop as the test-learner the day before.
-- [ ] Morning of: confirm projector and internet, log in to both accounts, open site/slides/chat, set up the drawing surface and pointer.
+- [ ] Morning of: confirm projector and internet, log in to both accounts, open the site and slides, lay out the concept-map materials and sticky notes, check the pointer.
 - [ ] Have a triage plan for anyone who hasn't finished (pairing, direct follow-up).
 
 ## Run of show {#sec-appendix-runofshow}
@@ -76,11 +79,12 @@ From @sec-run-of-show. The eight-part arc; example timings from the `gitforsci-g
 - [ ] Arrival (30 min): setup check, no teaching; helper handles broken setups.
 - [ ] Part 1 (30 min): welcome, safe-to-fail framing, three objectives, baseline concept map (pinned on the wall).
 - [ ] Part 2 (20 min): create and clone (Drawing 1).
+- [ ] Break (10 min): 1:1 fixes for parked learners.
 - [ ] Part 3 (30 min): the commit cycle; revert demo; credentials moment (Drawing 2).
-- [ ] Part 4 (20 min): team work, the push wall (the 403 cliffhanger).
+- [ ] Part 4 (20 min): team work, the push wall (the 403 cliffhanger); the match-the-command handout into lunch.
 - [ ] Lunch (55 min).
 - [ ] Part 5 (20 min): work on a branch, on the manuscript repo (Drawing 3).
-- [ ] Part 6 (40 min): pull request, review, merge; author and reviewer, then swap (Drawing 4). Protected.
+- [ ] Part 6 (40 min): pull request, review, merge; author and reviewer, then swap; the demo adds an issue with a task list (Drawing 4). Protected.
 - [ ] Movement break (5 min).
 - [ ] Part 7 (10 min): merge conflict, instructor demo only. First to cut.
 - [ ] Part 8 (30 min): second concept map beside the baseline; wrap-up; side benefits; point forward; feedback. Protected.
