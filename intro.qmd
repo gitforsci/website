@@ -2,13 +2,13 @@
 
 ## The workshop in one page
 
-**Git for Scientists** is a four-hour, in-person, hands-on workshop. It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
+**Git for Scientists** is a four-hour, hands-on workshop, taught in person; the delivery mechanics (a done-signal, handouts, the regroup rhythm) have a video-call variant so remote participants can follow along (@sec-run-of-show). It teaches researchers the foundations of Git and GitHub, with collaboration as the central theme. Learners leave able to create and clone repositories, work through a Git cycle (pull, stage, commit, push), use branches, and open and merge a pull request.
 
 The focus is doing all of this through the point-and-click interface: the buttons and menus in RStudio and on the GitHub website, not commands typed at a prompt. Researchers do not need to memorize Git commands to collaborate well, and starting with the graphical interface lowers the barrier and keeps attention on the workflow rather than on syntax.
 
 The workshop assumes learners can already use R and RStudio at a basic level: install a package, run a script, edit a document, find their way around the RStudio IDE interface. Git is the new thing; R is the familiar ground it stands on.
 
-Along the way, learners pick up side benefits almost for free: a little more comfort with R, a first taste of Quarto for authoring, and a first look at the terminal. The terminal is included as a brief taste, not as the central skill. Working with Git at the command line matters less than it used to, now that agentic coding tools can drive Git on your behalf, so this workshop builds confidence with the concepts and vocabulary first. That foundation is exactly what a follow-up workshop on agentic tools builds on. @sec-course-shape says more about this.
+Along the way, learners pick up side benefits almost for free: a little more comfort with R and RStudio, a first taste of Quarto for authoring, and reversibility as a habit. There is no terminal work in the base workshop. Working with Git at the command line matters less than it used to, now that agentic coding tools can drive Git on your behalf, so this workshop builds confidence with the concepts and vocabulary first. That foundation is exactly what a follow-up workshop on agentic tools builds on. @sec-course-shape says more about this.
 
 ## How this handbook is organized
 
@@ -22,7 +22,7 @@ flowchart TD
     C["<b>Part 3: Three-org setup</b><br/>create the iteration org and the website"]:::layer
     D["<b>Part 4: Delivering the session</b><br/>pre-flight checks and the run of show"]:::layer
     E["<b>Part 5: Reusing and re-running</b><br/>next iteration, license, citation"]:::layer
-    F["<b>Appendices</b><br/>printable checklists, planned drawings, references"]:::layer
+    F["<b>Appendices</b><br/>printable checklists, the concept drawings, learner personas, references"]:::layer
 
     P --> A --> B --> C --> D --> E --> F
 ```
@@ -39,7 +39,7 @@ flowchart TD
     classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
 
     P["People<br/><b>Instructor</b> and <b>Learner</b>"]:::layer
-    A["Accounts and software<br/>GitHub account · R and RStudio · Git · Element/Matrix chat"]:::layer
+    A["Accounts and software<br/>GitHub account · R and RStudio · Git · personal access token"]:::layer
     O["Three GitHub organizations<br/><b>gitforsci</b> (handbook, citation, DOI)<br/><b>gitforsci-dev</b> (templates, material)<br/><b>gitforsci-00x</b> (one per cohort)"]:::layer
 
     P --> A

@@ -16,7 +16,7 @@ An instructor needs everything a learner needs, and then some. This chapter cove
 flowchart TD
     classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
 
-    S["<b>Same as learners</b><br/>GitHub account · R and RStudio · Git · personal access token · Element chat"]:::layer
+    S["<b>Same as learners</b><br/>GitHub account · R and RStudio · Git · personal access token"]:::layer
     E["<b>Instructor-only</b><br/>test-learner account · org owner rights · two browsers · projector or screen share"]:::layer
 
     S --> E
@@ -50,7 +50,7 @@ Everything in @sec-learner-setup applies to you. In addition:
 
 - [ ] Confirm Quarto is installed. Recent RStudio installs bundle it; check by running `quarto --version` in the RStudio terminal. You need it to render the course website locally (@sec-website).
 
-- [ ] Confirm you are comfortable opening the RStudio terminal. The workshop introduces a small amount of terminal work, and you should be a step ahead of learners there.
+- [ ] Confirm you are comfortable opening the RStudio terminal. Learners never touch the terminal in the base workshop (@sec-course-shape), but you use it yourself to render and publish the cohort website (@sec-website).
 
 - [ ] Install the R packages you use to administer the course. The main one is **ghclass** (<https://rundel.github.io/ghclass/>), which scripts the bulk GitHub work: inviting learners to the organization and creating their repositories from templates. The administration scripts that use it live in `gitforsci-dev/admin` (@sec-create-orgs).
 
@@ -61,7 +61,7 @@ Everything in @sec-learner-setup applies to you. In addition:
 These are not software, but they belong on the instructor's setup list because they take lead time:
 
 - [ ] Book a room with a projector or large screen and reliable power.
-- [ ] Visit the room before the day to check sightlines, the projector connection, power sockets, and where you will stand and draw.
+- [ ] Visit the room before the day to check sightlines, the projector connection, power sockets, where you will stand, and where the wall space for pinning the concept maps is (@sec-concept-maps).
 - [ ] Confirm reliable internet for the whole room; the workshop is entirely online-dependent.
 - [ ] Arrange catering or breaks for a four-hour session if appropriate for your venue.
 - [ ] Decide and communicate the participation model (open sign-up, application, or invited group).

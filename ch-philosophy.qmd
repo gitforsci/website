@@ -22,7 +22,7 @@ Practically, this means:
 
 - Everyone works in their own repositories inside a dedicated organization for the cohort. Nobody can damage the real material.
 - Mistakes are demonstrated on purpose. Show a bad commit, then revert it. Show a merge that needs attention, then resolve it.
-- The chat channel (see @sec-learner-setup) is for "I am stuck" messages and support beyond the course.
+- Support runs over email and GitHub issues (see @sec-learner-setup): a learner who is stuck emails you, or opens an issue on their setup repository and assigns you, and that habit carries beyond the course.
 
 The emotional outcome matters as much as the technical one. A learner who leaves believing "I can try things and undo them" will keep using Git. A learner who leaves anxious will not.
 
@@ -38,8 +38,12 @@ This also gives you a test for what belongs in the session. When you sequence th
 
 Collaboration on GitHub is also project management, and it is worth naming that. GitHub Issues are tasks, and they live at the level of the repository, attached to the work they describe rather than scattered across email or a separate tracker. If a pull request is a comment on a change, an issue is a comment on the project as a whole: a note pinned to the folder the work lives in, where the next person will actually find it. Researchers recognize this immediately, because it is the same instinct as leaving a comment in a shared document, only kept next to the code and data instead of away from it.
 
+## Teach to a focus learner
+
+The room is never uniform. The course keeps three learner personas (@sec-personas), synthesised from pre-course surveys in the sense of *Teaching Tech Together*: Arti, the fearful outsider; Bianca, the collaboration-driven R user; and Cem, the controlled-AI researcher. Pick the persona the day is calibrated to and teach to them. In the reference run that is Arti: a room paced for Arti stays safe to fail, while Bianca gets the command behind each click as stretch material and Cem gets the provenance framing and the pointer to the agentic follow-up. Reading the survey results back to the room through these three, in Part 1 of the run of show (@sec-run-of-show), is also how learners see themselves in the day.
+
 ## Where these principles come from
 
-These principles are not abstract ideals. They come from observing a research group from the inside, and from running this workshop with real research groups and watching where people get stuck and where they light up. The illustrations used in the slides, by Allison Horst for Openscapes [@openscapes-illustrations], carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room.
+These principles are not abstract ideals. They come from observing a research group from the inside, and from running this workshop with real research groups and watching where people get stuck and where they light up. The four hand-drawn concept drawings that assemble stage by stage on the slides (@sec-live-drawings) carry the same spirit: friendly, low-stakes, collaboration-first. Keep that tone in the room. The Openscapes lesson series [@lowndes2024openscapes] shares this collaboration-first approach and is one of the post-workshop readings.
 
 The pedagogy also rests on the work of Greg Wilson and the book *Teaching Tech Together* [@wilson2019teaching], which distills how people actually learn technical skills. Read it alongside this guide; it is the single best companion to what follows. The Carpentries, which Wilson co-founded, run instructor training where these principles are taught in depth (<https://carpentries.org/instructor-training/>), and it is well worth the time if you plan to teach often.

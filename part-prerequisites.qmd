@@ -1,6 +1,6 @@
 # Prerequisites {.unnumbered}
 
-This part lists every account and piece of software the workshop needs, split by who needs it. The instructor chapter comes first, because the person running the course has to be set up before learners can be: the chat channel, the GitHub organization, and the survey all have to exist before a learner can join them.
+This part lists every account and piece of software the workshop needs, split by who needs it. The instructor chapter comes first, because the person running the course has to be set up before learners can be: the GitHub organization and the pre-course survey have to exist before a learner can join or complete them.
 
 - @sec-teacher-setup is the instructor checklist. It is everything a learner needs, plus the extra accounts and setup that only the person running the course requires, and it points to the test-learner account you use to check the learner experience.
 
@@ -12,7 +12,7 @@ The two chapters overlap on purpose: an instructor needs the full learner setup 
 flowchart TD
     classDef layer fill:#f7f9fc,stroke:#c7d2e0,color:#1f2933;
 
-    L["<b>Learner needs</b><br/>GitHub account · R and RStudio · Git · personal access token · Element/Matrix chat"]:::layer
+    L["<b>Learner needs</b><br/>GitHub account · R and RStudio · Git · personal access token"]:::layer
     T["<b>Instructor also needs</b><br/>a second test-learner account · owner rights on the org · two browsers or profiles"]:::layer
 
     L --> T

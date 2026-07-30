@@ -41,8 +41,13 @@ book:
   appendices:
     - appendix-checklists.qmd
     - appendix-drawings.qmd
+    - learner-persona.md
     - appendix-funding.qmd
     - references.qmd
+
+lang: en
+language:
+  repo-action-links-issue: "Give feedback"
 
 bibliography:
   - references.bib

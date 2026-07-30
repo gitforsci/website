@@ -1,16 +1,16 @@
-# Planned live drawings {#sec-appendix-drawings}
+# The concept drawings at a glance {#sec-appendix-drawings}
 
-The live visual drawings (@sec-live-drawings) are still in development. This appendix is the at-a-glance index of all planned drawings, so you can see the full set in one place. The design brief for each lives in @sec-live-drawings; update both when you develop a drawing.
+The four concept drawings (@sec-live-drawings) are developed and in use. Each is hand-drawn in Excalidraw and revealed stage by stage on the slides as the summary of its block. This appendix is the at-a-glance index; the design brief for each lives in @sec-live-drawings.
 
 | # | Drawing | Makes clear | When in the session | Status |
 |---|---|---|---|---|
-| 1 | Local and remote (@sec-drawing-local-remote) | Two copies of the work, and Git moving changes between them | Start of "create and clone" | Drafted; rehearsal pending |
-| 2 | The commit cycle (@sec-drawing-commit-cycle) | Stage, commit, push; a commit as a labeled snapshot | First commit in "create and clone" | Drafted; rehearsal pending |
-| 3 | Branching (@sec-drawing-branching) | A branch as a parallel line of work that splits and rejoins | Start of "branch" | Drafted; rehearsal pending |
-| 4 | The pull request (@sec-drawing-pull-request) | A merge with a human review step in the middle | Start of "pull request and merge" | Drafted; rehearsal pending |
+| 1 | Local and remote (@sec-drawing-local-remote) | Two copies of the work, and Git moving changes between them | Summary of "create and clone" | Done |
+| 2 | The commit cycle (@sec-drawing-commit-cycle) | Stage, commit, push; a commit as a labeled snapshot | Summary of "the commit cycle" | Done |
+| 3 | Branching (@sec-drawing-branching) | A branch as a parallel line of work that splits and rejoins | Summary of "work on a branch", merge point left open | Done |
+| 4 | The pull request (@sec-drawing-pull-request) | A merge with a human review step in the middle | Summary of "pull request, review, merge", completing Drawing 3 | Done |
 
 ## How to use this list
 
-- When you develop a drawing, replace its placeholder in @sec-live-drawings with the image and change its status here to "Done."
+- To change a drawing, edit its `.excalidraw` source and re-render the frame sequence following `README-drawings.md` next to the images (in the cohort and template repositories), then update the design brief in @sec-live-drawings if the story changed.
 - If you add a new drawing, add a row here and a section there, keeping the numbering in sync with the run of show (@sec-run-of-show).
 - Keep the "When in the session" column aligned with the run of show so the drawings stay tied to the moment they support.

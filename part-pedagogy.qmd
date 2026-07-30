@@ -6,4 +6,4 @@ This part covers three things:
 
 - @sec-philosophy: the teaching philosophy. What kind of room you are trying to create, and the few principles that drive every decision in the workshop.
 - @sec-course-shape: the shape of the course. How pre-course work, in-class hands-on exercises, and the wrap-up fit together, and the side benefits learners pick up along the way.
-- @sec-live-drawings: live visual drawings. The diagrams you draw by hand in front of the room. These are still in development, so this chapter is a set of placeholders describing what each drawing should do.
+- @sec-live-drawings: the concept drawings. Four hand-drawn diagrams that assemble stage by stage on the slides as the summary of each block, and the concept maps that bookend the day.
