@@ -1,0 +1,5 @@
+# Consumed by the /create-release-quarto skill at release time.
+# Three values that vary per repo; the release flow itself is generic.
+zenodo-community: eth-domain-oer-rdm   # https://zenodo.org/communities/eth-domain-oer-rdm
+resource-type: publication             # an educational resource archives as a Publication on Zenodo
+render: quarto render                  # this repo is a Quarto book
